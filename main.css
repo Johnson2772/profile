@@ -139,7 +139,7 @@ p {
   font-weight: bold;
   text-align: center;
   color: white;
-  text-border: 2px solid black;
+  text-decoration: 2px solid black;
   text-shadow: 2px 2px 12px black;
   text-align: center;
   margin-top: 380px;
@@ -487,7 +487,7 @@ textarea {
   outline: none;
   -webkit-outline: none;
   -moz-outline: none;
-  highlight: none;
+  user-select: none;
   -webkit-highlight: none;
   -moz-highlight: none;
   border: none;
@@ -531,8 +531,8 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  right: ;
-  bottom: ;
+  right: 0;
+  bottom: 0;
   overflow: auto;
   overflow-x: hidden;
   overflow-y: auto;
