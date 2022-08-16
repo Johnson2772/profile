@@ -28,6 +28,11 @@ function index(){
 
 
  $(function(){
+    
+    $("#item").click(function() {
+        $("#submenu").slideToggle(500);
+    });
+
     $("#menuBtn").mouseover(function(){
         var toggle = false;
         if(toggle == false){
@@ -68,12 +73,3 @@ function index(){
                 
             }
  });
-
-
-
-
- $(function() {
-    $("#item").click(function() {
-        $("#submenu").slideToggle(500);
-    });
-}); 
