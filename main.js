@@ -23,5 +23,5 @@ function index(){
      var titulo = document.getElementById("titulo")
      var p = document.getElementById("p");
      titulo.innerHTML="About Me ... ";
-     p.innerHTML="Hello, I'm Johnson, 34 years old, I'm from Colombia (Hola mundo a todos los hispanos) This Web site is the simple exemple about Home pages, Menus and Context design <br><br> Good bye there :D";
+     p.innerHTML="Hello, I'm Johnson, 35 years old, I'm originally from Colombia (Hola mundo a todos los hispanos leyendo esto) This Web site is the simple example about Home pages, Menus and Context design <br><br> Good bye there :D";
  }
