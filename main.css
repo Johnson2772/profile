@@ -459,7 +459,7 @@ textarea {
 
 
 .titleBar {
-  width: 100vw;
+  width: 100px;
   margin: 0;
   position: fixed;
   left: 0;
@@ -499,14 +499,14 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 12vw;
+  width: 12px;
 }
 
 #menu {
-  width: 65vw;
-  height: 100vh;
+  width: 65px;
+  height: 30px;
   position: fixed;
-  left: -100vw;
+  left: 40px;
   top: 0;
   bottom: 0;
   right: 0;
@@ -525,8 +525,8 @@ textarea {
 }
 
 #main {
-  height: 100vh;
-  width: 100vw;
+  height: 100px;
+  width: 100px;
   background-color: #EEE;
   position: fixed;
   top: 0;
@@ -541,8 +541,8 @@ textarea {
 
 .menuBtnIcon {
   background-color: #FFF;
-  width: 10vw;
-  height: 2vw;
+  width: 10px;
+  height: 2px;
   border-radius: 30%;
   display: block;
 }
@@ -553,8 +553,8 @@ textarea {
 }
 
 .menuItem {
-  width: 55vw;
-  padding: 5vw;
+  width: 55px;
+  padding: 5px;
   text-align: left;
   background-color: transparent;
   border-bottom: 1px solid #555;
@@ -566,9 +566,9 @@ textarea {
 
 .menuHead {
   margin: 0;
-  width: 60vw;
+  width: 60px;
   height: 125px;
-  padding-left: 5vw;
+  padding-left: 5px;
   text-align: left;
   background-color: rgba(0, 0, 0, .5);
   border-bottom: 1px solid #555;
@@ -578,9 +578,9 @@ textarea {
 }
 
 .block {
-  width: 80vw;
-  margin: 5vw;
-  padding: 5vw;
+  width: 80px;
+  margin: 5px;
+  padding: 5px;
   background-color: #FFF;
   color: #111;
   text-align: left;
