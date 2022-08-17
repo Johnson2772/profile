@@ -33,15 +33,15 @@ body {
 
 @keyframes background-change {
   0% {
-    background-color: #0f0;
+    background-color: #000;
   }
 
   50% {
-    background-color: #0f5;
+    background-color: #555;
   }
 
   100% {
-    background-color: #0f9;
+    background-color: #fff;
   }
 }
 
