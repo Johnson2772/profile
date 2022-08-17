@@ -297,6 +297,7 @@ footer {
   margin-top: 10px;
 }
 
+/* Table properties */
 table {
   width: 100%;
   font-size: 11pt;
@@ -316,6 +317,11 @@ td {
   font-weight: bold;
   color: white;
 }
+
+tr td {
+  text-align: center;
+}
+
 
 li {
   margin-bottom: 15px;
@@ -596,27 +602,6 @@ textarea {
 .menuItem:active {
   background-color: #555;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
