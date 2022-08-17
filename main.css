@@ -13,7 +13,7 @@ html {
 body {
   background-color: black;
   font-family: system-ui;
-  animation-name: backr;
+  animation-name: background-change;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -31,6 +31,19 @@ body {
   font-size: 13pt;
 }
 
+@keyframes background-change {
+  0% {
+    background-color: #0f0;
+  }
+
+  50% {
+    background-color: #0f5;
+  }
+
+  100% {
+    background-color: #0f9;
+  }
+}
 
 
 /* Header and title styles */
@@ -261,10 +274,20 @@ footer {
   border-radius: 100px;
   border-right: none;
   border-left: none;
-  animation-name: cadr;
+  animation-name: avatar;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+@keyframes avatar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .caption {
@@ -442,25 +465,7 @@ textarea {
   opacity: 0.8;
 }
 
-@keyframes backr {
-  0% {
-    background-color: #ffcc00;
-  }
 
-  100% {
-    background-color: #ff9900;
-  }
-}
-
-@keyframes cadr {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 
 
