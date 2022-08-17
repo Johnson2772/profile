@@ -37,11 +37,11 @@ body {
   }
 
   50% {
-    background-color: #555;
+    background-color: #3333;
   }
 
   100% {
-    background-color: #fff;
+    background-color: #666;
   }
 }
 
