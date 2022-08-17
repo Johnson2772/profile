@@ -46,6 +46,7 @@ body {
 }
 
 
+
 /* Header and title styles */
 
 header {
@@ -246,6 +247,7 @@ footer {
 }
 
 /*
+
 .items {
    width: 30%;
    display: block;
@@ -258,6 +260,7 @@ footer {
    float: left;
    margin-left: 1%;
  }
+
  */
 
 .thumbnail {
@@ -313,12 +316,13 @@ footer {
   border-radius: 50%;
 }
 
-
 .quote {
   font-size: 12pt;
   text-align: right;
   margin-top: 10px;
 }
+
+
 
 /* Table properties */
 table {
@@ -351,6 +355,8 @@ li {
   margin-bottom: 15px;
   font-weight: bold;
 }
+
+
 
 progress {
   width: 70%;
@@ -464,10 +470,6 @@ textarea {
 #contacts img:hover {
   opacity: 0.8;
 }
-
-
-
-
 
 
 
@@ -608,9 +610,6 @@ textarea {
 .menuItem:active {
   background-color: #555;
 }
-
-
-
 
 
 
