@@ -12,7 +12,7 @@ function index(){
      p.innerHTML="Nice to meet you.. :D";
  }
  
- function photos(){
+ function projects(){
      var titulo = document.getElementById("titulo")
      var p = document.getElementById("p");
      titulo.innerHTML="In Progress... ";
