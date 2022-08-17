@@ -105,7 +105,7 @@ h1 {
 }
 
 h1 span {
-  border: 4px dashed #20bcd5;
+  border: 1px dashed #2ad;
   padding: 10px;
 }
 
@@ -119,7 +119,7 @@ h3 {
 h3 a {
   border-bottom: 4px solid green;
   font-size: 10pt;
-
+  text-align: center;
 }
 
 h4 {
