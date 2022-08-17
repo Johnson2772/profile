@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   font-family: 'Handlee', verdana, arial, cursive;
-  font-size: 13pt;
+  font-size: 12pt;
 }
 
 @keyframes background-change {
@@ -86,13 +86,13 @@ header ul li a {
 
 header ul li a:hover,
 .active {
-  background-color: white;
-  color: #ff9900;
+  background-color: black;
+  color: green;
   border-radius: 8px;
 }
 
 h1 {
-  color: #20bcd5;
+  color: #2ad;
   margin-left: 10px;
   font-size: 15pt;
   font-style: italic;
@@ -100,7 +100,7 @@ h1 {
   float: left;
   font-family: "Times New Roman", Georgia, Serif;
   text-align: center;
-  padding: 18px 0 18px 0;
+  padding: 18px 0;
   margin: 0 0 10px 0;
 }
 
