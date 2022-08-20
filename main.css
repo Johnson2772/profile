@@ -107,10 +107,10 @@ h1 {
 h1 span {
   border: 1px dashed #2ad;
   padding: 10px;
+  align-self: center;
 }
 
 h3 {
-
   display: inline;
   float: right;
   margin-right: 10px;
