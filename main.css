@@ -327,6 +327,7 @@ footer {
 table {
   width: 100%;
   font-size: 11pt;
+  float: center;
 }
 
 table,
