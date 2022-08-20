@@ -107,7 +107,7 @@ h1 {
 h1 span {
   border: 1px dashed #2ad;
   padding: 10px;
-  align-self: center;
+  float: center;
 }
 
 h3 {
