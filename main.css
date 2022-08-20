@@ -97,7 +97,7 @@ h1 {
   font-size: 15pt;
   font-style: italic;
   text-shadow: 1px 1px 1px green;
-  float: left;
+  float: center;
   font-family: "Times New Roman", Georgia, Serif;
   text-align: center;
   padding: 18px 0;
@@ -107,7 +107,6 @@ h1 {
 h1 span {
   border: 1px dashed #2ad;
   padding: 10px;
-  float: center;
 }
 
 h3 {
