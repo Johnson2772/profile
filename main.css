@@ -334,7 +334,7 @@ table,
 th,
 td,
 tr {
-  border: 11px solid #cecece;
+  border: 11px solid lightgray;
   border-collapse: collapse;
   text-align: center;
   table-layout: fixed;
