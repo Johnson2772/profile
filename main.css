@@ -332,7 +332,8 @@ table {
 
 table,
 th,
-td {
+td,
+tr {
   border: 2px solid #cecece;
   border-collapse: collapse;
   text-align: center;
@@ -340,7 +341,7 @@ td {
 }
 
 .selected {
-  background-color: #f36f48;
+  background-color: lightgreen;
   font-weight: bold;
   color: white;
 }
