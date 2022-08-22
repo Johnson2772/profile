@@ -334,8 +334,9 @@ table,
 th,
 td,
 tr {
-  border: 2px solid #cecece;
+  border: 1.5px solid #cecece;
   border-collapse: collapse;
+  border: 10px;
   text-align: center;
   table-layout: fixed;
 }
@@ -345,12 +346,6 @@ tr {
   font-weight: bold;
   color: white;
 }
-
-tr td {
-  text-align: center;
-  border: 10px;
-}
-
 
 li {
   margin-bottom: 15px;
