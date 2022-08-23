@@ -240,6 +240,7 @@ section {
 footer {
   padding: 10px 0;
   background-color: #101010;
+  border-radius: 10px;
   color: #9d9d9d;
   bottom: 0;
   width: 100%;
@@ -300,10 +301,10 @@ footer {
 }
 
 .copyright {
-  font-size: 8pt;
+  font-size: 10pt;
   text-align: right;
   padding-bottom: 10px;
-  border-radius: 30px;
+  
   color: grey;
 }
 
