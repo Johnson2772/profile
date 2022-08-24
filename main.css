@@ -14,15 +14,14 @@ body {
   background-color: black;
   font-family: system-ui;
   animation-name: background-change;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
   color: green;
   width: 100%;
-  height: 720px;
   height: 100%;
-  margin: 0px;
+  margin: 0%;
   padding: 10px;
   overflow: auto;
   overflow-x: hidden;
@@ -247,11 +246,10 @@ section {
 
 footer {
   padding: 10px 0;
-  background-color: #101010;
+  background-color: #101;
   border-radius: 10px;
   color: #9d9d9d;
-  bottom: 0;
-  width: 100%;
+  width: 90%;
 }
 
 /*
