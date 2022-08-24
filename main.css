@@ -36,8 +36,16 @@ body {
     background-color: #000;
   }
 
+  25% {
+    background-color: #111;
+  }
+
   50% {
     background-color: #222;
+  }
+
+  75% {
+    background-color: #333;
   }
 
   100% {
@@ -141,7 +149,7 @@ hr {
 a {
   text-decoration: none;
   color: white;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 15px;
 }
 
 img {
