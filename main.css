@@ -280,13 +280,13 @@ section {
   min-height: 250px;
   padding: 15px;
   text-align: center;
-  width: 98%;
+  width: 90%;
 }
 
 .container {
-  width: 90%;
   margin: auto;
   overflow: hidden;
+  width: 90%;
 }
 
 footer {
