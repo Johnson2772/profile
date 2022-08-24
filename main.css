@@ -277,15 +277,17 @@ footer {
   width: 160px;
   height: 160px;
   border: 5px solid #999;
-  margin: 10px 0%;
+  margin: 185px 35%;
   border-radius: 100px;
-  animation-name: avatar;
+  border-right: none;
+  border-left: none;
+  animation-name: avatar-frame;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes avatar {
+@keyframes avatar-frame {
   0% {
     transform: rotate(0deg);
     background-color: #000;
