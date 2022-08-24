@@ -265,22 +265,15 @@ aside {
   float: right;
 }
 
-.section {
-  background-color: #fff;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
 
 section {
   background-color: #fff;
   border: 2px solid grey;
   border-radius: 10px;
-  min-height: 250px;
-  text-align: center;
-  padding: 15px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  min-height: 250px;
+  padding: 15px;
+  text-align: center;
 }
 
 .container {
