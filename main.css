@@ -140,7 +140,7 @@ header ul li a:hover,
 h1 {
   color: #2ad;
   margin-left: 10px;
-  font-size: 15pt;
+  font-size: 24pt;
   font-style: italic;
   text-shadow: 1px 1px 1px green;
   float: center;
@@ -152,16 +152,19 @@ h1 {
 
 h1 span {
   border: 1px dashed #2ad;
+  font-size: 18pt;
   padding: 10px;
 }
 
 h3 {
+  font-size: 16pt;
   display: inline;
   float: right;
   margin-right: 10px;
 }
 
 h3 a {
+  font-size: 16pt;
   border-bottom: 4px solid green;
   font-size: 10pt;
   text-align: center;
@@ -183,10 +186,10 @@ h4 {
   border-left: none;
   border-radius: 100%;
   border-right: none;
-  height: 160px;
+  height: 90px;
   float: left;
-  margin: 1% 1%;
-  width: 160px;
+  margin: 0% 0%;
+  width: 90px;
 }
 
 @keyframes avatar-frame {
@@ -262,7 +265,10 @@ p {
 }
 
 aside {
+  background-color: #fff;
+  border: 2px solid grey;
   float: right;
+  text-align: center;
 }
 
 
@@ -287,26 +293,9 @@ footer {
   background-color: #111;
   border-radius: 10px;
   color: #aaa;
-  width: 97%;
+  width: 98%;
   
 }
-
-/*
-
-.items {
-   width: 30%;
-   display: block;
-   padding: 4px;
-   margin-bottom: 20px;
-   line-height: 1.42857143;
-   background-color: #fff;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   float: left;
-   margin-left: 1%;
- }
-
- */
 
 .caption {
   color: #000;
@@ -333,7 +322,22 @@ footer {
 }
 
 
+/*
 
+.items {
+   width: 30%;
+   display: block;
+   padding: 4px;
+   margin-bottom: 20px;
+   line-height: 1.42857143;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   float: left;
+   margin-left: 1%;
+ }
+
+ */
 
 
 /* Table properties */
