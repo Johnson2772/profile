@@ -248,18 +248,21 @@ a {
 /* Regular text styles */
 
 p {
+  color: white;
+  display: block;
   font-size: 22px;
   font-family: system-ui;
   font-weight: bold;
+  margin: 0;
+  margin-top: 12pt;
+  padding: 0;
   text-align: center;
-  color: white;
   text-decoration: 2px solid black;
   text-shadow: 2px 2px 12px black;
-  text-align: center;
-  margin-top: 380px;
-  display: block;
-  padding: 0;
-  margin: 0;
+}
+
+aside {
+  float: right;
 }
 
 .section {
@@ -335,6 +338,8 @@ footer {
   text-align: right;
   margin-top: 10px;
 }
+
+
 
 
 
