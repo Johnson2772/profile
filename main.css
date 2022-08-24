@@ -273,16 +273,14 @@ footer {
   height: auto;
 }
 
-.avatar {
+.avatar-frame {
   width: 160px;
   height: 160px;
-  border: 2px solid #3c4043;
-  margin: 180px 35%;
+  border: 5px solid #999;
+  margin: 10px 0%;
   border-radius: 100px;
-  border-right: none;
-  border-left: none;
   animation-name: avatar;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -290,10 +288,12 @@ footer {
 @keyframes avatar {
   0% {
     transform: rotate(0deg);
+    background-color: #000;
   }
 
   100% {
     transform: rotate(360deg);
+    background-color: #fff;
   }
 }
 
