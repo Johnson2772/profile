@@ -267,6 +267,7 @@ p {
 aside {
   background-color: #fff;
   border: 2px solid grey;
+  border-radius: 15px;
   float: right;
   height: 100%;
   min-height: 200%;
@@ -278,7 +279,8 @@ aside {
 section {
   background-color: #fff;
   border: 2px solid grey;
-  border-radius: 5%;
+  border-radius: 15px;
+  float: left;
   margin: 1% 1%;
   min-height: 300px;
   padding: 5%;
