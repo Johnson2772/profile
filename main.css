@@ -54,6 +54,8 @@ body {
 
 
 
+
+
 /* Header and title styles */
 
 header {
@@ -222,7 +224,6 @@ p {
   border-radius: 10px;
 }
 
-
 section {
   background-color: #fff;
   border: 2px solid grey;
@@ -247,7 +248,6 @@ footer {
   color: #aaa;
   width: 97%;
   
-
 }
 
 /*
