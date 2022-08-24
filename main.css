@@ -11,23 +11,22 @@ html {
 }
 
 body {
-  background-color: black;
-  font-family: system-ui;
   animation-name: background-change;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  background-color: black;
   color: green;
-  width: 100%;
+  font-family: 'Handlee', system-ui, verdana, arial, cursive;
+  font-size: 12pt;
   height: 100%;
-  margin: 0%;
-  padding: 10px;
+  margin: 5%;
   overflow: auto;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: 'Handlee', verdana, arial, cursive;
-  font-size: 12pt;
+  padding: 5%;
+  width: 100%;
 }
 
 @keyframes background-change {
@@ -180,7 +179,7 @@ h4 {
   height: 160px;
   border: 5px solid #999;
   margin: 10px 35%;
-  border-radius: 100px;
+  border-radius: 100%;
   border-right: none;
   border-left: none;
   animation-name: avatar-frame;
@@ -213,7 +212,7 @@ img {
   display: flex;
   border: 1px solid white;
   border-radius: 100px;
-  margin: -10px 4px;
+  margin: -10% 4px;
 }
 
 .img-circle {
