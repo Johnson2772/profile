@@ -60,8 +60,6 @@ header {
   width: 100%;
   height: 100px;
   padding: 10px;
-  width: 100%;
-  height: 50px;
   background-color: #808080;
   display: flex;
   justify-content: space-between;
@@ -69,6 +67,27 @@ header {
   margin-top: 15px;
   box-shadow: 1px 2px 10px black;
   border-bottom: 2px solid black;
+}
+
+#header {
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-size: cover;
+}
+
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+#header p {
+  font-size: 25pt;
+  color: #3b464c;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
 }
 
 header .logo {
@@ -96,6 +115,25 @@ header ul li a:hover,
   background-color: black;
   color: green;
   border-radius: 8px;
+}
+
+#banner_image {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url("https://images.unsplash.com/photo-1608126199278-50a5f584dbdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80") no-repeat center;
+  background-size: cover;
+}
+
+#banner_content {
+  position: relative;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  background-color: black;
+  max-width: 660px;
 }
 
 h1 {
@@ -135,11 +173,7 @@ h4 {
   font-weight: bold;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background: #f36f48;
-}
+
 
 
 
@@ -177,6 +211,8 @@ p {
 
 
 
+
+
 /* Regular text styles */
 
 .section {
@@ -204,52 +240,14 @@ section {
   overflow: hidden;
 }
 
-#banner_image {
-  padding-top: 75px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #f8f8f8;
-  background: url("https://images.unsplash.com/photo-1608126199278-50a5f584dbdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80") no-repeat center;
-  background-size: cover;
-}
-
-#banner_content {
-  position: relative;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  margin-top: 12%;
-  margin-bottom: 12%;
-  background-color: black;
-  max-width: 660px;
-}
-
-#header {
-  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-  background-size: cover;
-}
-
-#header img {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: auto;
-}
-
-#header p {
-  font-size: 25pt;
-  color: #3b464c;
-  padding-top: 5px;
-  margin: 0;
-  font-weight: bold;
-  text-align: center;
-}
-
 footer {
   padding: 10px 0;
-  background-color: #101;
+  background-color: #111;
   border-radius: 10px;
-  color: #9d9d9d;
-  width: 90%;
+  color: #aaa;
+  width: 97%;
+  
+
 }
 
 /*
@@ -335,6 +333,12 @@ table {
   width: 100%;
   font-size: 11pt;
   float: center;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #f36f48;
 }
 
 table,
