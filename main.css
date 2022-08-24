@@ -192,17 +192,17 @@ h4 {
 @keyframes avatar-frame {
   0% {
     transform: rotate(0deg);
-    background-color: #000;
+    background-color: #888;
   }
 
   50% {
     transform: rotate(180deg);
-    background-color: #888;
+    background-color: #fff;
   }
 
   100% {
     transform: rotate(360deg);
-    background-color: #fff;
+    background-color: #000;
   }
 }
 
@@ -211,14 +211,17 @@ h4 {
 
 
 /* Imagen styles */
+.image {
+  border-radius: 100%;
+  float: left;
+}
 
 img {
-  width: 150px;
-  height: 150px;
-  display: flex;
   border: 1px solid white;
-  border-radius: 100px;
+  display: flex;
+  height: 150px;
   margin: -10% 4px;
+  width: 150px;
 }
 
 .img-circle {
