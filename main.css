@@ -175,17 +175,37 @@ h4 {
   font-weight: bold;
 }
 
+.avatar-frame {
+  width: 160px;
+  height: 160px;
+  border: 5px solid #999;
+  margin: 10px 35%;
+  border-radius: 100px;
+  border-right: none;
+  border-left: none;
+  animation-name: avatar-frame;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes avatar-frame {
+  0% {
+    transform: rotate(0deg);
+    background-color: #000;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    background-color: #fff;
+  }
+}
+
 
 
 
 
 /* Imagen styles */
-
-a {
-  text-decoration: none;
-  color: white;
-  padding: 0px 15px;
-}
 
 img {
   width: 150px;
@@ -195,6 +215,29 @@ img {
   border-radius: 100px;
   margin: -338px 664px;
 }
+
+.img-circle {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.thumbnail {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 15px;
+}
+
+
+
+
+
+/* Regular text styles */
 
 p {
   font-size: 22px;
@@ -210,12 +253,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
-
-
-
-
-/* Regular text styles */
 
 .section {
   background-color: #fff;
@@ -267,38 +304,6 @@ footer {
 
  */
 
-.thumbnail {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.avatar-frame {
-  width: 160px;
-  height: 160px;
-  border: 5px solid #999;
-  margin: 10px 35%;
-  border-radius: 100px;
-  border-right: none;
-  border-left: none;
-  animation-name: avatar-frame;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes avatar-frame {
-  0% {
-    transform: rotate(0deg);
-    background-color: #000;
-  }
-
-  100% {
-    transform: rotate(360deg);
-    background-color: #fff;
-  }
-}
-
 .caption {
   color: #000;
   padding: 0px 10px 10px;
@@ -315,11 +320,6 @@ footer {
 
 #contacts {
   text-align: center;
-}
-
-.img-circle {
-  border: 3px solid white;
-  border-radius: 50%;
 }
 
 .quote {
@@ -358,6 +358,10 @@ tr {
   font-weight: bold;
   color: white;
 }
+
+
+
+
 
 li {
   margin-bottom: 15px;
@@ -476,6 +480,10 @@ textarea {
 #contacts img:hover {
   opacity: 0.8;
 }
+
+
+
+
 
 
 
