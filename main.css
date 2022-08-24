@@ -219,9 +219,9 @@ h4 {
 img {
   border: 1px solid white;
   display: flex;
-  height: 150px;
-  margin: -10% 4px;
-  width: 150px;
+  height: 80px;
+  margin: 0% 0%;
+  width: 80px;
 }
 
 .img-circle {
