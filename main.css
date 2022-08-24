@@ -179,7 +179,7 @@ h4 {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  border: 5px solid #999;
+  border: 5px solid #fff;
   border-left: none;
   border-radius: 100%;
   border-right: none;
@@ -197,12 +197,12 @@ h4 {
 
   50% {
     transform: rotate(180deg);
-    background-color: #fff;
+    background-color: #000;
   }
 
   100% {
     transform: rotate(360deg);
-    background-color: #000;
+    background-color: #fff;
   }
 }
 
