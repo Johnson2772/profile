@@ -185,12 +185,13 @@ h4 {
   display: flex;
   border: 5px solid #fff;
   border-left: none;
-  border-radius: 100%;
+  border-radius: 75%;
   border-right: none;
-  height: 90px;
+  height: 50px;
   float: left;
   margin: 0% 0%;
-  width: 90px;
+  vertical-align: middle;
+  width: 50px;
 }
 
 @keyframes avatar-frame {
