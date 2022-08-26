@@ -192,7 +192,7 @@ h4 {
 }
 
 .rotating-test {
-  animation-name: avatar-frame;
+  animation-name: rotating-test;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
