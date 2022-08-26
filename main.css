@@ -178,6 +178,20 @@ h4 {
 }
 
 .avatar-frame {
+  display: flex;
+  border: 5px solid #fff;
+  border-left: none;
+  border-radius: 75%;
+  border-right: none;
+  box-shadow: #333 1% 1%;
+  height: 50px;
+  float: left;
+  margin: 0% 0%;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.rotating-test {
   animation-name: avatar-frame;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -194,7 +208,7 @@ h4 {
   width: 50px;
 }
 
-@keyframes avatar-frame {
+@keyframes rotating-test {
   0% {
     transform: rotate(0deg);
     background-color: #888;
