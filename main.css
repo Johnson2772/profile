@@ -70,6 +70,10 @@ header {
   padding: 30px;
 }
 
+
+
+
+
 #header {
   background-image: url("https://www.sololearn.com/Uploads/header.jpg");
   background-size: cover;
@@ -117,6 +121,11 @@ header ul li a:hover,
   color: green;
   border-radius: 8px;
 }
+
+
+
+
+
 
 #banner_image {
   padding-top: 75px;
