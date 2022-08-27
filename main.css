@@ -11,11 +11,7 @@ html {
 }
 
 body {
-  animation-name: background-change;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  animation: background-change 5s ease-in-out infinite alternate;
   background-color: black;
   color: green;
   font-family: 'Handlee', system-ui, verdana, arial, cursive;
@@ -199,14 +195,14 @@ h4 {
   from {
     box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px green, 0 0 4px green, 0 0 5px green, 0 0 6px green, 0 0 7px green;
   }
-  
+
   to {
-    box-shadow: 0 0 2px #fff, 0 0 3px palegreen, 0 0 4px  palegreen, 0 0 5px palegreen, 0 0 6px palegreen, 0 0 7px palegreen, 0 0 8px green;
+    box-shadow: 0 0 2px #fff, 0 0 3px palegreen, 0 0 4px palegreen, 0 0 5px palegreen, 0 0 6px palegreen, 0 0 7px palegreen, 0 0 8px green;
   }
 }
 
 .rotating-test {
-    animation-name: rotating-test;
+  animation-name: rotating-test;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
