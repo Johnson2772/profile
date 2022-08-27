@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  animation: background-change 5s linear infinite alternate;
+  animation: background-change 10s linear infinite alternate;
   background-color: #333;
   color: green;
   font-family: 'Handlee', system-ui, verdana, arial, cursive;
@@ -201,7 +201,7 @@ h4 {
 }
 
 .glow {
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
