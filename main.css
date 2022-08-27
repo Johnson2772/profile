@@ -12,7 +12,7 @@ html {
 
 body {
   animation: background-change 5s linear infinite alternate;
-  background-color: white;
+  background-color: #333;
   color: green;
   font-family: 'Handlee', system-ui, verdana, arial, cursive;
   font-size: 1em;
@@ -27,11 +27,11 @@ body {
 
 @keyframes background-change {
   0% {
-    background-color: #000;
+    background-color: #444;
   }
 
   20% {
-    background-color: #333;
+    background-color: #555;
   }
 
   40% {
@@ -39,15 +39,15 @@ body {
   }
 
   60% {
-    background-color: #999;
+    background-color: #777;
   }
 
   80% {
-    background-color: #ccc;
+    background-color: #888;
   }
 
   100% {
-    background-color: #fff;
+    background-color: #999;
   }
 }
 
