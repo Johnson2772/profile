@@ -197,7 +197,7 @@ h4 {
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 1% #fff, 0 0 2% #fff, 0 0 3% green, 0 0 4% green, 0 0 5% green, 0 0 6% green, 0 0 7% green;
+    box-shadow: 0 0 10% #fff, 0 0 20% #fff, 0 0 30% green, 0 0 40% green, 0 0 50% green, 0 0 60% green, 0 0 70% green;
   }
   
   to {
