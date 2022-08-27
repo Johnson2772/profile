@@ -201,7 +201,7 @@ h4 {
   }
   
   to {
-    box-shadow: 0 0 2% #fff, 0 0 3% seagreen, 0 0 4%  seagreen, 0 0 5% seagreen, 0 0 6% eagreen, 0 0 7% agreen, 0 0 8% green;
+    box-shadow: 0 0 20% #fff, 0 0 30% seagreen, 0 0 40%  seagreen, 0 0 50% seagreen, 0 0 60% seagreen, 0 0 70% seagreen, 0 0 80% green;
   }
 }
 
