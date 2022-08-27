@@ -197,11 +197,11 @@ h4 {
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px green, 0 0 8px green, 0 0 10px green, 0 0 12px green, 0 0 14px green;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px green, 0 0 4px green, 0 0 5px green, 0 0 6px green, 0 0 7px green;
   }
   
   to {
-    box-shadow: 0 0 4px #fff, 0 0 6px seagreen, 0 0 8px  seagreen, 0 0 10px seagreen, 0 0 12px seagreen, 0 0 14px seagreen, 0 0 16px green;
+    box-shadow: 0 0 2px #fff, 0 0 3px seagreen, 0 0 4px  seagreen, 0 0 5px seagreen, 0 0 6px seagreen, 0 0 7px seagreen, 0 0 8px green;
   }
 }
 
