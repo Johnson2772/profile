@@ -207,14 +207,11 @@ h4 {
 }
 
 .rotating-test {
-  animation-name: rotating-test;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: rotating-test 5s linear infinite alternate;
   display: flex;
   border: 5px solid #fff;
   border-left: none;
-  border-radius: 75%;
+  border-radius: 75px;
   border-right: none;
   height: 50px;
   float: left;
