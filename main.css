@@ -199,14 +199,14 @@ h4 {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
   }
-  
+
   to {
     box-shadow: 0 0 20px #fff, 0 0 30px seagreen, 0 0 40px seagreen, 0 0 50px seagreen, 0 0 60px seagreen, 0 0 70px seagreen, 0 0 80px seagreen;
   }
 }
 
 .rotating-test {
-    animation-name: rotating-test;
+  animation-name: rotating-test;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
