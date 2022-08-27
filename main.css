@@ -201,7 +201,7 @@ h4 {
   }
   
   to {
-    box-shadow: 0 0 2px #fff, 0 0 3px seagreen, 0 0 4px  seagreen, 0 0 5px seagreen, 0 0 6px seagreen, 0 0 7px seagreen, 0 0 8px green;
+    box-shadow: 0 0 2px #fff, 0 0 3px palegreen, 0 0 4px  palegreen, 0 0 5px palegreen, 0 0 6px palegreen, 0 0 7px palegreen, 0 0 8px green;
   }
 }
 
@@ -722,4 +722,3 @@ textarea {
 
 #submenu a:hover {
   background-color: #4CAF50
-}
