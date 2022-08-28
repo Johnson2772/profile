@@ -199,6 +199,9 @@ h4 {
   width: 50px;
 }
 
+
+
+/* Effects */
 .glow {
   animation: glow 5s ease-in-out infinite alternate;
 }
@@ -257,10 +260,9 @@ h4 {
 
 img {
   border: 1px solid white;
-  display: flex;
-  height: 80px;
-  margin: 0% 0%;
-  width: 80px;
+  /* display: flex; */
+  height: 48px;
+  width: 48px;
 }
 
 .img-circle {
@@ -727,3 +729,4 @@ textarea {
 
 #submenu a:hover {
   background-color: #4CAF50
+}
