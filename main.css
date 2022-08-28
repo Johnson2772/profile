@@ -254,6 +254,7 @@ h4 {
 /* Imagen styles */
 .image {
   border-radius: 100%;
+  margin: 10% 0%;
   display: flex;
   float: left;
 }
@@ -261,8 +262,8 @@ h4 {
 img {
   border: 1px solid white;
   /* display: flex; */
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
 }
 
 .img-circle {
