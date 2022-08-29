@@ -892,11 +892,7 @@ textarea {
 
 
 
-
-
-* {
-  
-}
+/* Slideshow */
 
 .mySlides1,
 .mySlides2 {
@@ -959,16 +955,7 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* Other */
 
 #contacts img {
   height: 50px;
