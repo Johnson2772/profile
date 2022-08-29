@@ -280,7 +280,8 @@ img {
   border: 1px solid white;
   border-radius: 100%;
   height: 32px;
-  vertical-align: middle width: 32px;
+  vertical-align: middle;
+  width: 32px;
 }
 
 .image {
@@ -360,8 +361,11 @@ aside {
   float: right;
   height: 100%;
   min-height: 200%;
+  position: fixed !important;
   text-align: center;
+  overflow: auto;
   width: 20%;
+  z-index: 1;
 }
 
 b,
@@ -370,8 +374,13 @@ strong {
 }
 
 code {
+  background-color: #fff;
+  border-left: 4px solid #4CAF50;
   font-family: monospace, monospace;
-  font-size: 1em
+  font-size: 1em;
+  padding: 8px 12px;
+  width: auto;
+  word-wrap: break-word;
 }
 
 .container {
@@ -546,9 +555,12 @@ tr {
   width: 100%;
 }
 
-tr,
-tr {
-    
+td,
+th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top
 }
 
 .selected {
@@ -620,21 +632,25 @@ textarea {
   height: 100px;
 }
 
-button,
-input {
-  overflow: visible
-}
-
-button,
-select {
-  text-transform: none
+button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button
+  -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -642,14 +658,31 @@ button::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
   border-style: none;
-  padding: 0
+  padding: 0;
 }
 
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+select {
+  padding: 9px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 
 button,
@@ -658,7 +691,15 @@ select,
 textarea,
 optgroup {
   font: inherit;
-  margin: 0
+  margin: 0;
+}
+
+input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
 }
 
 input,
@@ -677,7 +718,7 @@ textarea {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: .35em .625em .75em
+  padding: .35em .625em .75em;
 }
 
 legend {
@@ -685,39 +726,167 @@ legend {
   display: table;
   max-width: 100%;
   padding: 0;
-  white-space: normal
+  white-space: normal;
 }
 
 textarea {
-  overflow: auto
+  overflow: auto;
 }
 
 [type=checkbox],
 [type=radio] {
-  padding: 0
+  padding: 0;
 }
 
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
-  height: auto
+  height: auto;
 }
 
 [type=search] {
   -webkit-appearance: textfield;
-  outline-offset: -2px
+  outline-offset: -2px;
 }
 
 [type=search]::-webkit-search-decoration {
-  -webkit-appearance: none
+  -webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  font: inherit
+  font: inherit;
 }
 
 
+/* Animation effects  */
 
+.spin {
+  animation: spin 2s infinite linear
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(359deg)
+  }
+}
+
+.animate-fading {
+  animation: fading 10s infinite
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.animate-opacity {
+  animation: opac 0.8s
+}
+
+@keyframes opac {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.animate-top {
+  position: relative;
+  animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.animate-left {
+  position: relative;
+  animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 0.4s
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0
+  }
+
+  to {
+    right: 0;
+    opacity: 1
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+.animate-zoom {
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
 
 
 
@@ -858,6 +1027,8 @@ textarea {
   overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
+  transition: margin-left .4s;
+  /* W3copy */
 }
 
 .menuBtnIcon {
