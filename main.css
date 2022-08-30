@@ -90,9 +90,6 @@ nav {
 
 
 
-
-
-
 /* Header and title styles */
 
 header {
@@ -104,7 +101,6 @@ header {
   display: flex;
   height: 48px;
   justify-content: space-between;
-  margin-top: 15px;
 }
 
 #header {
