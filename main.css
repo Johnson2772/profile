@@ -76,7 +76,7 @@ section {
 
 
 /* Navigation */
-nav {
+.nav {
   align-items: center;
   background-color: #555;
   border-bottom: 2px solid black;
