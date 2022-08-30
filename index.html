@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 ">
+
+    <!-- Unnecesary deprecated -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script> -->
 </head>
 
 <body>
-
-
 
     <!-- Page Container -->
     <div class="page">
@@ -28,14 +28,18 @@
 
                 <div class="topnav" id="myTopnav">
                     <h1><a href="#" onclick="index()">Johnson2772</a></a></h1>
-                    <a href="#home" class="active">Home</a>
-                    <a href="#news">News</a>
+                    <a href="#home" onclick="home()" id="menu1" class="active">Home</a>
+                    <a href="#" onclick="projects()" id="menu2">Projects</a>
+                    <a href="#about" onclick="about()" id="menu3">About</a>
+                    <a href="#blog">Blog</a>
                     <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
+
+
+                <h2 class="logo"><a href="#">Johnson2772</a></h2>
 
                 <div class="Container">
 
@@ -163,19 +167,6 @@
         <header>
 
             <img src="https://en.gravatar.com/userimage/4331285/fce73f1becd16f72a32ea17755a969b6" class="image glow">
-
-
-
-            <nav>
-                <h3><a href="#" onclick="home()" id="menu1">Home</a></h3>
-                <h3><a href="#" onclick="projects()" id="menu2">Projects</a></h3>
-                <h3><a href="#" onclick="about()" id="menu3">About</a></h3>
-            </nav>
-
-            <h2 class="logo"><a href="#">Johnson2772</a></h2>
-
-
-
 
             <!-- Banner start -->
             <div id="banner_image">
