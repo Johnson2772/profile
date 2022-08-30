@@ -12,11 +12,13 @@ html {
   overflow-x: hidden;
 }
 
-html,
-body {
-  font-family: Verdana, sans-serif;
+body,
+html {
+  font-family: Verdana, sans-serif, Arial, Helvetica;
   font-size: 15px;
-  line-height: 1.5
+
+  height: 100%;
+  line-height: 1.5;
 }
 
 body {
@@ -72,6 +74,11 @@ section {
 .page {
   max-width: 1400px;
 }
+
+
+
+
+
 
 
 
@@ -137,29 +144,6 @@ header ul li a:hover,
   background-color: black;
   color: green;
   border-radius: 8px;
-}
-
-
-
-
-
-#banner_image {
-  padding-top: 75px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #f8f8f8;
-  background: url("https://images.unsplash.com/photo-1608126199278-50a5f584dbdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80") no-repeat center;
-  background-size: cover;
-}
-
-#banner_content {
-  position: relative;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  margin-top: 12%;
-  margin-bottom: 12%;
-  background-color: black;
-  max-width: 660px;
 }
 
 h1,
@@ -232,11 +216,6 @@ h6 {
 
 
 
-
-
-
-
-
 /* Testing effect */
 
 .rotating-test {
@@ -274,12 +253,27 @@ h6 {
 
 
 
+
+
+
+
+
 /* Imagen styles */
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+img {
+  border: 1px solid white;
+  height: auto;
+  vertical-align: middle;
+}
+
+.image {
+  border-radius: 100%;
+  display: flex;
+  float: left;
+  height: 32px;
+  margin: 0% 0% 0% 1%;
+  max-width: 100%;
+  width: 32px;
 }
 
 .hero-image {
@@ -316,30 +310,23 @@ body, html {
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-img {
-  border: 1px solid white;
-  height: auto;
-  vertical-align: middle;
+#banner_image {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url("https://images.unsplash.com/photo-1608126199278-50a5f584dbdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80") no-repeat center;
+  background-size: cover;
 }
 
-.image {
-  border-radius: 100%;
-  display: flex;
-  float: left;
-  height: 32px;
-  margin: 0% 0% 0% 1%;
-  max-width: 100%;
-  width: 32px;
+#banner_content {
+  position: relative;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  background-color: black;
+  max-width: 660px;
 }
 
 .thumbnail {
@@ -432,6 +419,12 @@ a:active,
 a:hover {
   outline-width: 0
 }
+
+
+
+
+
+
 
 
 
