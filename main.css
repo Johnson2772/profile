@@ -81,7 +81,7 @@ section {
 
 
 
-/* Style the top navigation bar */
+/* Styling the top navigation bar */
 
 /* Navigation Bar */
 .nav {
@@ -96,7 +96,6 @@ section {
   margin-top: 15px;
 }
 
-/* Top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #111;
@@ -104,7 +103,6 @@ section {
 
 .topnav a {
   float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -124,6 +122,13 @@ section {
 
 .topnav .icon {
   display: none;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -204,7 +209,7 @@ section {
 }
 
 /* Column container */
-.row {  
+.row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -218,7 +223,7 @@ section {
 }
 
 /* Main column */
-.main {   
+.main {
   flex: 70%;
   background-color: white;
   padding: 20px;
@@ -240,7 +245,7 @@ section {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  .row {
     flex-direction: column;
   }
 }
@@ -249,7 +254,7 @@ section {
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
-    width:100%;
+    width: 100%;
   }
 }
 
