@@ -45,6 +45,7 @@ section {
   display: block
 }
 
+/* Background color change effect  */
 @keyframes background-change {
   0% {
     background-color: #444;
@@ -98,7 +99,7 @@ section {
 /* Top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #111;
 }
 
 .topnav a {
@@ -180,6 +181,13 @@ section {
   background-color: #ddd;
   color: black;
 }
+
+
+
+
+
+
+
 
 
 /* Style the header */
