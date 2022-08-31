@@ -106,13 +106,6 @@ section {
   padding: 20px;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {
@@ -786,10 +779,11 @@ sup {
 /* Footer section */
 
 footer {
-  padding: 10px 0;
   background-color: #111;
   border-radius: 10px;
   color: #aaa;
+  padding: 20px 0;
+  text-align: center;
   width: 98%;
 }
 
