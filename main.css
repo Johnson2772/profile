@@ -792,7 +792,7 @@ aside {
   border: 2px solid grey;
   border-radius: 15px;
   display: flex;
-  float: right;
+  float: left;
   height: 100%;
   min-height: 200%;
   position: fixed !important;
