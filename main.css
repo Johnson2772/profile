@@ -769,7 +769,7 @@ aside {
   float: right;
   height: 100%;
   min-height: 200%;
-  position: fixed !important;
+  position: fixed;
   text-align: center;
   overflow: auto;
   width: 20%;
