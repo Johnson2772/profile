@@ -11,6 +11,10 @@ function myFunction() {
 
 
 
+
+
+/* Changing content */
+
 function index(){
     var titulo = document.getElementById("titulo")
      var p = document.getElementById("p");
@@ -44,6 +48,7 @@ function index(){
 
  
 /* Slideshow  */
+
  let slideIndex = [1,1];
  let slideId = ["mySlides1", "mySlides2"]
  showSlides(1, 0);
@@ -67,7 +72,8 @@ function index(){
 
 
 
-// Automatic Slideshow - change image every 3 seconds
+/* Automatic Slideshow - change image every 3 seconds */
+
 var myIndex = 0;
 carousel();
 
