@@ -194,8 +194,10 @@ nav ul li a:hover,
 }
 
 .topnav {
-  overflow: hidden;
   background-color: #111;
+  float: right;
+  overflow: hidden;
+  
 }
 
 
@@ -229,7 +231,7 @@ nav ul li a:hover,
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
+.split {
   float: right;
   background-color: #04AA6D;
   color: white;
