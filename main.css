@@ -80,105 +80,8 @@ section {
 
 
 
-/* Create two unequal columns that floats next to each other */
-
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
 
 
-
-
-
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 
 
 
@@ -526,36 +429,86 @@ h6 {
 
 
 
-/* Testing effect */
+/* Create two unequal columns that floats next to each other */
 
-.rotating-test {
-  animation: rotating-test 5s linear infinite alternate;
-  display: flex;
-  border: 5px solid #fff;
-  border-left: none;
-  border-radius: 75px;
-  border-right: none;
-  height: 50px;
-  float: left;
-  margin: 0% 0%;
-  vertical-align: middle;
-  width: 50px;
+/* Create two unequal columns that sits next to each other */
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
-@keyframes rotating-test {
-  0% {
-    transform: rotate(0deg);
-    background-color: #888;
-  }
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
 
-  50% {
-    transform: rotate(180deg);
-    background-color: #000;
-  }
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
 
-  100% {
-    transform: rotate(360deg);
-    background-color: #fff;
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
   }
 }
 
@@ -639,8 +592,6 @@ img {
   max-width: 660px;
 }
 
-
-
 .avatar-frame {
   display: flex;
   border: 5px solid #fff;
@@ -655,7 +606,7 @@ img {
   width: 50px;
 }
 
-/* Effect */
+/* Glowing Effect */
 .glow {
   animation: glow 5s ease-in-out infinite alternate;
 }
@@ -841,6 +792,7 @@ footer {
   background-color: #111;
   border-radius: 10px;
   color: #aaa;
+  margin: 20px 0;
   padding: 20px 0;
   text-align: center;
   width: 98%;
@@ -1251,5 +1203,47 @@ textarea {
 
   to {
     transform: scale(1)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Testing effect */
+
+.rotating-test {
+  animation: rotating-test 5s linear infinite alternate;
+  display: flex;
+  border: 5px solid #fff;
+  border-left: none;
+  border-radius: 75px;
+  border-right: none;
+  height: 50px;
+  float: left;
+  margin: 0% 0%;
+  vertical-align: middle;
+  width: 50px;
+}
+
+@keyframes rotating-test {
+  0% {
+    transform: rotate(0deg);
+    background-color: #888;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    background-color: #000;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    background-color: #fff;
   }
 }
