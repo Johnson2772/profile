@@ -822,6 +822,7 @@ section {
   border: 2px solid grey;
   border-radius: 15px;
   display: flex;
+  justify-content: space-evenly;
   float: left;
   margin: 1% 1%;
   min-height: 300px;
