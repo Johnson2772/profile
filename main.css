@@ -45,7 +45,7 @@ section {
   display: block
 }
 
-/* Background color change effect  */
+/* Background color changing effect  */
 @keyframes background-change {
   0% {
     background-color: #444;
