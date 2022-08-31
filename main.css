@@ -77,6 +77,66 @@ section {
 }
 
 
+
+
+
+/* Create two unequal columns that floats next to each other */
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+
+
+
 /* Column container */
 .row {
   display: flex;
@@ -353,12 +413,12 @@ nav ul li a:hover,
 header {
   align-items: center;
   background-color: #555;
-  background: #1abc9c;
   border-bottom: 2px solid black;
   border-radius: 25px 25px 0px 0px;
   box-shadow: 1px 2px 10px grey;
   color: white;
   display: flex;
+  font-size: 40px;
   height: 48px;
   justify-content: space-between;
   padding: 80px;
