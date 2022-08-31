@@ -171,6 +171,28 @@ section {
   color: black;
 }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 5px;
+}
+
+nav ul li a {
+  padding: 5px 3px;
+}
+
+nav ul li a:hover,
+.active {
+  background-color: black;
+  color: green;
+  border-radius: 8px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #111;
@@ -375,28 +397,6 @@ header {
 header .logo {
   font-size: 20px;
   text-transform: uppercase;
-}
-
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-
-header ul li {
-  margin-right: 5px;
-}
-
-header ul li a {
-  padding: 5px 3px;
-}
-
-header ul li a:hover,
-.active {
-  background-color: black;
-  color: green;
-  border-radius: 8px;
 }
 
 h1,
