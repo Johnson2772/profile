@@ -317,6 +317,8 @@ nav ul li a:hover,
   display: block;
 }
 
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -933,10 +935,6 @@ form {
   background-color: #43a09d;
 }
 
-textarea {
-  height: 100px;
-}
-
 button {
   border: none;
   display: inline-block;
@@ -1035,6 +1033,7 @@ legend {
 }
 
 textarea {
+  height: 100px;
   overflow: auto;
 }
 
@@ -1194,26 +1193,4 @@ textarea {
   to {
     transform: scale(1)
   }
-}
-
-
-
-
-
-
-/* Other */
-
-#contacts img {
-  height: 50px;
-  width: 50px;
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-#contacts a {
-  text-decoration: none;
-}
-
-#contacts img:hover {
-  opacity: 0.8;
 }
