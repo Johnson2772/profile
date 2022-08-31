@@ -88,12 +88,12 @@ section {
 /* Styling the top navigation bar */
 
 /* Navigation Bar */
-.nav {
+nav {
   align-items: center;
   background-color: #555;
   border-bottom: 2px solid black;
-  border-radius: 25px 25px 0px 0px;
-  box-shadow: 1px 2px 10px grey;
+  box-shadow: 1px 2px 10px grey;  
+  border-radius: 25px 25px 0px 0px;  
   display: flex;
   height: 48px;
   justify-content: space-between;
@@ -334,10 +334,7 @@ nav ul li a:hover,
 /* Style the header */
 header {
   align-items: center;
-  background-color: #555;
-  border-bottom: 2px solid black;
-  border-radius: 25px 25px 0px 0px;
-  box-shadow: 1px 2px 10px grey;
+  background-color: #555;  
   color: white;
   display: flex;
   font-size: 40px;
