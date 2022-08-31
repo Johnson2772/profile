@@ -790,7 +790,7 @@ abbr[title] {
 aside {
   background-color: #fff;
   border: 2px solid grey;
-  border-radius: 15px;
+  border-radius: 5px;
   display: flex;
   float: left;
   height: 100%;
