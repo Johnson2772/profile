@@ -436,8 +436,9 @@ h6 {
 
 /* Main column */
 .main {
-  flex: 70%;
+  flex: 100%;
   background-color: white;
+  height: 100%;
   padding: 20px;
 }
 
@@ -451,7 +452,7 @@ h6 {
 /* Left column */
 .leftcolumn {
   float: left;
-  width: 75%;
+  width: 70%;
 }
 
 /* Right column */
