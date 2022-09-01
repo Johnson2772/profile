@@ -436,10 +436,9 @@ h6 {
 
 /* Main column */
 .main {
-  flex: 100%;
+  flex: auto;
   background-color: white;
   height: 100%;
-  padding: 20px;
 }
 
 /* Fake image, just for this example */
@@ -457,7 +456,7 @@ h6 {
 
 /* Right column */
 .rightcolumn {
-  float: left;
+  float: right;
   width: 25%;
   padding-left: 20px;
 }
