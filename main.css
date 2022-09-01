@@ -98,10 +98,11 @@ nav {
   color: white;
   display: flex;
   float: right;
-  height: 48px;
+  height: 64px;
   justify-content: space-between;
   margin-top: 15px;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Style the navigation bar links */
