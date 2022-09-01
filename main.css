@@ -461,13 +461,6 @@ h6 {
   padding-left: 20px;
 }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
 /* Column container */
 .row {
   display: flex;
@@ -516,7 +509,7 @@ h6 {
 
 
 
-
+/* Skill bar  */
 .bar {
   width: 100%;
   background-color: #DDD;
@@ -689,6 +682,15 @@ img {
   }
 }
 
+
+
+
+
+
+
+
+
+
 /* Slideshow */
 
 .mySlides1,
@@ -852,6 +854,11 @@ sup {
 
 
 
+
+
+
+
+
 /* Footer section */
 
 footer {
@@ -900,6 +907,11 @@ footer {
   text-align: right;
   margin-top: 2pt;
 }
+
+
+
+
+
 
 
 
@@ -957,6 +969,11 @@ li {
   margin-bottom: 15px;
   font-weight: bold;
 }
+
+
+
+
+
 
 
 
@@ -1137,6 +1154,11 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+
+
+
+
+
 
 
 
