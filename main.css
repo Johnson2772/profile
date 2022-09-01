@@ -37,6 +37,7 @@ article,
 aside,
 footer,
 header,
+main,
 nav,
 section {
   display: block
@@ -435,7 +436,7 @@ h6 {
 }
 
 /* Main column */
-.main {
+main {
   flex: auto;
   background-color: white;
   height: 100%;
