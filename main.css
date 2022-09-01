@@ -818,6 +818,7 @@ p {
   text-shadow: 2px 2px 12px black;
 }
 
+/* Add a card effect for articles */
 section {
   background-color: #fff;
   border: 2px solid grey;
