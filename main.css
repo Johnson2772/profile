@@ -286,51 +286,7 @@ nav a:hover,
 
 
 
-/* Header and title styles */
-
-/* Style the header */
-header {
-  align-items: center;
-  background-color: #555;
-  color: white;
-  display: flex;
-  font-size: 40px;
-  height: 48px;
-  justify-content: space-between;
-  padding: 80px;
-  text-align: center;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-#header {
-  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-  background-size: cover;
-}
-
-#header img {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: auto;
-}
-
-#header p {
-  font-size: 25pt;
-  color: #3b464c;
-  padding-top: 5px;
-  margin: 0;
-  font-weight: bold;
-  text-align: center;
-}
-
-header .logo {
-  font-size: 20px;
-  text-transform: uppercase;
-}
+/* Title styles and Header*/
 
 h1,
 h2,
@@ -354,14 +310,14 @@ h1 {
   text-shadow: 1px 1px 1px green;
 }
 
-h2 {
-  font-size: 30px
-}
-
 h1 span {
   border: 1px dashed #2ad;
   font-size: 18pt;
   padding: 10px;
+}
+
+h2 {
+  font-size: 30px
 }
 
 h3 {
@@ -393,6 +349,49 @@ h6 {
   font-size: 16px
 }
 
+/* Styling the header */
+header {
+  align-items: center;
+  background-color: #555;
+  color: white;
+  display: flex;
+  font-size: 40px;
+  height: 48px;
+  justify-content: space-between;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Increase the font size of the h1 element */
+header h1 {
+  font-size: 40px;
+}
+
+header {
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-size: cover;
+}
+
+header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+header p {
+  font-size: 25pt;
+  color: #3b464c;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 20px;
+  text-transform: uppercase;
+}
 
 
 
