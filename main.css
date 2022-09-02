@@ -434,7 +434,7 @@ h6 {
 header {
   align-items: center;
   background-color: #555;
-  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg") no-repeat center;
   background: url("https://images.unsplash.com/photo-1608126199278-50a5f584dbdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80") no-repeat center;
   background-size: cover;
   color: white;
@@ -446,14 +446,40 @@ header {
   text-align: center;
 }
 
-#banner_content {
-  position: relative;
+#banner_content {  
+  background-color: black;
+  height: 50%;
+  max-width: 660px;  
   padding-top: 6%;
   padding-bottom: 6%;
-  margin-top: 12%;
+  position: relative;
   margin-bottom: 12%;
-  background-color: black;
-  max-width: 660px;
+  margin-top: 12%;  
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }
 
 /* Increase the font size of the h1 element */
@@ -491,79 +517,6 @@ header .logo {
 
 
 
-
-/* Skill bar  */
-.bar {
-  width: 100%;
-  background-color: #DDD;
-}
-
-.skill {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.porcent-10 {
-  width: 10%;
-  background-color: #F00;
-}
-
-.porcent-20 {
-  width: 20%;
-  background-color: #F30;
-}
-
-.porcent-30 {
-  width: 30%;
-  background-color: #F60;
-}
-
-.porcent-40 {
-  width: 40%;
-  background-color: #F90;
-}
-
-.porcent-50 {
-  width: 50%;
-  background-color: #FC0;
-}
-
-.porcent-60 {
-  width: 60%;
-  background-color: #CF0;
-}
-
-.porcent-70 {
-  width: 70%;
-  background-color: #9F0;
-}
-
-.porcent-80 {
-  width: 80%;
-  background-color: #6F0;
-}
-
-.porcent-90 {
-  width: 90%;
-  background-color: #3F0;
-}
-
-.porcent-100 {
-  width: 100%;
-  background-color: #0F0;
-}
-
-
-
-
-
-
-
-
-
-
 /* Imagen styles */
 
 img {
@@ -580,40 +533,6 @@ img {
   margin: 0% 0% 0% 1%;
   max-width: 100%;
   width: 32px;
-}
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8d2F0Y2h8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
 }
 
 .avatar-frame {
@@ -812,6 +731,78 @@ sub {
 
 sup {
   top: -0.5em
+}
+
+
+
+
+
+
+
+
+
+
+/* Skill bar  */
+.bar {
+  width: 100%;
+  background-color: #DDD;
+}
+
+.skill {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.porcent-10 {
+  width: 10%;
+  background-color: #F00;
+}
+
+.porcent-20 {
+  width: 20%;
+  background-color: #F30;
+}
+
+.porcent-30 {
+  width: 30%;
+  background-color: #F60;
+}
+
+.porcent-40 {
+  width: 40%;
+  background-color: #F90;
+}
+
+.porcent-50 {
+  width: 50%;
+  background-color: #FC0;
+}
+
+.porcent-60 {
+  width: 60%;
+  background-color: #CF0;
+}
+
+.porcent-70 {
+  width: 70%;
+  background-color: #9F0;
+}
+
+.porcent-80 {
+  width: 80%;
+  background-color: #6F0;
+}
+
+.porcent-90 {
+  width: 90%;
+  background-color: #3F0;
+}
+
+.porcent-100 {
+  width: 100%;
+  background-color: #0F0;
 }
 
 
