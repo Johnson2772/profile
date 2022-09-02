@@ -135,8 +135,6 @@ main {
   clear: both;
 }
 
-
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
@@ -440,9 +438,9 @@ header {
   color: white;
   display: flex;
   font-size: 40px;
-  height: 48px;
+  height: 300px;
   justify-content: space-between;
-  padding: 200px;
+  padding: 50%;
   text-align: center;
 }
 
