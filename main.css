@@ -241,7 +241,6 @@ nav ul li a:hover,
   border-radius: 8px;
 }
 
-
 .active {
   background-color: #04AA6D;
   color: white;
@@ -253,7 +252,6 @@ nav ul li a:hover,
   background-color: #04AA6D;
   color: white;
 }
-
 
 .dropdown {
   float: left;
