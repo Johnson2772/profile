@@ -353,6 +353,8 @@ h6 {
 header {
   align-items: center;
   background-color: #555;
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-size: cover;
   color: white;
   display: flex;
   font-size: 40px;
@@ -365,11 +367,6 @@ header {
 /* Increase the font size of the h1 element */
 header h1 {
   font-size: 40px;
-}
-
-header {
-  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-  background-size: cover;
 }
 
 header img {
