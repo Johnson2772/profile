@@ -446,6 +446,16 @@ header {
   text-align: center;
 }
 
+#banner_content {
+  position: relative;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  background-color: black;
+  max-width: 660px;
+}
+
 /* Increase the font size of the h1 element */
 header h1 {
   font-size: 40px;
@@ -604,16 +614,6 @@ img {
 .hero-text button:hover {
   background-color: #555;
   color: white;
-}
-
-#banner_content {
-  position: relative;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  margin-top: 12%;
-  margin-bottom: 12%;
-  background-color: black;
-  max-width: 660px;
 }
 
 .avatar-frame {
