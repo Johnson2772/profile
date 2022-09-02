@@ -457,7 +457,7 @@ header {
   margin-top: 12%;  
 }
 
-.hero-text {
+.banner-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -466,7 +466,7 @@ header {
   color: white;
 }
 
-.hero-text button {
+.banner-text button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -477,7 +477,7 @@ header {
   cursor: pointer;
 }
 
-.hero-text button:hover {
+.banner-text button:hover {
   background-color: #555;
   color: white;
 }
