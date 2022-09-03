@@ -446,13 +446,10 @@ header {
 
 #banner_content {
   background-color: black;
-  height: 50%;
-  max-width: 660px;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  margin: 10%;
+  max-width: 600px;
+  padding: 6%;
   position: relative;
-  margin-bottom: 12%;
-  margin-top: 12%;
 }
 
 .banner-text {
