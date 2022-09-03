@@ -440,16 +440,20 @@ header {
   font-size: 40px;
   height: 300px;
   justify-content: space-between;
+  min-height: 380px;
   padding: 50%;
+  position: relative;
   text-align: center;
 }
 
-#banner_content {
+#banner_container {
   background-color: black;
   margin: 10%;
-  max-width: 600px;
+  max-width: 300px;
+  margin: 20px;
   padding: 6%;
-  position: relative;
+  position: absolute;
+  right: 20%;
 }
 
 .banner-text {
@@ -463,18 +467,23 @@ header {
 
 .banner-text button {
   border: none;
+  color: white;
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
   color: black;
   background-color: #ddd;
+  background-color: #04AA6D;
   text-align: center;
   cursor: pointer;
+  opacity: 0.9;
+  width: 100%;
 }
 
 .banner-text button:hover {
   background-color: #555;
   color: white;
+  opacity: 1;
 }
 
 /* Increase the font size of the h1 element */
