@@ -379,7 +379,7 @@ h5,
 h6 {
   font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
   font-weight: normal;
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 h1 {
@@ -390,7 +390,7 @@ h1 {
   margin: 0 0 10px 10px;
   padding: 18px 0;
   text-align: center;
-  text-shadow: 1px 1px 1px green;
+  text-shadow: 1px 5px 10px green;
 }
 
 h1 span {
@@ -446,7 +446,7 @@ header {
   background-size: cover;
   color: white;
   display: flex;
-  font-size: 40px;
+  font-size: 3rem;
   height: 300px;
   justify-content: space-between;
   min-height: 380px;
