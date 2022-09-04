@@ -459,8 +459,8 @@ header {
   background-color: black;  
   max-width: 80%;
   max-height: min-content;
-  margin: 10%;
-  padding: 6%;
+  margin: 5%;
+  padding: 5%;
   position: absolute;
   right: 5%;
   width: 500px;
@@ -472,7 +472,6 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
 }
 
