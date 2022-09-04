@@ -149,6 +149,8 @@ main {
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
+    display: grid;
+    grid-template-columns: 700px repeat(2, 1fr);
   }
 }
 
@@ -159,6 +161,8 @@ main {
     width: 100%;
   }
 }
+
+
 
 
 
@@ -391,72 +395,47 @@ h1 {
 
 h1 span {
   border: 1px dashed #2ad;
-  font-size: 18pt;
+  font-size: 4rem;
   padding: 10px;
+  text-align: center;
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 3rem;
   display: inline;
   float: right;
   margin-right: 10px;
+  text-align: center;
 }
 
 h3 a {
-  font-size: 16pt;
   border-bottom: 4px solid green;
-  font-size: 10pt;
+  font-size: 3rem;
   text-align: center;
 }
 
 h4 {
   color: green;
   margin-top: 20%;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
-
-
-
-.contenedor {
-  max-width: 1200px;
-  width: 95%;
-  margin: 0 auto;
-}
-
-p {
-  font-size: 1.8rem;
-}
-
-aside{
-  margin: 0;
-}
-
-@media (min-width:768px){
-  .contenedor-grid{
-      display: grid;
-      grid-template-columns: 700px repeat(2, 1fr);
-  }
-
-  aside{
-      margin-left: 1.5rem;
-  }
-}
-
-
-
 
 /* Styling the header */
 header {
@@ -477,14 +456,15 @@ header {
 }
 
 #banner_container {
-  background-color: black;
-  margin: 10%;
+  background-color: black;  
   max-width: 70%;
-  margin: 20px;
+  max-height: min-content;
+  margin: 10%;
   padding: 6%;
   position: absolute;
-  right: 20%;
+  right: 5%;
   width: 500px;
+
 }
 
 .banner-text {
@@ -688,12 +668,13 @@ aside {
   border-radius: 5px;
   float: right;
   height: 100%;
+  margin: 0;
   min-height: 200%;
   position: fixed;
   text-align: center;
   overflow: auto;
   width: 20%;
-  z-index: 1;
+  z-index: 1;  
 }
 
 b,
@@ -725,7 +706,7 @@ mark {
 p {
   color: white;
   display: block;
-  font-size: 22px;
+  font-size: 1.8rem;
   font-family: system-ui;
   font-weight: bold;
   margin: 0;
@@ -733,7 +714,7 @@ p {
   padding: 0;
   text-align: center;
   text-decoration: 2px solid black;
-  text-shadow: 2px 2px 12px black;
+  text-shadow: 2px 2px 12px black;  
 }
 
 /* Add a card effect for articles */
