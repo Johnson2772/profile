@@ -374,14 +374,14 @@ h4,
 h5,
 h6 {
   font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
-  font-weight: 400;
+  font-weight: normal;
   margin: 10px 0
 }
 
 h1 {
   color: #2ad;
   float: center;
-  font-size: 36px;
+  font-size: 4rem;
   font-style: italic;
   margin: 0 0 10px 10px;
   padding: 18px 0;
@@ -396,7 +396,7 @@ h1 span {
 }
 
 h2 {
-  font-size: 30px
+  font-size: 3.2rem;
 }
 
 h3 {
@@ -416,17 +416,47 @@ h3 a {
 h4 {
   color: green;
   margin-top: 20%;
-  font-size: 20px;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 h5 {
-  font-size: 18px
+  font-size: 1.5rem;
 }
 
 h6 {
-  font-size: 16px
+  font-size: 1.2rem;
 }
+
+
+
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+aside{
+  margin: 0;
+}
+
+@media (min-width:768px){
+  .contenedor-grid{
+      display: grid;
+      grid-template-columns: 700px repeat(2, 1fr);
+  }
+
+  aside{
+      margin-left: 1.5rem;
+  }
+}
+
+
+
 
 /* Styling the header */
 header {
@@ -527,6 +557,7 @@ header .logo {
 img {
   border: 1px solid white;
   height: auto;
+  max-width: 100%;
   vertical-align: middle;
 }
 
