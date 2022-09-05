@@ -168,6 +168,35 @@ main {
 
 
 
+div#extra {
+  background: #147FA9;
+}
+
+
+div#content {
+  float: right;
+  width: 500px;
+}
+
+div#navigation {
+  float: left;
+  width: 200px;
+}
+
+div#extra {
+  float: left;
+  clear: left;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -176,7 +205,7 @@ main {
 /* Navigation Bar */
 nav {
   align-items: center;
-  background-color: #111;
+  background-color: #7cb;
   border-bottom: 2px solid black;
   box-shadow: 1px 2px 10px grey;
   border-radius: 25px 25px 0px 0px;
@@ -224,7 +253,9 @@ nav ul {
 }
 
 nav ul li {
+  line-height: 1.6;
   margin-right: 5px;
+  padding-right: 10px;
 }
 
 nav ul li a {
@@ -369,75 +400,10 @@ nav a:hover,
 
 
 
-/* Title styles and Header*/
+/* Title Header and styles */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
-  font-weight: normal;
-  margin: 10px 0;
-}
 
-h1 {
-  color: #2ad;
-  float: center;
-  font-size: 4rem;
-  font-style: italic;
-  margin: 0 0 10px 10px;
-  padding: 18px 0;
-  text-align: center;
-  text-shadow: 1px 5px 10px green;
-}
-
-h1 span {
-  border: 1px dashed #2ad;
-  font-size: 4rem;
-  padding: 10px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 3.5rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 3rem;
-  display: inline;
-  float: right;
-  margin-right: 10px;
-  text-align: center;
-}
-
-h3 a {
-  border-bottom: 4px solid green;
-  font-size: 3rem;
-  text-align: center;
-}
-
-h4 {
-  color: green;
-  margin-top: 20%;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-h5 {
-  font-size: 2rem;
-  text-align: center;
-}
-
-h6 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-/* Styling the header */
+/* Styling header banner */
 header {
   align-items: center;
   background-color: #555;
@@ -453,6 +419,45 @@ header {
   padding: 50%;
   position: relative;
   text-align: center;
+}
+
+header a {
+  position: absolute;
+  right: 0;
+  top: 23px;
+  padding: 10px;
+  color: #006;
+}
+
+header h1 {
+  background: #e0e0e0;
+  color: #292929;
+  font-size: 40px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+header p {
+  font-size: 25pt;
+  color: #3b464c;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 #banner_container {
@@ -493,30 +498,73 @@ header {
   opacity: 1;
 }
 
-/* Increase the font size of the h1 element */
-header h1 {
-  font-size: 40px;
+/* Increase the font size of the h's element */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
+  font-weight: normal;
+  margin: 10px 0;
 }
 
-header img {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: auto;
+h1 {
+  color: #2ad;
+  float: center;
+  font-size: 4rem;
+  font-style: italic;
+  margin: 0 0 10px 10px;
+  padding: 18px 0;
+  text-align: center;
+  text-shadow: 1px 5px 10px green;
 }
 
-header p {
-  font-size: 25pt;
-  color: #3b464c;
-  padding-top: 5px;
-  margin: 0;
+h1 span {
+  border: 1px dashed #2ad;
+  font-size: 4rem;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+h3 {
+  display: inline;
+  float: right;
+  font-size: 3rem;
+  margin-right: 10px;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+h3 a {
+  border-bottom: 4px solid green;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h4 {
+  color: green;
+  margin-top: 20%;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
 }
 
-header .logo {
-  font-size: 20px;
-  text-transform: uppercase;
+h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 
@@ -665,12 +713,12 @@ aside {
   float: right;
   height: 100%;
   margin: 0;
-  min-height: 200%;
+  min-height: 500px;
   position: fixed;
   text-align: center;
   overflow: auto;
   width: 20%;
-  z-index: 1;  
+  z-index: 10;  
 }
 
 b,
@@ -689,7 +737,7 @@ code {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
   width: 90%;
 }
@@ -705,9 +753,10 @@ p {
   font-size: 1.8rem;
   font-family: system-ui;
   font-weight: bold;
+  line-height: 1.8;
   margin: 0;
   margin-top: 12pt;
-  padding: 0;
+  padding: 0 10px;
   text-align: center;
   text-decoration: 2px solid black;
   text-shadow: 2px 2px 12px black;  
@@ -837,11 +886,16 @@ sup {
 footer {
   background-color: #111;
   border-radius: 10px;
+  clear: both;
   color: #aaa;
   margin: 20px 0;
   padding: 20px 0;
   text-align: center;
-  width: 98%;
+  width: 100%;
+}
+
+footer p {
+  padding: 20px 10px;
 }
 
 .copyleft {
