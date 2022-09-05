@@ -769,6 +769,10 @@ sup {
   color: white;
 }
 
+.porcent-10, .porcent-20, .porcent-30, .porcent-40, .porcent-50, .porcent-60, .porcent-70, .porcent-80, .porcent-90, .porcent-100{
+  border-radius: 15px;
+}
+
 .porcent-10 {
   width: 10%;
   background-color: #F00;
