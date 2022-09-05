@@ -74,7 +74,7 @@ section {
   margin: 1%;
   max-width: 1800px;
   padding: 1%;
-  width: 95%;
+  width: 97%;
 }
 
 
@@ -756,9 +756,10 @@ sup {
 
 
 /* Skill bar  */
-.bar {
-  width: 100%;
+.bar {  
   background-color: #DDD;
+  border-radius: 15px;
+  width: 100%;
 }
 
 .skill {
