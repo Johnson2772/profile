@@ -168,35 +168,6 @@ main {
 
 
 
-div#extra {
-  background: #147FA9;
-}
-
-
-div#content {
-  float: right;
-  width: 500px;
-}
-
-div#navigation {
-  float: left;
-  width: 200px;
-}
-
-div#extra {
-  float: left;
-  clear: left;
-  width: 200px;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -205,7 +176,7 @@ div#extra {
 /* Navigation Bar */
 nav {
   align-items: center;
-  background-color: #7cb;
+  background-color: #111;
   border-bottom: 2px solid black;
   box-shadow: 1px 2px 10px grey;
   border-radius: 25px 25px 0px 0px;
