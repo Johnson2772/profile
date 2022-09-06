@@ -71,10 +71,9 @@ section {
 }
 
 .page {
-  margin: 1%;
-  max-width: 1800px;
+  max-width: 2048px;
   padding: 1%;
-  width: 97%;
+  width: 100%;
 }
 
 
@@ -96,7 +95,7 @@ main {
 }
 
 /* Sidebar/left column */
-.side {
+.aside {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
