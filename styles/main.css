@@ -87,9 +87,11 @@ section {
 
 /* Creating two unequal columns that floats next to each other */
 
-/* Main column */
+/* Main column container */
 main {
+  display: flex;
   flex: auto;
+  flex-wrap: wrap;
   background-color: white;
   height: 100%;
 }
@@ -121,14 +123,8 @@ main {
   padding: 20px;
 }
 
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Clear floats after the columns */
-.row:after {
+main:after {
   content: "";
   display: table;
   clear: both;
@@ -963,7 +959,6 @@ th {
 }
 
 li {
-  margin-bottom: 15px;
   font-weight: bold;
 }
 
