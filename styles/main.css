@@ -381,8 +381,8 @@ header {
   font-size: 3rem;
   height: 300px;
   justify-content: space-between;
-  min-height: 380px;
-  padding: 50%;
+  min-height: 180px;
+  padding: 5%;
   position: relative;
   text-align: center;
 }
