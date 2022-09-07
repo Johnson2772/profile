@@ -174,7 +174,7 @@ nav {
   align-items: center;
   background-color: #111;
   border-bottom: 2px solid black;
-  box-shadow: 1px 2px 10px black;
+  box-shadow: 1px 2px 20px black;
   color: white;
   display: flex;
   float: right;
@@ -257,6 +257,7 @@ nav ul li a:hover,
 .dropdown {
   float: left;
   overflow: hidden;
+  z-index: 2;
 }
 
 .dropdown .dropbtn {
