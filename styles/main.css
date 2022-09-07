@@ -390,8 +390,6 @@ header {
 
 header a {
   position: absolute;
-  right: 0;
-  top: 23px;
   padding: 10px;
   color: #006;
 }
