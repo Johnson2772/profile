@@ -180,8 +180,8 @@ nav {
   float: right;
   height: 64px;
   justify-content: space-between;
-  margin-top: 15px;
   overflow: hidden;
+  padding: 2%;
   position: fixed;
   z-index: 1;
   width: 100%;
