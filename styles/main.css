@@ -430,7 +430,7 @@ header .logo {
 #banner_container {
   background-color: black;
   color: white;
-  max-width: 100%;
+  max-width: 90%;
   max-height: min-content;
   margin: 0%;
   padding: 5%;
