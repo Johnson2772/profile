@@ -90,11 +90,12 @@ section {
 
 /* Main column container */
 main {
+  background-color: white;
   display: flex;
   flex: auto;
   flex-wrap: wrap;
-  background-color: white;
   height: 100%;
+  position: fixed;
 }
 
 /* Sidebar/left column */
