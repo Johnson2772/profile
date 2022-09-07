@@ -382,7 +382,7 @@ header {
   font-size: 3rem;
   height: 700px;
   justify-content: space-between;
-  min-height: 180px;
+  min-height: fit-content;
   padding: 5%;
   position: relative;
   text-align: center;
@@ -435,7 +435,6 @@ header .logo {
   margin: 0%;
   padding: 5%;
   position: absolute;
-  right: 5%;
   text-align: center;
   width: 100%;
 
