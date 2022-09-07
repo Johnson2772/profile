@@ -95,7 +95,6 @@ main {
   flex: auto;
   flex-wrap: wrap;
   height: 100%;
-  position: fixed;
 }
 
 /* Sidebar/left column */
@@ -184,6 +183,7 @@ nav {
   justify-content: space-between;
   margin-top: 15px;
   overflow: hidden;
+  position: fixed;
   width: 100%;
 }
 
@@ -673,7 +673,6 @@ aside {
   float: right;
   height: 100%;
   margin: 0;
-  position: fixed;
   text-align: center;
   overflow: auto;
   width: 40%;
