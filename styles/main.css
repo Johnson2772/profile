@@ -71,7 +71,8 @@ section {
 }
 
 .page {
-  max-width: 2048px;
+  margin: auto;
+  max-width: 100%;  
   padding: 1%;
   width: 100%;
 }
