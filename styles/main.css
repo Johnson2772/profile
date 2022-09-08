@@ -735,15 +735,14 @@ sup {
 
 /* Skill bar  */
 .bar {
-  background-color: #DDD;
+  background-color: #aaa;
   border-radius: 15px;
   width: 100%;
 }
 
 .skill {
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   color: white;
 }
 
