@@ -697,11 +697,11 @@ section {
   border: 2px solid grey;
   border-radius: 15px;
   float: left;
-  margin: 1% 1%;
+  margin: 1% auto;
   min-height: 300px;
   padding: 5%;
   text-align: center;
-  width: 60%;
+  width: 95%;
 }
 
 small {
