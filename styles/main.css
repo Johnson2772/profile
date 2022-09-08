@@ -432,10 +432,8 @@ header .logo {
   max-height: min-content;
   margin: auto;
   padding: 5%;
-  position: absolute;
   text-align: center;
   width: 50%;
-
 }
 
 #banner_container button {
