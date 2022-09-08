@@ -72,7 +72,7 @@ section {
 
 .page {
   margin: auto;
-  max-width: 100%;  
+  max-width: 100%;
   padding: 0%;
   width: 100%;
 }
@@ -99,25 +99,21 @@ main {
   width: 70%;
 }
 
-/* Sidebar/left column */
-.aside {
+/* Sidebar/right column */
+aside {
+  background-color: #fff;
+  border: 2px solid grey;
+  border-radius: 5px;
   flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Left column */
-.leftcolumn {
-  
-  
-}
-
-/* Right column */
-.rightcolumn {
   float: right;
-  width: 25%;
-  padding-left: 20px;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  overflow: auto;
+  width: 30%;
+  z-index: 1;
 }
+
 
 /* Fake image, just for this example */
 .fakeimg {
@@ -136,8 +132,8 @@ main:after {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
-  .leftcolumn,
-  .rightcolumn {
+  main,
+  aside {
     width: 100%;
     padding: 0;
   }
@@ -256,6 +252,7 @@ nav ul li a:hover,
   color: white;
 }
 
+/* Dropdown menu */
 .dropdown {
   float: left;
   overflow: hidden;
@@ -653,19 +650,6 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-aside {
-  background-color: #fff;
-  border: 2px solid grey;
-  border-radius: 5px;
-  float: right;
-  height: 100%;
-  margin: 0;
-  text-align: center;
-  overflow: auto;
-  width: 40%;
-  z-index: 1;  
-}
-
 b,
 strong {
   font-weight: bolder
@@ -704,7 +688,7 @@ p {
   padding: 0 10px;
   text-align: center;
   text-decoration: 2px solid black;
-  text-shadow: 2px 2px 12px black;  
+  text-shadow: 2px 2px 12px black;
 }
 
 /* Add a card effect for articles */
@@ -750,7 +734,7 @@ sup {
 
 
 /* Skill bar  */
-.bar {  
+.bar {
   background-color: #DDD;
   border-radius: 15px;
   width: 100%;
@@ -763,7 +747,16 @@ sup {
   color: white;
 }
 
-.porcent-10, .porcent-20, .porcent-30, .porcent-40, .porcent-50, .porcent-60, .porcent-70, .porcent-80, .porcent-90, .porcent-100{
+.porcent-10,
+.porcent-20,
+.porcent-30,
+.porcent-40,
+.porcent-50,
+.porcent-60,
+.porcent-70,
+.porcent-80,
+.porcent-90,
+.porcent-100 {
   border-radius: 15px;
 }
 
