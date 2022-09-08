@@ -429,13 +429,12 @@ header .logo {
 #banner_container {
   background-color: black;
   color: white;
-  max-width: 90%;
   max-height: min-content;
-  margin: 0%;
+  margin: auto;
   padding: 5%;
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: 50%;
 
 }
 
