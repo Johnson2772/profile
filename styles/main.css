@@ -94,7 +94,9 @@ main {
   display: flex;
   flex: auto;
   flex-wrap: wrap;
+  float: left;
   height: 100%;
+  width: 70%;
 }
 
 /* Sidebar/left column */
@@ -106,8 +108,8 @@ main {
 
 /* Left column */
 .leftcolumn {
-  float: left;
-  width: 70%;
+  
+  
 }
 
 /* Right column */
