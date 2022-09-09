@@ -110,7 +110,7 @@ aside {
   height: 100%;
   margin: auto;
   overflow: auto;
-  text-align: center;
+  text-align: left;
   width: 30%;
   z-index: 1;
 }
