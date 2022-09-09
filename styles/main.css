@@ -377,7 +377,7 @@ header {
   align-items: center;
   background-color: #555;
   background-image: url("https://www.sololearn.com/Uploads/header.jpg") no-repeat center;
-  background: url("images/banner.jpg") no-repeat center;
+  background: no-repeat center url("images/banner.jpg") ;
   background-size: cover;
   color: white;
   display: flex;
