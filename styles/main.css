@@ -29,8 +29,8 @@ html {
 html {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   overflow-x: hidden;
+  padding: 0;
 }
 
 article,
@@ -684,6 +684,18 @@ p {
 }
 
 /* Add a card effect for articles */
+article {
+  background-color: #fff;
+  border: 2px solid grey;
+  border-radius: 15px;
+  float: left;
+  margin: 1% auto;
+  min-height: 300px;
+  padding: 5%;
+  text-align: center;
+  width: 95%;
+}
+
 section {
   background-color: #fff;
   border: 2px solid grey;
@@ -728,7 +740,7 @@ sup {
 /* Skill bar  */
 
 .skill-bar {
-  background-color: #666;
+  background-color:  #666;
   border: 2px solid #000;
   color: white;
   padding: 1px;
