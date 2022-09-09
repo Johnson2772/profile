@@ -74,8 +74,9 @@ section {
   background: transparent;
   margin: auto;
   max-width: 100%;
-  min-width: 30%;
+  min-width: 40%;
   height: 2000px;
+  overflow: auto;
   padding: 0%;
   width: 90%;  
 }
@@ -112,7 +113,6 @@ aside {
   float: right;
   height: 100%;
   margin: 0 auto;
-  overflow: auto;
   text-align: left;
   width: 30%;
   z-index: 1;
