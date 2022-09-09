@@ -734,7 +734,8 @@ sup {
 /* Skill bar  */
 
 .skill-bar {
-  background-color: #666;  
+  background-color: #666;
+  border: 2px solid #000;
   color: white;  
   padding: 1px;
   text-align: right;
@@ -886,13 +887,11 @@ table {
 }
 
 hr {
-  background: #f36f48;
-  box-sizing: content-box;
-  border: 0;
+  background: #f36f48;  
   border-top: 1px solid #eee;
+  box-sizing: content-box;
   height: 1px;
   margin: 20px 0;
-
   overflow: visible;
 }
 
