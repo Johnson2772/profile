@@ -732,18 +732,16 @@ sup {
 
 
 /* Skill bar  */
-.bar {
-  background-color: #666;
-  border-radius: 15px;
+
+.skill-bar {
+  background-color: #666;  
+  color: white;  
+  padding: 1px;
+  text-align: right;
   width: 100%;
 }
 
-.skill {
-  text-align: right;
-  padding: 10px 0px;
-  color: white;
-}
-
+.skill-bar,
 .porcent-10,
 .porcent-20,
 .porcent-30,
