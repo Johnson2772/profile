@@ -684,7 +684,7 @@ p {
 
 /* Add a card effect for articles */
 article {
-  background-color: #fff;
+  background-color: lightsteelblue;
   border: 2px solid grey;
   border-radius: 15px;
   float: left;
@@ -700,7 +700,7 @@ section {
   border: 2px solid grey;
   border-radius: 15px;
   float: left;
-  margin: 1% auto;
+  margin: auto;
   min-height: 300px;
   padding: 5%;
   text-align: center;
