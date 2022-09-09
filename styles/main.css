@@ -105,10 +105,11 @@ main {
 /* Sidebar/right column */
 aside {
   background-color: white;
+  display: flex;
   flex: 30%;
   float: right;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
   overflow: auto;
   text-align: left;
   width: 30%;
@@ -257,7 +258,7 @@ nav ul li a:hover,
 .dropdown {
   float: left;
   overflow: hidden;
-  z-index: 2;
+  z-index: 5;
 }
 
 .dropdown .dropbtn {
@@ -303,8 +304,6 @@ nav a:hover,
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
 
 
 
