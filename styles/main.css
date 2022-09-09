@@ -97,20 +97,20 @@ main {
   flex-wrap: wrap;
   float: left;
   height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
   width: 70%;
 }
 
 /* Sidebar/right column */
 aside {
-  background-color: #fff;
-  border: 2px solid grey;
-  border-radius: 5px;
+  background-color: white;
   flex: 30%;
   float: right;
   height: 100%;
-  margin: 0;
-  text-align: center;
+  margin: auto;
   overflow: auto;
+  text-align: center;
   width: 30%;
   z-index: 1;
 }
@@ -663,12 +663,6 @@ code {
   word-wrap: break-word;
 }
 
-.container {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 90%;
-}
-
 mark {
   background: #070;
   color: #fff;
@@ -736,7 +730,7 @@ sup {
 .skill-bar {
   background-color: #666;
   border: 2px solid #000;
-  color: white;  
+  color: white;
   padding: 1px;
   text-align: right;
   width: 100%;
@@ -887,7 +881,7 @@ table {
 }
 
 hr {
-  background: #f36f48;  
+  background: #f36f48;
   border-top: 1px solid #eee;
   box-sizing: content-box;
   height: 1px;
