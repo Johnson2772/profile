@@ -72,6 +72,7 @@ section {
 
 .page {
   margin: auto;
+  
   max-width: 100%;
   padding: 0%;
   width: 90%;
@@ -176,7 +177,7 @@ nav {
   color: white;
   display: flex;
   float: right;
-  height: 64px;
+  height: 6%;
   justify-content: space-between;
   overflow: hidden;
   padding: 2%;
