@@ -377,7 +377,7 @@ header {
   align-items: center;
   background-color: #555;
   background-image: url("https://www.sololearn.com/Uploads/header.jpg") no-repeat center;
-  background: no-repeat center url("images/banner.jpg") ;
+  background: no-repeat center url("images/banner.jpg");
   background-size: cover;
   color: white;
   display: flex;
@@ -438,14 +438,14 @@ header .logo {
 }
 
 #banner_container button {
+  background-color: lightgreen;
   border: none;
   color: white;
-  outline: 0;
-  padding: 10px 25px;
-  background-color: lightgreen;
-  text-align: center;
   cursor: pointer;
+  padding: 10px 25px;
   opacity: 0.7;
+  outline: 0;
+  text-align: center;
   width: 100%;
 }
 
