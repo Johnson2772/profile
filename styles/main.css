@@ -444,29 +444,26 @@ h6 {
 }
 
 /* Creating two unequal columns that floats next to each other */
-
-/* Main/left column container */
-main {
+main, aside {
   background-color: white;
   display: flex;
   flex: auto;
+  height: 100%;
+  margin: 1% auto;
+  overflow: auto;
+}
+
+
+/* Main/left column container */
+main { 
   flex-wrap: wrap;
   float: left;
-  height: 100%;
-  margin: 1px auto;
-  overflow: auto;
   width: 70%;
 }
 
 /* Sidebar/right column container */
-aside {
-  background-color: white;
-  display: flex;
-  flex: 30%;
-  float: right;
-  height: 100%;
-  margin: 1px auto;
-  overflow: auto;
+aside {  
+  float: right;  
   text-align: left;
   width: 30%;
   z-index: 1;
