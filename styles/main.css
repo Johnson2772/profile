@@ -319,6 +319,30 @@ aside {
   z-index: 1;
 }
 
+/* Add a card effect for articles */
+article {
+  background-color: lightsteelblue;
+  border: 2px solid grey;
+  border-radius: 15px;
+  float: left;
+  margin: 1% auto;
+  min-height: 300px;
+  padding: 5%;
+  text-align: center;
+  width: 95%;
+}
+
+section {
+  background-color: #fff;
+  border: 2px solid grey;
+  border-radius: 15px;
+  float: left;
+  margin: auto;
+  min-height: 300px;
+  padding: 5%;
+  text-align: center;
+  width: 95%;
+}
 
 /* Fake image, just for this example */
 .fakeimg {
@@ -686,31 +710,6 @@ p {
   text-align: center;
   text-decoration: 2px solid black;
   text-shadow: 2px 2px 12px black;
-}
-
-/* Add a card effect for articles */
-article {
-  background-color: lightsteelblue;
-  border: 2px solid grey;
-  border-radius: 15px;
-  float: left;
-  margin: 1% auto;
-  min-height: 300px;
-  padding: 5%;
-  text-align: center;
-  width: 95%;
-}
-
-section {
-  background-color: #fff;
-  border: 2px solid grey;
-  border-radius: 15px;
-  float: left;
-  margin: auto;
-  min-height: 300px;
-  padding: 5%;
-  text-align: center;
-  width: 95%;
 }
 
 small {
