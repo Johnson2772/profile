@@ -449,7 +449,7 @@ main, aside {
   display: flex;
   flex: auto;
   height: 100%;
-  margin: 1% auto;
+  margin: 1em auto;
   overflow: auto;
 }
 
