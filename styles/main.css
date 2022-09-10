@@ -323,7 +323,7 @@ aside {
 section {
   background-color: lightgray;
   border: 2px solid darkslategray;
-  border-radius: 15px;
+  border-radius: 30px;
   float: left;
   margin: 1% auto;
   min-height: min-content;
@@ -336,7 +336,7 @@ section {
 article {
   background-color: lightsteelblue;
   border: 2px solid grey;
-  border-radius: 15px;
+  border-radius: 30px;
   float: left;
   margin: 1% auto;
   min-height: 300px;
@@ -348,8 +348,9 @@ article {
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
-  width: 100%;
+  height:100px;  
   padding: 20px;
+  width: 100%;
 }
 
 /* Clear floats after the columns */
