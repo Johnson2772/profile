@@ -376,9 +376,9 @@ main:after {
 header {
   align-items: center;
   background: no-repeat cover,
-    linear-gradient(#000, #fff),
+    url("images/banner.jpg"),
     url("https://www.sololearn.com/Uploads/header.jpg"),
-    url("images/banner.jpg");
+    linear-gradient(#000, #fff);
   color: white;
   display: flex;
   font-size: 3rem;
