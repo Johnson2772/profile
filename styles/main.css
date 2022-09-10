@@ -375,8 +375,8 @@ main:after {
 /* Styling header banner */
 header {
   align-items: center;
-  background-color: #555;
   background-image: url("https://www.sololearn.com/Uploads/header.jpg"), url("images/banner.jpg") no-repeat center;
+  /* background-color: #555; */
   background-size: cover;
   color: white;
   display: flex;
