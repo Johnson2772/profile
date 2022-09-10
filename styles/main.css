@@ -436,6 +436,7 @@ header .logo {
   max-height: min-content;
   margin: auto;
   padding: 5%;
+  border-radius: 25px;
   text-align: center;
   width: 50%;
 }
