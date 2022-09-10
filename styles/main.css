@@ -369,7 +369,8 @@ main:after {
 
 
 
-
+background-image: url("../../media/examples/lizard.png"),
+                  url("../../media/examples/star.png");
 
 /* Header and Title styles */
 
@@ -377,7 +378,7 @@ main:after {
 header {
   align-items: center;
   background-color: #555;
-  background-image: url("https://www.sololearn.com/Uploads/header.jpg") no-repeat center;
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg"), url("images/banner.jpg"); no-repeat center;
   background-size: cover;
   color: white;
   display: flex;
