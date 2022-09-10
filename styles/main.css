@@ -285,9 +285,9 @@ nav a:hover,
   margin: auto;
   max-width: 100%;
   min-width: 40%;
-  height: 2000px;  
+  height: 2000px;
   padding: 0%;
-  width: 90%;  
+  width: 90%;
 }
 
 /* Creating two unequal columns that floats next to each other */
@@ -375,9 +375,10 @@ main:after {
 /* Styling header banner */
 header {
   align-items: center;
-  background-image: linear-gradient(#000, #fff) url("https://www.sololearn.com/Uploads/header.jpg"), url("images/banner.jpg") no-repeat center;
-  /* background-color: #555; */
-  background-size: cover;
+  background: no-repeat cover,
+    linear-gradient(#000, #fff),
+    url("https://www.sololearn.com/Uploads/header.jpg"),
+    url("images/banner.jpg");
   color: white;
   display: flex;
   font-size: 3rem;
@@ -744,7 +745,7 @@ sup {
 /* Skill bar  */
 
 .skill-bar {
-  background-color:  #666;
+  background-color: #666;
   border: 2px solid #000;
   color: white;
   padding: 1px;
