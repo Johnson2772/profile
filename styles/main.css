@@ -339,10 +339,10 @@ article {
   border-radius: 30px;
   float: left;
   margin: 1% auto;
-  min-height: 300px;
+  min-height: min-content;
   padding: 5%;
-  text-align: center;
-  width: 95%;
+  text-align: left;
+  width: 100%;
 }
 
 /* Fake image, just for this example */
