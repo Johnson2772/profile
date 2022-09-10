@@ -375,7 +375,7 @@ main:after {
 /* Styling header banner */
 header {
   align-items: center;
-  background-image: url("https://www.sololearn.com/Uploads/header.jpg"), url("images/banner.jpg") no-repeat center;
+  background-image: linear-gradient(#000, #fff) url("https://www.sololearn.com/Uploads/header.jpg"), url("images/banner.jpg") no-repeat center;
   /* background-color: #555; */
   background-size: cover;
   color: white;
