@@ -278,16 +278,16 @@ nav a:hover,
 
 
 
-
+/* Main page conatainer */
 
 .page {
   background: transparent;
   margin: auto;
   max-width: 100%;
-  min-width: 40%;
-  height: 2000px;
+  min-width: 30%;
+  height: auto;
   padding: 0%;
-  width: 90%;
+  width: 95%;
 }
 
 /* Creating two unequal columns that floats next to each other */
@@ -300,7 +300,7 @@ main {
   flex-wrap: wrap;
   float: left;
   height: 100%;
-  margin: 0 auto;
+  margin: 1px auto;
   overflow: auto;
   width: 70%;
 }
@@ -312,7 +312,7 @@ aside {
   flex: 30%;
   float: right;
   height: 100%;
-  margin: 0 auto;
+  margin: 1px auto;
   overflow: auto;
   text-align: left;
   width: 30%;
@@ -830,10 +830,10 @@ sup {
 
 footer {
   background-color: #111;
-  border-radius: 10px;
+  border-radius: 30px;
   clear: both;
   color: #aaa;
-  padding: 10%;
+  padding: 1%;
   text-align: center;
   width: 100%;
 }
