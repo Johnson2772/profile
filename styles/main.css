@@ -319,6 +319,19 @@ aside {
   z-index: 1;
 }
 
+/* Adding a  */
+section {
+  background-color: lightgray;
+  border: 2px solid darkslategray;
+  border-radius: 15px;
+  float: left;
+  margin: 1% auto;
+  min-height: min-content;
+  padding: 5%;
+  text-align: center;
+  width: 95%;
+}
+
 /* Add a card effect for articles */
 article {
   background-color: lightsteelblue;
@@ -326,18 +339,6 @@ article {
   border-radius: 15px;
   float: left;
   margin: 1% auto;
-  min-height: 300px;
-  padding: 5%;
-  text-align: center;
-  width: 95%;
-}
-
-section {
-  background-color: #fff;
-  border: 2px solid grey;
-  border-radius: 15px;
-  float: left;
-  margin: auto;
   min-height: 300px;
   padding: 5%;
   text-align: center;
