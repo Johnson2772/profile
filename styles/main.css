@@ -292,8 +292,9 @@ header {
   color: white;
   display: flex;
   font-size: 3rem;
-  height: 800px;
+  height: min-content;
   justify-content: space-between;
+  margin: 4% auto 0%;
   min-height: fit-content;
   padding: 5%;
   position: relative;
