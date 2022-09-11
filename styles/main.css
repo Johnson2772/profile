@@ -284,7 +284,7 @@ nav a:hover,
 header {
   align-items: center;
   background: no-repeat center,
-    url("https://www.sololearn.com/Uploads/header.jpg"),
+    
     linear-gradient(#000, #fff);
   color: white;
   display: flex;
