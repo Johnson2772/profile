@@ -11,26 +11,24 @@ body {
   background-color: #333;
   color: green;
   font-family: 'Handlee', system-ui, verdana, arial, helvetica, sans-serif, cursive;
-  font-size: 1em;
-  height: 100%;
+  font-size: 1rem;
   overflow: auto;
-  overflow-x: hidden;
   overflow-y: auto;
 }
 
 body,
 html {
   font-family: Verdana, sans-serif, Arial, Helvetica;
-  font-size: 15px;
+  font-size: 1rem;
   height: 100%;
-  line-height: 1.5;
+  line-height: 1.2;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 html {
   box-sizing: border-box;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
 }
 
 article,
