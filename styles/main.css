@@ -558,10 +558,10 @@ img {
   border-radius: 100%;
   display: flex;
   float: left;
-  height: 32px;
+  height: 32rem;
   margin: 0% 0% 0% 1%;
   max-width: 100%;
-  width: 32px;
+  width: 2rem;
 }
 
 .avatar-frame {
