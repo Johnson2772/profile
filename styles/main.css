@@ -284,7 +284,7 @@ nav a:hover,
 header {
   align-items: center;
   background: no-repeat center,
-    
+    url("https://www.sololearn.com/Uploads/header.jpg"),
     linear-gradient(#000, #fff);
   color: white;
   display: flex;
@@ -442,7 +442,8 @@ h6 {
 }
 
 /* Creating two unequal columns that floats next to each other */
-main, aside {
+main,
+aside {
   background-color: white;
   display: flex;
   flex: auto;
@@ -453,15 +454,15 @@ main, aside {
 
 
 /* Main/left column container */
-main { 
+main {
   flex-wrap: wrap;
   float: left;
   width: 70%;
 }
 
 /* Sidebar/right column container */
-aside {  
-  float: right;  
+aside {
+  float: right;
   text-align: left;
   width: 30%;
   z-index: 1;
@@ -496,7 +497,7 @@ article {
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
-  height:100px;  
+  height: 100px;
   padding: 20px;
   width: 100%;
 }
