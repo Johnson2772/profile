@@ -557,10 +557,10 @@ img {
   border-radius: 100%;
   display: flex;
   float: left;
-  height: fit-content;
+  height: 3rem;
   margin: 0% 0% 0% 1%;
   max-width: 100%;
-  width: fit-content;
+  width: 3rem;
 }
 
 .avatar-frame {
