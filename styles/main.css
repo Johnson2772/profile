@@ -296,7 +296,7 @@ header {
 }
 
 header a {
-  position: absolute;
+  position: relative;
   padding: 10px;
   color: #006;
 }
