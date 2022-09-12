@@ -342,8 +342,8 @@ header .logo {
   color: white;
   max-height: min-content;
   margin: auto;
-  padding: 5%;
-  border-radius: 25px;
+  padding: 1rem;
+  border-radius: 2.5rem;
   text-align: center;
   width: 50%;
 }
