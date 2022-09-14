@@ -993,6 +993,7 @@ form {
 button {
   background-color: inherit;
   border: none;
+  border-radius: 2rem;
   color: inherit;
   cursor: pointer;
   display: inline-block;
@@ -1003,7 +1004,7 @@ button {
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: min-content;
+  width: auto;
 }
 
 button,
