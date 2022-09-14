@@ -991,19 +991,19 @@ form {
 }
 
 button {
+  background-color: inherit;
   border: none;
+  color: inherit;
   cursor: pointer;
   display: inline-block;
-  
-  vertical-align: middle;
+  margin: auto;
   overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  padding: 8px 16px;
-  background-color: inherit;
+  padding: 0.5rem;
   text-align: center;
-  
+  text-decoration: none;
+  vertical-align: middle;
   white-space: nowrap;
+  width: min-content;
 }
 
 button,
