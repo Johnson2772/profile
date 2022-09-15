@@ -453,6 +453,7 @@ aside {
   height: 100%;
   margin: 1em auto;
   overflow: auto;
+  padding: 1rem;
   z-index: 1;
 }
 
