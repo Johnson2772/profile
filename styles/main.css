@@ -451,7 +451,7 @@ aside {
   display: flex;
   flex: auto;
   height: 100%;
-  margin: 1em auto;
+  margin: 1rem 0.5rem;
   overflow: auto;
   padding: 1rem;
   z-index: 1;
