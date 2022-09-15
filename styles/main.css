@@ -447,7 +447,7 @@ h6 {
 /* Creating two unequal columns that floats next to each other */
 main,
 aside {
-  background-color: white;
+  background-color: transparent;
   display: flex;
   flex: auto;
   height: 100%;
