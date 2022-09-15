@@ -284,6 +284,7 @@ nav a:hover,
 header {
   align-items: center;
   background: no-repeat center/100% url("https://www.sololearn.com/Uploads/header.jpg"), linear-gradient(#000, #fff);
+  border-radius: 0 0 2rem 2rem;
   color: white;
   display: flex;
   font-size: 3rem;
@@ -475,20 +476,20 @@ aside {
 section {
   background-color: lightgray;
   border: 2px solid darkslategray;
-  border-radius: 30px;
+  border-radius: 2rem;
   float: left;
   margin: 0.2rem;
   min-height: min-content;
   padding: 5%;
   text-align: center;
-  width: 98%;
+  width: 100%;
 }
 
 /* Add a card effect for articles */
 article {
   background-color: lightsteelblue;
   border: 2px solid grey;
-  border-radius: 30px;
+  border-radius: 2rem;
   float: left;
   margin: 1% auto;
   min-height: min-content;
