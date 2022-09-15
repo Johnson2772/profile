@@ -701,25 +701,24 @@ mark {
 p {
   color: white;
   display: block;
-  font-size: 1.8rem;
   font-family: system-ui;
+  font-size: 1.8rem;  
   font-weight: bold;
-  line-height: 1.8;
-  margin: 0;
-  margin-top: 12pt;
+  line-height: 2.5rem;
+  margin: 1rem;
   padding: 0 10px;
-  text-align: center;
+  text-align: justify;
   text-decoration: 2px solid black;
   text-shadow: 2px 2px 12px black;
 }
 
 small {
-  font-size: 80%
+  font-size: 1.2rem;
 }
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 1.1rem;
   line-height: 0;
   position: relative;
   vertical-align: baseline
