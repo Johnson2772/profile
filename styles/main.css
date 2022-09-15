@@ -451,7 +451,7 @@ aside {
   display: flex;
   flex: auto;
   height: 100%;
-  margin: 1rem 0.5rem;
+  margin: 1rem auto;
   overflow: auto;
   padding: 1rem;
   z-index: 1;
@@ -478,7 +478,7 @@ section {
   border: 2px solid darkslategray;
   border-radius: 30px;
   float: left;
-  margin: 1% auto;
+  margin: 0.2rem;
   min-height: min-content;
   padding: 5%;
   text-align: center;
