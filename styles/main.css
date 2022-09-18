@@ -450,7 +450,7 @@ aside {
   background-color: transparent;
   display: flex;
   flex: auto;
-  height: 100%;
+  height: 100rem;
   margin: 1rem auto;
   overflow: auto;
   z-index: 1;
