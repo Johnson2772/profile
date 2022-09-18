@@ -830,7 +830,7 @@ sup {
 
 footer {
   background-color: #111;
-  border-radius: 30px;
+  border-radius: 2rem 0 0 2rem;
   clear: both;
   color: #aaa;
   padding: 1%;
