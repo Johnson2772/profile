@@ -82,15 +82,15 @@ section {
 nav {
   align-items: center;
   background-color: black;
-  border-bottom: 2px solid black;
-  box-shadow: 1px 2px 2rem black;
+  border-bottom: 0.2rem solid black;
+  box-shadow: 0.1rem 0.2rem 2rem black;
   color: white;
   display: flex;
   float: right;
   height: 6%;
   justify-content: space-between;
   overflow: hidden;
-  padding: 2%;
+  padding: 1rem;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -187,7 +187,7 @@ nav ul li a:hover,
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-content a {
