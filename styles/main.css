@@ -746,7 +746,7 @@ sup {
 /* Skill bar  */
 
 .skill-bar {
-  background-color: #666;
+  background-color: lightslategray;
   border: 2px solid #000;
   color: white;
   padding: 1px;
