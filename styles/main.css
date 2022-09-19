@@ -451,6 +451,7 @@ aside {
   display: flex;
   flex: auto;
   height: max-content;
+  min-height: 1000rem;
   margin: 1rem auto;
   overflow: hidden;
   z-index: 1;
