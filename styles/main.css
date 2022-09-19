@@ -474,7 +474,7 @@ aside {
 
 /* Adding a  */
 section {
-  background-color: black;
+  background: repeating-linear-gradient(#000, #fff);
   border: 2px solid white;
   border-radius: 2rem;
   float: left;
