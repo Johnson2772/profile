@@ -473,8 +473,8 @@ aside {
 
 /* Adding a  */
 section {
-  background: repeating-linear-gradient(black,transparent,lightgray);
-  border: 2px solid white;
+  background: repeating-linear-gradient(black,transparent,lightgray,white);
+  border: 0.2rem solid white;
   border-radius: 2rem;
   float: left;
   min-height: auto;
