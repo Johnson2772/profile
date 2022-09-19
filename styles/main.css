@@ -473,8 +473,8 @@ aside {
 
 /* Adding a  */
 section {
-  background-color: lightgray;
-  border: 2px solid darkslategray;
+  background-color: darkslategray;
+  border: 2px solid black;
   border-radius: 2rem;
   float: left;
   margin: 0.2rem;
