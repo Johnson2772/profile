@@ -290,7 +290,7 @@ header {
   height: max-content;
   margin: 4% auto 0%;
   min-height: fit-content;
-  padding: 5%;
+  padding: 5% 1%;
   position: relative;
   text-align: center;
 }
@@ -493,7 +493,7 @@ article {
   float: left;
   margin: 1% auto;
   min-height: min-content;
-  padding: 5%;
+  padding: 5% 1%;
   text-align: left;
   width: 100%;
 }
