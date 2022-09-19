@@ -11,7 +11,6 @@ body {
   background-color: #333;
   color: green;
   font-family: 'Handlee', system-ui, verdana, arial, helvetica, sans-serif, cursive;
-  font-size: 1rem;
   overflow: auto;
   overflow-y: auto;
 }
