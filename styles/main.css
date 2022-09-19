@@ -486,11 +486,11 @@ section {
 
 /* Add a card effect for articles */
 article {
-  background-color: lightsteelblue;
-  border: 2px solid grey;
+  background-color: transparent;
+  border: 0.2rem solid grey;
   border-radius: 2rem;
   float: left;
-  margin: 1% auto;
+  margin: 1rem auto 3rem;
   min-height: min-content;
   padding: 5% 1%;
   text-align: left;
