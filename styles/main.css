@@ -407,8 +407,8 @@ h3 {
 }
 
 h3 a {
-  border-bottom: 4px solid green;
-  font-size: 3rem;
+  border: 4px solid green;
+  font-size: 3.5rem;
 }
 
 h4 {
