@@ -167,7 +167,16 @@ nav ul li a:hover,
 .dropdown {
   float: left;
   overflow: hidden;
+  position: relative;
   z-index: 5;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 1.2rem;
+  border: none;
 }
 
 .dropdown .dropbtn {
