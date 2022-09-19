@@ -468,7 +468,7 @@ main {
 /* Sidebar/right column container */
 aside {
   float: right;
-  text-align: left;
+  text-align: left;  
   width: 30%;  
 }
 
@@ -487,8 +487,6 @@ section {
 /* Add a card effect for articles */
 article {
   background-color: transparent;
-  border: 0.2rem solid grey;
-  border-radius: 2rem;
   float: left;
   margin: 1rem auto 3rem;
   min-height: min-content;
