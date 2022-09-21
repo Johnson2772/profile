@@ -697,7 +697,7 @@ code {
   background-color: #fff;
   border-left: 4px solid #4CAF50;
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 8px 12px;
   width: auto;
   word-wrap: break-word;
@@ -712,14 +712,14 @@ p {
   color: white;
   display: block;
   font-family: system-ui;
-  font-size: 1.8rem;  
+  font-size: 1.2rem;  
   font-weight: bold;
   line-height: 2.5rem;
   margin: 1rem;
   padding: 0 10px;
   text-align: left;
-  text-decoration: 2px solid black;
-  text-shadow: 2px 2px 12px black;
+  text-decoration: 0.2rem solid black;
+  text-shadow: 0.2rem 0.2rem 1rem black;
 }
 
 small {
