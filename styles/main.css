@@ -757,7 +757,6 @@ sup {
   background-color: lightslategray;
   border: 0.2rem solid #000;
   color: black;
-  margin: 0 2rem 0;
   text-align: right;
   width: 100%;
 }
@@ -774,6 +773,7 @@ sup {
 .porcent-90,
 .porcent-100 {
   border-radius: 2rem;
+  padding: 0 1rem 0 0;
 }
 
 .porcent-10 {
