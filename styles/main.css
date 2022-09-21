@@ -755,9 +755,9 @@ sup {
 
 .skill-bar {
   background-color: lightslategray;
-  border: 2px solid #000;
-  color: white;
-  padding: 1%;
+  border: 0.2rem solid #000;
+  color: black;
+  margin: 0 2rem 0;
   text-align: right;
   width: 100%;
 }
@@ -773,7 +773,7 @@ sup {
 .porcent-80,
 .porcent-90,
 .porcent-100 {
-  border-radius: 15px;
+  border-radius: 2rem;
 }
 
 .porcent-10 {
