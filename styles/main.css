@@ -700,6 +700,10 @@ code {
   word-wrap: break-word;
 }
 
+i {
+  margin: 2rem; 
+}
+
 mark {
   background: #070;
   color: #fff;
