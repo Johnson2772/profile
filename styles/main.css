@@ -839,8 +839,7 @@ sup {
 /* Footer section */
 
 footer {
-  background-color: #111;
-  border-radius: 2rem 0 0 2rem;
+  background-color: black ;
   clear: both;
   color: #aaa;
   padding: 1%;
