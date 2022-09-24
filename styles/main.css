@@ -470,14 +470,14 @@ aside {
 main {
   flex-wrap: wrap;
   float: left;
-  width: 70%;  
+  width: 65%;  
 }
 
 /* Sidebar/right column container */
 aside {
   float: right;
   text-align: left;  
-  width: 30%;  
+  width: 35%;  
 }
 
 /* Adding a  */
@@ -494,7 +494,9 @@ section {
 
 /* Add a card effect for articles */
 article {
-  background-color: transparent;
+  background: steelblue;
+  border: 0.2rem solid aliceblue;
+  border-radius: 2rem;
   float: left;
   margin: 1rem auto 3rem;
   min-height: min-content;
