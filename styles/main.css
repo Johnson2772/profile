@@ -293,7 +293,6 @@ nav a:hover,
 header {
   align-items: center;
   background: no-repeat center/100% url("https://www.sololearn.com/Uploads/header.jpg"), linear-gradient(#000, #fff);
-  border-radius: 2rem;
   color: white;
   display: flex;
   font-size: 3rem;
@@ -485,7 +484,6 @@ aside {
 /* Adding a  */
 section {
   background: repeating-linear-gradient(black, transparent, lightgray, white);
-  background: repeating-linear-gradient(white, lightgray, transparent, black);
   border: 0.1rem solid white;
   border-radius: 2rem;
   float: left;
