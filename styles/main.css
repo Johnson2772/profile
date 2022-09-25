@@ -297,7 +297,7 @@ header {
   display: flex;
   font-size: 3rem;
   height: 95%;
-  margin: 2% auto 0%;
+  margin: 0 auto;
   min-height: fit-content;
   padding: 5% 1%;
   position: relative;
