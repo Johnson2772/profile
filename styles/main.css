@@ -349,10 +349,11 @@ header .logo {
 #banner_container {
   background-color: black;
   color: white;
-  max-height: min-content;
   margin: auto;
+  max-height: min-content;
+  max-width: 55rem;
   padding: 1rem;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
   text-align: center;
   width: 50%;
 }
