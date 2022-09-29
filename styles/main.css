@@ -288,6 +288,7 @@ nav a:hover,
 
 
 
+
 /* Header and Title styles */
 
 /* Styling header banner */
@@ -450,7 +451,7 @@ h6 {
   max-width: 100%;
   min-width: 30%;
   height: auto;
-  padding: 0%;
+  top: 5rem;
   width: 95%;
 }
 
