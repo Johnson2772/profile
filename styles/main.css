@@ -293,11 +293,11 @@ nav a:hover,
 /* Styling header banner */
 header {
   align-items: center;
-  background: no-repeat center/100% url("https://www.sololearn.com/Uploads/header.jpg"), linear-gradient(#000, #fff);
+  background: no-repeat center/50% url("https://www.sololearn.com/Uploads/header.jpg"), linear-gradient(#000, #fff);
   color: white;
   display: flex;
   font-size: 3rem;
-  margin: 0 auto;
+  margin: auto;
   min-height: fit-content;
   position: relative;
   text-align: center;
