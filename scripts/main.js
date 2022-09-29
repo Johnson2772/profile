@@ -1,11 +1,11 @@
 /* Trying to make a dinamic webpage */
 
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var x = document.getElementsByTagName("nav");
+  if (x.className === "nav") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "nav";
   }
 }
 
