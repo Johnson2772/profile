@@ -498,7 +498,7 @@ article {
   background: steelblue;
   border: 0.2rem solid aliceblue;
   border-radius: 2rem;
-  float: left;
+  display: block;
   margin: 1rem auto 3rem;
   min-height: min-content;
   padding: 5% 1%;
