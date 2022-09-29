@@ -295,6 +295,7 @@ nav a:hover,
 header {
   align-items: center;
   background: no-repeat center/100% url("https://www.sololearn.com/Uploads/header.jpg"), linear-gradient(#000, #fff);
+  border-radius: 1rem;
   color: white;
   display: block;
   font-size: 3rem;
@@ -447,10 +448,11 @@ h6 {
 
 .page {
   background: transparent;
+  height: auto;
   margin: auto;
   max-width: 100%;
   min-width: 30%;
-  height: auto;
+  position: relative;
   top: 5rem;
   width: 95%;
 }
