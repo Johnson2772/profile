@@ -344,14 +344,15 @@ header .logo {
 
 #banner {
   background: no-repeat center url("images/banner.jpg");
-  justify-content: space-between;
   display: flex;
+  height: 100%;
+  justify-content: space-between;
 }
 
 #banner_container {
   background-color: black;
   color: white;
-  margin: 19rem auto;
+  margin: auto;
   max-height: min-content;
   max-width: 55rem;
   padding: 2rem;
@@ -364,6 +365,7 @@ header .logo {
   background-color: darkgreen;
   border: none;
   border-radius: 2rem;
+  bottom: 5%;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -722,7 +724,7 @@ p {
   font-family: system-ui;
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 2.5rem;
+  line-height: 2rem;
   margin: 1rem;
   padding: 0 10px;
   text-align: left;
@@ -847,10 +849,12 @@ sup {
 
 footer {
   background-color: black;
+  bottom: -10rem;
   clear: both;
   color: #aaa;
   margin: 3rem 0 0 0;
   padding: 1rem;
+  position: relative;
   text-align: center;
   width: 100%;
 }
