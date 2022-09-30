@@ -284,13 +284,13 @@ nav a:hover,
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: #eee;
+  background-color: transparent;
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
