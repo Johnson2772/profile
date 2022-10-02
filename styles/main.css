@@ -288,6 +288,7 @@ ul.breadcrumb {
   padding: 10px 16px;
   position: sticky;
   top: 0;
+  z-index: 0;
 }
 
 /* Display list items side by side */
