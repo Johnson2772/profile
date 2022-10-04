@@ -93,7 +93,6 @@ nav {
   position: -webkit-sticky;
   top: 0;
   width: 100%;
-  z-index: 2;
 }
 
 /* Style the navigation bar links */
@@ -338,7 +337,6 @@ header {
   min-height: fit-content;
   position: relative;
   text-align: center;
-  z-index: 0;
 }
 
 header a {
