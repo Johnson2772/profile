@@ -156,6 +156,12 @@ nav ul li a:hover,
   color: white;
 }
 
+nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
 /* Create a right-aligned (split) link inside the navigation bar */
 .split {
   float: right;
@@ -208,12 +214,6 @@ nav ul li a:hover,
   text-align: left;
 }
 
-nav a:hover,
-.dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
@@ -226,7 +226,6 @@ nav a:hover,
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-
 
 /* Responsive navigation */
 @media screen and (max-width: 600px) {
