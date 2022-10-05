@@ -1068,7 +1068,7 @@ button {
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: auto;
+  width: 10rem;
 }
 
 button,
@@ -1131,13 +1131,13 @@ input {
 input,
 textarea {
   margin-bottom: 10px;
-  font-size: 11pt;
-  padding: 15px 10px 10px;
+  font-size: 0.8rem;
+  padding: 0 2rem;
   border: 1px solid lightgrey;
-  background-color: #efefef;
-  color: #787575;
+  background-color: white;
+  color: grey;
   border-radius: 1rem;
-  width: 70%;
+  width: 25%;
   outline: none;
 }
 
