@@ -1120,10 +1120,11 @@ optgroup {
 }
 
 input {
-  padding: 8px;
-  display: block;
+  padding: 0.2rem;  
   border: none;
   border-bottom: 1px solid #ccc;
+  display: inline;
+  float: right;
   width: 100%;
 }
 
@@ -1132,10 +1133,10 @@ textarea {
   margin-bottom: 10px;
   font-size: 11pt;
   padding: 15px 10px 10px;
-  border: 1px solid #cecece;
+  border: 1px solid lightgrey;
   background-color: #efefef;
   color: #787575;
-  border-radius: 5px;
+  border-radius: 1rem;
   width: 70%;
   outline: none;
 }
