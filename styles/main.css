@@ -283,7 +283,7 @@ nav a:hover,
 /* Breadcrumbs */
 ul.breadcrumb {
   background-color: black;
-  display: block;
+  display: flex;
   list-style: none;
   padding: 10px 16px;
   position: sticky;
