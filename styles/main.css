@@ -1116,12 +1116,10 @@ select,
 textarea,
 optgroup {
   font: inherit;
-  margin: 0;
 }
 
 input {
-  padding: 0.2rem;  
-  border: none;
+  padding: 0.2rem;
   border-bottom: 1px solid #ccc;
   display: inline;
   float: right;
@@ -1130,7 +1128,6 @@ input {
 
 input,
 textarea {
-  margin-bottom: 10px;
   font-size: 0.8rem;
   padding: 0 2rem;
   border: 1px solid lightgrey;
