@@ -93,7 +93,7 @@ nav {
   position: -webkit-sticky;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Style the navigation bar links */
@@ -287,8 +287,8 @@ ul.breadcrumb {
   list-style: none;
   padding: 10px 16px;
   position: sticky;
-  top: 0;
-  z-index: 0;
+  top: 5rem;
+  z-index: 1;
 }
 
 /* Display list items side by side */
@@ -505,7 +505,6 @@ aside {
   min-height: 400rem;
   margin: 1rem auto;
   overflow: hidden;
-  z-index: 1;
 }
 
 
