@@ -97,11 +97,32 @@
 
 
 
-    <button onclick="openPage('Home', this)">Home</button>
-    <button onclick="openPage('News', this)" id="defaultOpen">News</button>
-    <button onclick="openPage('Contact', this)">Contact</button>
-    <button onclick="openPage('About', this)">About</button>
-
+    <ul>
+        <li><a onclick="openPage('Home', this)" class="active">Home</a></li>
+        <li><a onclick="openPage('Projects', this)">Projects</a></li>
+        <li><a onclick="openPage('News', this)">News</a></li>
+        <li><a onclick="openPage('Schedule', this)">Schedule</a></li>
+        <li><a onclick="openPage('About', this)">About</a></li>
+        <li><a onclick="openPage('Contact', this)">Contact</a></li>
+        <li class="split">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Menu <i>&#9776;</i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#signup">Sign Up</a>
+                    <a href="#login">Login</a>
+                    <a href="#help">Help</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i>&#9776;</i>
+            </a>
+        </li>
+    </ul>
+    
     <div id="Home" class="tabcontent">
         <h3>Home</h3>
         <p>Home is where the heart is..</p>
