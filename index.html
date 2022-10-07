@@ -21,7 +21,7 @@
 
 
     <!-- Header/Banner section -->
-    <header id="banner home">
+    <header id="home banner">
 
         <!-- Banner start -->
         <div id="banner_container">
@@ -48,12 +48,12 @@
         <h1 class="logo"><a href="#" onclick="index()">Johnson2772</a></a></h1>
 
         <ul>
-            <li><a href="#home" onclick="openPage('home', this)" class="active">Home</a></li>
-            <li><a href="#projects" onclick="openPage('projects', this)">Projects</a></li>
-            <li><a href="#news" onclick="openPage('news', this)">News</a></li>
-            <li><a href="#schedule" onclick="openPage('schedule', this)">Schedule</a></li>
-            <li><a href="#about" onclick="openPage('about', this)">About</a></li>
-            <li><a href="#contact" onclick="openPage('contact', this)">Contact</a></li>
+            <li><a class="tablink active" href="#home" onclick="openPage('home', this)">Home</a></li>
+            <li><a class="tablink" href="#projects" onclick="openPage('projects', this)">Projects</a></li>
+            <li><a class="tablink" href="#news" onclick="openPage('news', this)">News</a></li>
+            <li><a class="tablink" href="#schedule" onclick="openPage('schedule', this)">Schedule</a></li>
+            <li><a class="tablink" href="#about" onclick="openPage('about', this)">About</a></li>
+            <li><a class="tablink" href="#contact" onclick="openPage('contact', this)">Contact</a></li>
             <li class="split">
                 <div class="dropdown">
                     <button class="dropbtn">
@@ -82,33 +82,11 @@
     <ul class="breadcrumb">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#new"></a>New</li>
+        <li><a href="#news"></a>New</li>
         <li>First</li>
         <input type="search" name="SearchBar" placeholder="Search" />
         <input type="submit" value="Go!" />
     </ul>
-
-
-    <div id="Home" class="tabcontent">
-        <h3>Home</h3>
-        <p>Home is where the heart is..</p>
-    </div>
-
-    <div id="News" class="tabcontent">
-        <h3>News</h3>
-        <p>Some news this fine day!</p>
-    </div>
-
-    <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Get in touch, or swing by for a cup of coffee.</p>
-    </div>
-
-    <div id="About" class="tabcontent">
-        <h3>About</h3>
-        <p>Who we are and what we do.</p>
-    </div>
-
 
 
 
@@ -126,8 +104,10 @@
 
         <!-- About Me section start -->
         <section>
+            
 
-            <header id="about">
+
+            <header id="home" class="tabcontent">
                 <h1><span>Welcome To My Github Profile!</span></h1>
                 <h2>About Me</h2>
                 <small>Jhonatan Posada</small>
@@ -163,10 +143,10 @@
                     ullamco.</p>
                 <br>
             </article>
+            
 
 
-
-            <header id="projects">
+            <header id="projects" class="tabcontent">
                 <h2>Start Quiz "HTML Basic"</h2>
                 <small>You can test your HTML skills with W3docs' Quiz.</small>
             </header>
@@ -197,32 +177,7 @@
             </article>
 
 
-
-            <header>
-                <h2><i>&#127891;</i>Education</h2>
-                <small>Resume</small>
-            </header>
-            <article>
-                <h5><b>W3Schools.com</b></h5>
-                <h6><i>&#128198;</i> 2015 - Forever </h6>
-                <p>Web Development! All I need to know in one place</p>
-                <hr>
-                <h5><b>SoloLearn.com</b></h5>
-                <h6><i>&#128198;</i> 2012 - Forever </h6>
-                <p>Web Development! All I need to know in one place</p>
-                <hr>
-                <h5><b>Nassau Community College</b></h5>
-                <h6><i>&#128198;</i> 2011 - 2012 </h6>
-                <p>Master Degree</p>
-                <hr>
-                <h5><b>Universidad Tecnológica De Pereira (UTP)</b></h5>
-                <h6><i>&#128198; </i> 2008 - 2011 </h6>
-                <p>Bachelor Degree</p>
-                <br>
-            </article>
-
-
-            <header>
+            <header id="news" class="tabcontent">
                 <h2>Multiple Slideshows</h2>
             </header>
             <article>
@@ -284,11 +239,9 @@
 
 
 
-            <header>
+            <header  id="schedule" class="tabcontent">
                 <h2><span>My Coding Schedule</span></h2>
             </header>
-
-
             <article>
                 <table>
                     <tr>
@@ -376,7 +329,40 @@
 
 
 
+            <header id="about" class="tabcontent">
+                <h2><i>&#127891;</i>Education</h2>
+                <small>Resume</small>
+            </header>
             <article>
+                <h5><b>W3Schools.com</b></h5>
+                <h6><i>&#128198;</i> 2015 - Forever </h6>
+                <p>Web Development! All I need to know in one place</p>
+                <hr>
+                <h5><b>SoloLearn.com</b></h5>
+                <h6><i>&#128198;</i> 2012 - Forever </h6>
+                <p>Web Development! All I need to know in one place</p>
+                <hr>
+                <h5><b>Nassau Community College</b></h5>
+                <h6><i>&#128198;</i> 2011 - 2012 </h6>
+                <p>Master Degree</p>
+                <hr>
+                <h5><b>Universidad Tecnológica De Pereira (UTP)</b></h5>
+                <h6><i>&#128198; </i> 2008 - 2011 </h6>
+                <p>Bachelor Degree</p>
+                <br>
+            </article>
+
+
+            <header id="contact" class="tabcontent">
+                <h2><i>&#127891;</i>Contact</h2>
+                <small>Let's talk</small>
+            </header>
+            <article>
+                
+                <p>
+
+                </p>
+                <hr>
                 <h1>New Year's Countdown</h1>
                 <hr>
                 <p id="countdown"></p>
