@@ -379,7 +379,7 @@ header .logo {
 }
 
 #banner {
-  background: no-repeat center url("../images/banner.jpg");
+  background: no-repeat center/100% url("../images/banner.jpg");
   display: flex;
   height: 100%;
   justify-content: space-between;
