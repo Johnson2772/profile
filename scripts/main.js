@@ -27,7 +27,7 @@ function openPage(pageName,element) {
   document.getElementById(pageName).style.display = "block";
 }
 
-// Get the element with id="defaultOpen" and click on it
+// Get the element with id="active" and click on it
 document.getElementById("active").click();
 
 
