@@ -343,18 +343,17 @@ header {
 
 header a {
   position: relative;
-  padding: 10px;
-  color: #006;
+  padding: 0.2rem;
+  color: blue;
 }
 
 header h1 {
-  background: #e0e0e0;
-  color: #292929;
+  background: whitesmoke;
+  border-radius: 1rem;
+  color: teal;
   font-size: 2.5rem;
-  height: 6rem;
-  line-height: 80px;
-  margin: 0;
-  padding-left: 10px;
+  height: min-content;
+  line-height: 3rem;
 }
 
 header img {
