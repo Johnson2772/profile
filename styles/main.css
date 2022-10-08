@@ -486,9 +486,6 @@ h6 {
 
 main {
   background: transparent;
-  flex-wrap: wrap;
-  float: left;
-  height: auto;
   margin: auto;
   max-width: 100%;
   min-width: 30%;
@@ -505,13 +502,13 @@ aside {
   flex: auto;
   height: max-content;
   min-height: 400rem;
-  margin: 1rem auto;
   overflow: hidden;
 }
 
 /* Sidebar/right column container */
 aside {
   float: right;
+  margin: 0 0 0 1rem;
   text-align: left;
   width: 35%;
 }
