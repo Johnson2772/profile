@@ -378,7 +378,7 @@ header .logo {
 }
 
 #banner {
-  background: no-repeat center/100% url("./images/banner.jpg");
+  background: no-repeat center/150% url("./images/banner.jpg");
   border-radius: 0;
   display: flex;
   height: 100%;
