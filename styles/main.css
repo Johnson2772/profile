@@ -439,15 +439,16 @@ h6 {
 }
 
 h1 {
-  color: #2ad;
+  border: 1.3rem ridge steelblue;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 1rem steelblue;
+  color: teal;
+  display: inline;
   font-size: 4rem;
   font-style: italic;
-  text-shadow: 1px 5px 10px green;
-}
-
-h1 span {
-  border: 1px dashed #2ad;
-  font-size: 4rem;
+  padding: 2rem;
+  text-shadow: 1px 5px 10px lime;
+  width: 100%;
 }
 
 h2 {
