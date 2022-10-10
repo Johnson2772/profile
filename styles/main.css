@@ -434,22 +434,22 @@ h5,
 h6 {
   font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
   font-weight: normal;
-  margin: 1rem -1rem;
+  margin: 0 -2%;
   padding: 1rem;
   text-align: center;
 }
 
 h1 {
-  border: 1.3rem ridge steelblue;
+  border: 1.3rem ridge teal;
   border-radius: 2rem;
-  box-shadow: 0rem 0rem 1rem steelblue;
+  box-shadow: 0rem 0rem 1rem teal;
   color: teal;
   display: inline;
   font-size: 4rem;
   font-style: italic;
   padding: 2rem;
   text-shadow: 1px 5px 10px lime;
-  width: 100%;
+  width: 104%;
 }
 
 h2 {
