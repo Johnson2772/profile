@@ -283,12 +283,13 @@ nav a:hover,
 /* Breadcrumbs */
 ul.breadcrumb {
   background-color: black;
-  display: flex;
+  display: inline-block;
   list-style: none;
   padding: 10px 16px;
   position: sticky;
   top: 5rem;
   z-index: 1;
+  width: 100%;
 }
 
 /* Display list items side by side */
@@ -535,7 +536,7 @@ article {
   border: 0.2rem solid aliceblue;
   border-radius: 2rem;
   display: block;
-  margin: 1rem auto 3rem;
+  margin: 1rem auto 5rem;
   min-height: min-content;
   padding: 5% 1%;
   text-align: left;
