@@ -536,6 +536,13 @@ article {
   border: 0.2rem solid aliceblue;
   border-radius: 2rem;
   box-shadow: 0 0 15px 7px rgb(121 201 251 / 38%), inset 0 0 15px 7px rgb(121 201 251 / 36%);
+  /* 
+  Try on this style
+  background-color: rgba(0,0,0,.85);
+  border: 2px solid #0ff;
+  border-radius: 20px 0;
+  box-shadow: 0 0 15px 7px rgb(121 201 251 / 38%), inset 0 0 15px 7px rgb(121 201 251 / 36%);
+  */
   display: block;
   margin: 1rem auto 5rem;
   min-height: min-content;
@@ -543,6 +550,7 @@ article {
   text-align: left;
   width: 100%;
 }
+
 
 /* Fake image, just for this example */
 .fakeimg {
