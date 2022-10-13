@@ -523,6 +523,7 @@ section {
   background: repeating-linear-gradient(black, transparent, lightgray, white);
   border: 0.1rem solid white;
   border-radius: 2rem;
+  box-shadow: 0 0 15px 7px rgb(121 201 251 / 38%), inset 0 0 15px 7px rgb(121 201 251 / 36%);
   float: left;
   min-height: auto;
   padding: 2rem;
