@@ -1027,6 +1027,7 @@ input {
   border-bottom: 1px solid #ccc;
   display: inline;
   float: right;
+  height: 2.5rem;
   width: 100%;
 }
 
