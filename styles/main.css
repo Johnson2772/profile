@@ -796,7 +796,7 @@ sup {
 
 /* Skill bar  */
 
-.skill-bar {
+meter {
   background-color: lightslategray;
   border: 0.2rem solid #000;
   color: black;
