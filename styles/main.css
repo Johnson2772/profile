@@ -525,7 +525,7 @@ section {
   border-radius: 2rem;
   float: left;
   min-height: auto;
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
   width: 99%;
 }
@@ -534,10 +534,10 @@ section {
 article {
   background: black;
   border: 0.2rem solid lime;
-  border-radius: 2rem 0;
+  border-radius: 2rem 0 2rem;
   box-shadow: 0 0 2rem 0.7rem rgb(121 201 251 / 38%), inset 0 0 2rem 0.7rem rgb(121 201 251 / 36%);
   display: block;
-  margin: 1rem auto 5rem;
+  margin: 1rem auto 10rem;
   min-height: min-content;
   padding: 5% 1%;
   text-align: left;
