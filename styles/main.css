@@ -534,9 +534,9 @@ section {
 /* Add a card effect for articles */
 article {
   background: black;
-  border: 0.2rem solid lime;
+  border: 0.2rem solid darkviolet;
   border-radius: 2rem 0 2rem;
-  box-shadow: 0 0 2rem 0.7rem rgb(121 201 251 / 38%), inset 0 0 2rem 0.7rem rgb(121 201 251 / 36%);
+  box-shadow: 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2), inset 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2);
   display: block;
   margin: 1rem auto 10rem;
   min-height: min-content;
