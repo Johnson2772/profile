@@ -88,7 +88,7 @@ nav {
   height: 5rem;
   justify-content: space-between;
   overflow: hidden;
-  padding: 1rem;
+  padding: 0 1rem;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -375,7 +375,7 @@ header p {
 }
 
 header .logo {
-  font-size: 20px;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
