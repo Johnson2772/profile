@@ -821,26 +821,24 @@ footer p {
 }
 
 .tolink {
-  background-color: black;
-  border: 2px solid darkviolet;
-  border-radius: 10px;
+  background-color: darkviolet;
+  border: 2px solid white;
+  border-radius: 2rem;
   box-shadow: 1px 2px 10px black;
   display: block;
-  height: 50px;
-  margin: 10px 10%;
-  width: 105px;
+  height: 2rem;
+  margin: 1rem;
 }
 
 .tolink a {
-  display: block;
+  display: inline;
   font-weight: bold;
-  font-size: 16px;
-  padding-top: 15px;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .tolink:hover {
-  background-color: gray;
+  background-color: darkviolet;
   color: red;
 }
 
@@ -895,12 +893,12 @@ td,
 th {
   padding: 8px 8px;
   display: table-cell;
-  text-align: left;
+  text-align: center;
   vertical-align: top
 }
 
 .selected {
-  background-color: lightgreen;
+  background-color: orchid;
   font-weight: bold;
   color: white;
 }
