@@ -795,68 +795,6 @@ sup {
 
 
 
-/* Footer section */
-
-footer {
-  background-color: black;
-  bottom: -10rem;
-  clear: both;
-  color: #aaa;
-  margin: 3rem 0 0 0;
-  padding: 1rem;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-footer p {
-  padding: 20px 10px;
-}
-
-.copyleft {
-  font-size: 10pt;
-  text-align: right;
-  padding-bottom: 10px;
-  color: grey;
-}
-
-.tolink {
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 2rem;
-  box-shadow: 1px 2px 10px black;
-  display: inline-block;
-  width: 10rem;
-}
-
-.tolink a {
-  display: inline;
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.tolink:hover {
-  background-color: darkviolet;
-  color: red;
-}
-
-.quote {
-  font-size: 12pt;
-  text-align: right;
-  margin-top: 2pt;
-}
-
-
-
-
-
-
-
-
-
-
-
 /* Table properties */
 
 table {
@@ -1057,6 +995,66 @@ legend {
 textarea {
   height: 100px;
   overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Footer section */
+
+footer {
+  background-color: black;
+  bottom: -10rem;
+  clear: both;
+  color: #aaa;
+  margin: 3rem 0 0 0;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  padding: 20px 10px;
+}
+
+.copyleft {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: grey;
+}
+
+.tolink {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 2rem;
+  box-shadow: 1px 2px 10px black;
+  display: inline-block;
+  width: 5rem;
+}
+
+.tolink a {
+  display: inline;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.tolink:hover {
+  background-color: darkviolet;
+  color: red;
+}
+
+.quote {
+  font-size: 1rem;
+  text-align: right;
+  margin: 0.2rem 0 0 0;
 }
 
 
