@@ -90,7 +90,6 @@ nav {
   overflow: hidden;
   padding: 0 1rem;
   position: sticky;
-  position: -webkit-sticky;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -140,7 +139,7 @@ nav ul li a {
 }
 
 nav a.active {
-  background-color: #04AA6D;
+  background-color: blueviolet;
   color: white;
 }
 
@@ -152,7 +151,7 @@ nav ul li a:hover,
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: blueviolet;
   color: white;
 }
 
@@ -400,7 +399,7 @@ header .logo {
 }
 
 #banner_container button {
-  background-color: darkgreen;
+  background-color: darkmagenta;
   border: none;
   border-radius: 2rem;
   bottom: 5%;
@@ -420,7 +419,7 @@ header .logo {
 }
 
 #banner_container button:hover {
-  background-color: lightgreen;
+  background-color: blueviolet;
   color: white;
   opacity: 0.7;
 }
