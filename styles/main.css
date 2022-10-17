@@ -391,8 +391,8 @@ header .logo {
   background-color: black;
   color: white;
   margin: auto;
-  max-height: min-content;
-  max-width: 55rem;
+  max-width: 50rem;
+  min-width: min-content;
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
@@ -424,6 +424,16 @@ header .logo {
   color: white;
   opacity: 0.7;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Increase the font size of the h's element */
 
@@ -613,8 +623,8 @@ img {
   height: min-content;
   margin: 0% 0% 0% 1%;
   max-width: 100%;
-  min-width: 1rem;
-  width: 3%;
+  min-width: 2rem;
+  width: 4rem;
 }
 
 .avatar-frame {
@@ -1013,7 +1023,7 @@ footer {
   clear: both;
   color: #aaa;
   margin: 3rem 0 0 0;
-  padding: 1rem;
+  padding: 7rem 0 0;
   position: relative;
   text-align: center;
   width: 100%;
