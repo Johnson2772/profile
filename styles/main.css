@@ -628,7 +628,7 @@ img {
 
 .avatar-frame {
   display: flex;
-  border: 5px solid #fff;
+  border: 5px solid white;
   border-left: none;
   border-radius: 75%;
   border-right: none;
@@ -647,11 +647,11 @@ img {
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px green, 0 0 4px green, 0 0 5px green, 0 0 6px green, 0 0 7px green;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px purple, 0 0 4px purple, 0 0 5px purple, 0 0 6px purple, 0 0 7px purple;
   }
 
   to {
-    box-shadow: 0 0 2px #fff, 0 0 3px palegreen, 0 0 4px palegreen, 0 0 5px palegreen, 0 0 6px palegreen, 0 0 7px palegreen, 0 0 8px green;
+    box-shadow: 0 0 2px #fff, 0 0 3px plum, 0 0 4px plum, 0 0 5px plum, 0 0 6px plum, 0 0 7px plum, 0 0 8px plum;
   }
 }
 
