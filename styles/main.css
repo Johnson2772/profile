@@ -330,7 +330,7 @@ ul.breadcrumb li a:hover {
 /* Styling header banner */
 header {
   align-items: center;
-  background: no-repeat center/100% url("https://www.sololearn.com/Uploads/header.jpg"), linear-gradient(#000, #fff);
+  background: no-repeat center/100% url("images/banner.png"), linear-gradient(#fff, #000);
   border-radius: 1rem;
   color: white;
   display: block;
@@ -349,6 +349,7 @@ header a {
 
 header h1 {
   background: whitesmoke;
+  border: solid .2rem blueviolet;
   border-radius: 1rem;
   color: purple;
   display: inline-block;
@@ -530,12 +531,12 @@ aside {
 /* Adding a  */
 section {
   background: repeating-linear-gradient(black, transparent, lightgray, white);
-  border: 0.1rem solid white;
+  border: 0.1rem solid darkviolet;
   border-radius: 2rem;
   float: left;
   max-width: 100%;
   min-height: auto;
-  padding: 2rem;
+  padding: 3rem 1.25rem;
   text-align: center;
   width: 100%;
 }
