@@ -450,6 +450,7 @@ h1 {
   font-style: italic;
   height: min-content;
   line-height: 3rem;
+  margin: -1rem -1rem 0;
   padding: 2rem;
   text-shadow: 1px 5px 10px plum;
   width: 102%;
