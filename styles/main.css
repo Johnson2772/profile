@@ -452,14 +452,14 @@ h6 {
 h1 {
   border: 1.3rem ridge blueviolet;
   border-radius: 2rem;
-  box-shadow: 0rem 0rem 1rem purple;
+  box-shadow: 0rem 0rem 2rem purple;
   color: teal;
   display: inline;
   font-size: 3rem;
   font-style: italic;
   padding: 2rem;
   text-shadow: 1px 5px 10px plum;
-  width: 104%;
+  width: 102%;
 }
 
 h2 {
