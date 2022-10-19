@@ -434,8 +434,7 @@ h5,
 h6 {
   font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
   font-weight: normal;
-  margin: 0 -2%;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
