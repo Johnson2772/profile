@@ -129,7 +129,7 @@ nav ul {
 }
 
 nav ul li {
-  line-height: 1.6;
+  line-height: 3rem;
   margin-right: 5px;
   padding-right: 10px;
 }
@@ -139,7 +139,7 @@ nav ul li a {
 }
 
 nav a.active {
-  background-color: blueviolet;
+  background-color: purple;
   color: white;
 }
 
@@ -158,7 +158,7 @@ nav ul li a:hover,
 /* Create a right-aligned (split) link inside the navigation bar */
 .split {
   float: right;
-  background-color: blueviolet;
+  background-color: purple;
   color: white;
 }
 
