@@ -89,33 +89,94 @@ function contact() {
 
 
 
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 1, 2023 15:00:00").getTime();
+// // Set the date we're counting down to
+// var countDownDate = new Date("Jan 1, 2023 15:00:00").getTime();
+
+// // Update the count down every 1 second
+// var countdownfunction = setInterval(function () {
+
+//   // Get todays date and time
+//   var now = new Date().getTime();
+
+//   // Find the distance between now an the count down date
+//   var distance = countDownDate - now;
+
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//   // Output the result in an element with id="countdown"
+//   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+//     + minutes + "m " + seconds + "s ";
+
+//   // If the countdown is over, write some text 
+//   if (distance < 0) {
+//     clearInterval(countdownfunction);
+//     document.getElementById("countdown").innerHTML = "EXPIRED";
+//   }
+// }, 1000);
+
+
+
+
+
+let days = 2; //starting number of days
+let hours = 0; // starting number of hours
+let minutes = 2; // starting number of minutes
+let seconds = 5; // starting number of seconds
+
+// converts all to seconds
+let totalSeconds =
+days * 60 * 60 * 24 + hours * 60 * 60 + minutes * 60 + seconds;
+
+//temporary seconds holder
+let tempSeconds = totalSeconds;
+
+// calculates number of days, hours, minutes and seconds from a given number of seconds
+const convert = (value, inSeconds) => {
+if (value > inSeconds) {
+    let x = value % inSeconds;
+    tempSeconds = x;
+    return (value - x) / inSeconds;
+} else {
+    return 0;
+}
+};
+
+//sets seconds
+const setSeconds = (s) => {
+document.querySelector("#seconds").textContent = s + "s";
+};
+
+//sets minutes
+const setMinutes = (m) => {
+document.querySelector("#minutes").textContent = m + "m";
+};
+
+//sets hours
+const setHours = (h) => {
+document.querySelector("#hours").textContent = h + "h";
+};
+
+//sets Days
+const setDays = (d) => {
+document.querySelector("#days").textContent = d + "d";
+};
 
 // Update the count down every 1 second
-var countdownfunction = setInterval(function () {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Output the result in an element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-  // If the countdown is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
+var x = setInterval(() => {
+//clears countdown when all seconds are counted
+if (totalSeconds <= 0) {
+    clearInterval(x);
+}
+setDays(convert(tempSeconds, 24 * 60 * 60));
+setHours(convert(tempSeconds, 60 * 60));
+setMinutes(convert(tempSeconds, 60));
+setSeconds(tempSeconds == 60 ? 59 : tempSeconds);
+totalSeconds--;
+tempSeconds = totalSeconds;
 }, 1000);
 
 
