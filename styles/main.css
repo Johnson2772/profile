@@ -85,7 +85,7 @@ nav {
   color: white;
   display: flex;
   float: right;
-  height: 5rem;
+  height: 4rem;
   justify-content: space-between;
   overflow: hidden;
   padding: 0 1rem;
@@ -129,7 +129,7 @@ nav ul {
 }
 
 nav ul li {
-  line-height: 3rem;
+  line-height: 4rem;
   margin-right: 5px;
   padding-right: 10px;
 }
@@ -179,7 +179,7 @@ nav ul li a:hover,
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 1rem;
   border: none;
   outline: none;
   color: white;
