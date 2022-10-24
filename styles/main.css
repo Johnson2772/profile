@@ -37,6 +37,15 @@ section {
   display: block
 }
 
+
+
+
+
+
+
+
+
+
 /* Background color changing effect  */
 @keyframes background-change {
   0% {
@@ -63,6 +72,163 @@ section {
     background-color: #555;
   }
 }
+/* Header and Title styles */
+
+/* Styling header banner */
+header {
+  align-items: center;
+  background: no-repeat center/200% url("./images/header.png"), linear-gradient(#fff, #000);
+  border-radius: 1rem;
+  color: white;
+  display: block;
+  font-size: 3rem;
+  margin: auto;
+  min-height: fit-content;
+  position: relative;
+  text-align: center;
+}
+
+header a {
+  position: relative;
+  padding: 0.2rem;
+  color: blue;
+}
+
+header img {
+  display: block;
+  width: 6rem;
+  height: 200px;
+  margin: auto;
+}
+
+header p {
+  font-size: 25pt;
+  color: #3b464c;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#banner {
+  background: no-repeat center/150% url("./images/banner.jpg");
+  border-radius: 0;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#banner_container {
+  background-color: black;
+  color: white;
+  margin: auto;
+  max-width: 55rem;
+  max-height: 75rem;
+  min-width: 35rem;
+  padding: 4rem 2rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+#banner_container button {
+  background-color: darkmagenta;
+  border: none;
+  border-radius: 2rem;
+  bottom: 5%;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  opacity: 0.7;
+  outline: 0;
+  overflow: hidden;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+#banner_container button:hover {
+  background-color: blueviolet;
+  color: white;
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Increase the font size of the h's element */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
+  font-weight: normal;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h1 {
+  background: whitesmoke;
+  border: .2rem solid blueviolet;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 2rem purple;
+  color: purple;
+  display: inline-block;
+  font-size: 3rem;
+  font-style: italic;
+  height: min-content;
+  line-height: 3rem;
+  margin: -1rem -1rem 0;
+  padding: 2rem;
+  text-shadow: 1px 5px 10px plum;
+  width: 102%;
+}
+
+h2 {
+  font-size: 2.75rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h3 a {
+  border: 4px solid green;
+  font-size: 2.25rem;
+}
+
+h4 {
+  color: darkviolet;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
 
 
 
@@ -317,170 +483,6 @@ ul.breadcrumb li a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-/* Header and Title styles */
-
-/* Styling header banner */
-header {
-  align-items: center;
-  background: no-repeat center/200% url("./images/header.png"), linear-gradient(#fff, #000);
-  border-radius: 1rem;
-  color: white;
-  display: block;
-  font-size: 3rem;
-  margin: auto;
-  min-height: fit-content;
-  position: relative;
-  text-align: center;
-}
-
-header a {
-  position: relative;
-  padding: 0.2rem;
-  color: blue;
-}
-
-header img {
-  display: block;
-  width: 6rem;
-  height: 200px;
-  margin: auto;
-}
-
-header p {
-  font-size: 25pt;
-  color: #3b464c;
-  padding-top: 5px;
-  margin: 0;
-  font-weight: bold;
-  text-align: center;
-}
-
-header .logo {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-#banner {
-  background: no-repeat center/150% url("./images/banner.jpg");
-  border-radius: 0;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
-
-#banner_container {
-  background-color: black;
-  color: white;
-  margin: auto;
-  max-width: 55rem;
-  max-height: 75rem;
-  min-width: 35rem;
-  padding: 4rem 2rem 2rem;
-  border-radius: 2rem;
-  text-align: center;
-}
-
-#banner_container button {
-  background-color: darkmagenta;
-  border: none;
-  border-radius: 2rem;
-  bottom: 5%;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  margin: auto;
-  opacity: 0.7;
-  outline: 0;
-  overflow: hidden;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: auto;
-}
-
-#banner_container button:hover {
-  background-color: blueviolet;
-  color: white;
-  opacity: 0.7;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Increase the font size of the h's element */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
-  font-weight: normal;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-h1 {
-  background: whitesmoke;
-  border: .2rem solid blueviolet;
-  border-radius: 2rem;
-  box-shadow: 0rem 0rem 2rem purple;
-  color: purple;
-  display: inline-block;
-  font-size: 3rem;
-  font-style: italic;
-  height: min-content;
-  line-height: 3rem;
-  margin: -1rem -1rem 0;
-  padding: 2rem;
-  text-shadow: 1px 5px 10px plum;
-  width: 102%;
-}
-
-h2 {
-  font-size: 2.75rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-}
-
-h3 a {
-  border: 4px solid green;
-  font-size: 2.25rem;
-}
-
-h4 {
-  color: darkviolet;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-h5 {
-  font-size: 1.75rem;
-}
-
-h6 {
-  font-size: 1.5rem;
-}
 
 
 

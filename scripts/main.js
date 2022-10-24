@@ -13,22 +13,22 @@ function myFunction() {
 
 
 
-// /* Changing content */
-// function openPage(pageName, element) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablink");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].style.backgroundColor = "";
-//   }
-//   document.getElementById(pageName).style.display = "block";
-// }
+/* Changing content */
+function openPage(pageName, element) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+}
 
-// // Get the element with id="active" and click on it
-// document.getElementById("active").click();
+// Get the element with id="active" and click on it
+document.getElementById("active").click();
 
 
 
