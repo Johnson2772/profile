@@ -167,6 +167,12 @@
 
                 <h5>Recent projects</h5>
                 <h6>Look my most recent projects, Sep 2, 2022</h6>
+                <div id="countdown-container">
+                    <div id="countdown">
+                        <span id="days">0d</span> : <span id="hours">0h</span> :
+                        <span id="minutes">0m</span> : <span id="seconds">0s</span>
+                    </div>                    
+                </div>
                 <div class="fakeimg">Image</div>
 
                 <p>
@@ -397,19 +403,47 @@
                 <small>Let's talk</small>
             </header>
 
-            <article>
-
-                <p>
-                <h1>New Year's Countdown</h1>
-                </p>
+            <article>                
+                <h1>New Year's Countdown</h1>                
                 <hr>
                 <hr>
-                <div id="countdown-container">
-                    <div id="countdown">
-                        <span id="days">0d</span> : <span id="hours">0h</span> :
-                        <span id="minutes">0m</span> : <span id="seconds">0s</span>
-                    </div>
-                </div>
+                <form action="destination.html" method="POST">
+                    <fieldset>
+                        <legend>Personal Details: </legend>
+                        <label for="name">Username: </label>
+                        <input type="text" name="username" id="name" required autofocus placeholder="Your username"
+                            pattern="[a-zA-Z]{3,}" title="Please introduce more than three letters">
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email" required placeholder="Your Email"
+                            pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in a valid email address">
+                        <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required
+                            placeholder="Please enter in your phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                            title="Please enter in a phone number in this format: ### ### ####">
+                        <select name="country" required>
+                            <option value=""> </option>
+                            <option value="US">US</option>
+                            <option value="CO">CO</option>
+                            <option value="ES">ES</option>
+                        </select>
+                    </fieldset>
+            
+                    <br>
+            
+                    <fieldset>
+                        <legend>Booking Details: </legend>
+                        <label for="date">Booking date: </label><input id="date" type="date" name="date" min="2013-12-02">
+                        <label for="numberOfGuests">Number of Guests: </label><input id="numberOfGuests" type="number"
+                            name="numberOfGuests" min="1" max="6">
+                        <p>Do you require continental breakfast?</p>
+                        <label for="yesMeals">Yes: </label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+                        <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
+                        <br>
+                        <label for="balcony">Do you require a bathtub? </label><input id="bathtub" type="checkbox"
+                            name="bathtub value=" yes" checked>
+                        <br>
+                        <input type="image" src="images/button.png" alt="Submit">
+                    </fieldset>
+                </form>
             </article>
 
 
