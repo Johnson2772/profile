@@ -119,13 +119,13 @@
 
             <article>
 
-                <h5>Hello World!</h5>
-                <h6>Greetings, Oct 7th, 2022</h6>
+                <h3>Hello World!</h3>
+                <h4>Greetings, Oct 7th, 2022</h4>
                 <div class="fakeimg">Image</div>
 
                 <p>
                     Hi! My name is <strong>Jhonatan Posada</strong>. My friends also
-                    call me Johnson. Coding is my passion. It's not just about the apps.
+                    call me Johnson (It's a looong Story &#128521;). Coding is my passion. It's not just about the apps.
                     Learning to code gave me <i>problem-solving skills</i> and a way to
                     communicate with others on a technical level. I can also develop websites
                     and use my coding skills to get a better job.
@@ -409,21 +409,21 @@
                 <form action="destination.html" method="POST">
 
                     <fieldset>
+
                         <legend>Contact Form: </legend>
 
                         <label for="username">Username: </label>
-                        <input type="text" name="username" id="username" required autofocus
-                            pattern="[a-zA-Z]{3,}" placeholder="Your username" 
-                            title="Please introduce more than three letters" >
+                        <input type="text" name="username" id="username" required autofocus pattern="[a-zA-Z]{3,}"
+                            placeholder="Your username" title="Please introduce more than three letters">
 
                         <label for="email">Email: </label>
-                        <input type="text" name="email" id="email" required                             
+                        <input type="text" name="email" id="email" required
                             pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" placeholder="Your Email"
                             title="Please enter in a valid email address">
 
                         <label for="phone">Phone: </label>
-                        <input type="tel" name="phone" id="phone" required
-                            pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="Please enter in your phone number"
+                        <input type="tel" name="phone" id="phone" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                            placeholder="Please enter in your phone number"
                             title="Please enter in a phone number in this format: ### ### ####">
 
                         <select name="language" required>
@@ -432,6 +432,10 @@
                             <option value="ES">ES</option>
                             <option value="FR">FR</option>
                         </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."> </textarea>
+
                     </fieldset>
 
                     <hr>
@@ -439,20 +443,27 @@
                     <br>
 
                     <fieldset>
-                        <legend>Booking Details: </legend>
-                        <label for="date">Booking date: </label><input id="date" type="date" name="date"
-                            min="2013-12-02">
-                        <label for="numberOfGuests">Number of Guests: </label><input id="numberOfGuests" type="number"
-                            name="numberOfGuests" min="1" max="6">
+
+                        <legend>Details: </legend>
+
+                        <label for="date">Date: </label>
+                        <input id="date" type="date" name="date" min="2013-12-02">
+
+                        <label for="numberOfGuests">Number of Guests: </label>
+                        <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6">
+
                         <p>Do you require continental breakfast?</p>
-                        <label for="yesMeals">Yes: </label><input id="yesMeals" type="radio" name="meals"
-                            value="yesMeals">
+                        <label for="yesMeals">Yes: </label>
+                        <input id="yesMeals" type="radio" name="meals" value="yesMeals">
                         <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
                         <br>
+
                         <label for="balcony">Do you require a bathtub? </label><input id="bathtub" type="checkbox"
                             name="bathtub value=" yes" checked>
                         <br>
-                        <input type="image" src="images/button.png" alt="Submit">
+
+                        <input type="submit" value="Submit">
+
                     </fieldset>
 
                 </form>
