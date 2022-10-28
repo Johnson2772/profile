@@ -1013,18 +1013,16 @@ textarea {
 
 footer {
   background-color: black;
-  bottom: -10rem;
+  bottom: -15rem;
   clear: both;
   color: #aaa;
-  margin: 3rem 0 0 0;
   padding: 7rem 0 0;
   position: relative;
   text-align: center;
-  width: 100%;
 }
 
 footer p {
-  padding: 20px 10px;
+  padding: 1.2rem 0.8rem;
 }
 
 .copyleft {
