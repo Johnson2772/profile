@@ -965,7 +965,7 @@ input {
   border-bottom: 1px solid #ccc;
   display: inline;
   float: right;
-  height: 2.5rem;
+  height: 2.2rem;
   width: 100%;
 }
 
@@ -996,8 +996,9 @@ legend {
 }
 
 textarea {
-  height: 100px;
+  height: 10rem;
   overflow: auto;
+  width: 80%;
 }
 
 
