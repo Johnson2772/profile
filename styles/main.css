@@ -1012,7 +1012,7 @@ textarea {
 /* Footer section */
 
 footer {
-  background-color: black;
+  background: black;
   bottom: -15rem;
   clear: both;
   color: #aaa;
