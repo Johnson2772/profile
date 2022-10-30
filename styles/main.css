@@ -541,9 +541,9 @@ article {
   border-radius: 2rem 0 2rem;
   box-shadow: 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2), inset 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2);
   display: block;
-  margin: 1rem auto 10rem;
+  margin: 1rem auto 7rem;
   min-height: min-content;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   text-align: left;
   width: 100%;
 }
@@ -606,7 +606,6 @@ img {
   border: 1px solid white;
   height: auto;
   max-width: 100%;
-  vertical-align: middle;
 }
 
 .image {
