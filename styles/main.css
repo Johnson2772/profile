@@ -1040,9 +1040,9 @@ footer p {
   display: inline-block;
   font-weight: bold;
   font-size: 1.5rem;
-  height: 2.5rem;
+  height: 3rem;
   text-align: center;
-  width: 2.5rem;
+  width: 5rem;
 }
 
 .tolink:hover {
