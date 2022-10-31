@@ -1,4 +1,4 @@
-/* Trying to make a dinamic webpage */
+/* Trying to make a dynamic webpage */
 
 function myFunction() {
   var x = document.getElementsByTagName("nav");
