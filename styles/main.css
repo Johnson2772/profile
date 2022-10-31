@@ -8,7 +8,7 @@
 
 body {
   animation: background-change 10s linear infinite alternate;
-  background-color: #333;
+  background: #333;
   color: darkviolet;
   font-family: 'Handlee', system-ui, verdana, arial, helvetica, sans-serif, cursive;
   overflow: auto;
@@ -260,7 +260,7 @@ nav {
   justify-content: space-between;
   overflow: hidden;
   padding: 0 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
