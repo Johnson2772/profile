@@ -275,8 +275,8 @@ Jumps directly to linked
 #schedule,
 #about,
 #contact {
-  margin-top: -250px;
-    padding-top: 250px;
+  margin-top: -10rem;
+  padding-top: 10rem;
 }
 
 /* Style the navigation bar links */
