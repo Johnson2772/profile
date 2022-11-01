@@ -126,14 +126,16 @@ header .logo {
 
 #banner_container {
   background-color: black;
+  border-radius: 2rem;
   color: white;
   margin: auto;
   max-width: 55rem;
   max-height: 75rem;
   min-width: 35rem;
   padding: 4rem 2rem 2rem;
-  border-radius: 2rem;
+  position: relative;
   text-align: center;
+  top: 7rem;
 }
 
 #banner_container button {
@@ -254,9 +256,9 @@ nav {
   bottom: 0;
   box-shadow: 0.1rem 0.2rem 2rem black;
   color: white;
-  display: flex;
+  display: inline-table;
   float: right;
-  height: 6rem;
+  height: 5rem;
   justify-content: space-between;
   overflow: hidden;
   padding: 0 1rem;
@@ -306,7 +308,7 @@ nav a:hover {
 }
 
 nav ul {
-  display: flex;
+  display: inline-flexbox;  
   justify-content: center;
   align-items: center;
   list-style: none;
