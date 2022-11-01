@@ -73,6 +73,10 @@ section {
   }
 }
 
+
+
+
+
 /* Header and Title styles */
 
 /* Styling header banner */
@@ -127,6 +131,7 @@ header .logo {
 #banner_container {
   background-color: black;
   border-radius: 2rem;
+  bottom: 6rem;
   color: white;
   margin: auto;
   max-width: 55rem;
@@ -135,7 +140,6 @@ header .logo {
   padding: 4rem 2rem 2rem;
   position: relative;
   text-align: center;
-  top: 7rem;
 }
 
 #banner_container button {
@@ -794,7 +798,7 @@ small {
 
 sub,
 sup {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 0;
   position: relative;
   vertical-align: baseline
