@@ -1,15 +1,13 @@
 /* Trying to make a dynamic webpage */
 
-function myFunction() {
-  var x = document.getElementsByTagName("nav");
+function toggleResponsive() {
+  var x = document.getElementById("topNav");
   if (x.className === "nav") {
     x.className += " responsive";
   } else {
     x.className = "nav";
   }
 }
-
-
 
 
 
