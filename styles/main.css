@@ -416,7 +416,7 @@ nav a:hover,
 
 
 /* Responsive navigation */
-@media screen and (max-width: 80%) {
+@media screen and (max-width: 950px) {
   nav a:not(:first-child) {
     display: none;
   }
