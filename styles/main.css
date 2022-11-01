@@ -259,9 +259,7 @@ nav {
   bottom: 0;
   box-shadow: 0.1rem 0.2rem 2rem black;
   color: white;
-  display: inline-table;
-  float: right;
-  height: 4rem;
+  height: 3rem;
   justify-content: space-between;
   overflow: hidden;
   padding: 0 1rem;
@@ -288,7 +286,6 @@ Jumps directly to linked
 nav a {
   float: left;
   font-size: 1.5rem;
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
@@ -306,7 +303,7 @@ nav a.right {
 
 /* Change color on hover */
 nav a:hover {
-  background-color: #ddd;
+  background: #ddd;
   color: black;
 }
 
@@ -318,7 +315,6 @@ nav ul {
 }
 
 nav ul li {
-  line-height: 4rem;
   margin-right: 5px;
   padding-right: 10px;
 }
