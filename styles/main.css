@@ -131,13 +131,13 @@ header .logo {
 #banner_container {
   background-color: black;
   border-radius: 2rem;
-  bottom: 6rem;
+  bottom: 3rem;
   color: white;
   margin: auto;
   max-width: 55rem;
   max-height: 75rem;
   min-width: 35rem;
-  padding: 4rem 2rem 2rem;
+  padding: 4rem 2rem;
   position: relative;
   text-align: center;
 }
@@ -324,26 +324,26 @@ nav ul li a {
 }
 
 nav a.active {
-  background-color: purple;
+  background: purple;
   color: white;
 }
 
 nav ul li a:hover,
 .active {
-  background-color: black;
+  background: black;
   color: darkviolet;
   border-radius: 8px;
 }
 
 .active {
-  background-color: blueviolet;
+  background: blueviolet;
   color: white;
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
 .split {
   float: right;
-  background-color: purple;
+  background: purple;
   color: white;
 }
 
