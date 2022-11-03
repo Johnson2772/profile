@@ -293,7 +293,6 @@ nav a {
   font-size: 1.5rem;
   color: white;
   text-align: center;
-  padding: 14px 20px;
   text-decoration: none;
 }
 
@@ -506,6 +505,19 @@ ul.breadcrumb li a:hover {
 
 
 
+
+
+
+/* Keeping anchor sticky at the bottom */
+#top {
+  background: black;
+  bottom: 0;
+  color: purple;
+  position: sticky;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+}
 
 
 
