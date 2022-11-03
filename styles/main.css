@@ -272,7 +272,7 @@ nav {
 /* 
 Jumps directly to linked 
 */
-h1::before { 
+header::before { 
   display: block; 
   content: " "; 
   margin-top: -100rem; 
