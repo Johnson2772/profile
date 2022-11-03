@@ -266,7 +266,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* 
@@ -470,7 +470,7 @@ ul.breadcrumb {
   padding: 10px 16px;
   position: sticky;
   top: 3rem;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 
@@ -520,6 +520,7 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
   top: 6rem;
   width: 100%;
+  z-index: 1;
 }
 
 
