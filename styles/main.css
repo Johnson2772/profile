@@ -284,6 +284,7 @@ Jumps directly to linked
 
 /* Style the navigation bar links */
 nav a {
+  display: block;
   float: left;
   font-size: 1.5rem;
   color: white;
@@ -308,7 +309,7 @@ nav a:hover {
 }
 
 nav ul {
-  display: inline-flexbox;  
+  display: inline-flexbox;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -351,8 +352,6 @@ nav ul li a:hover,
 .dropdown {
   float: left;
   overflow: hidden;
-  position: relative;
-  z-index: 5;
 }
 
 .dropbtn {
@@ -376,7 +375,7 @@ nav ul li a:hover,
 
 .dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -417,15 +416,20 @@ nav a:hover,
 
 /* Responsive navigation */
 @media screen and (max-width: 950px) {
-  nav a:not(:first-child) {
-    display: none;
-  }
-
   nav a.icon {
     float: right;
     display: block;
   }
 
+  nav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 950px) {
   nav.responsive {
     position: relative;
   }
@@ -440,16 +444,6 @@ nav a:hover,
     float: none;
     display: block;
     text-align: left;
-  }
-
-  nav a:not(:first-child),
-  .dropdown .dropbtn {
-    display: none;
-  }
-
-  nav a.icon {
-    float: right;
-    display: block;
   }
 
   nav.responsive .dropdown {
