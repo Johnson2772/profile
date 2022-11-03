@@ -275,8 +275,8 @@ Jumps directly to linked
 header::before { 
   display: block; 
   content: " "; 
-  margin-top: -100rem; 
-  height: 100rem; 
+  margin-top: -10rem; 
+  height: 10rem; 
   visibility: hidden; 
   pointer-events: none;
 }
@@ -469,7 +469,7 @@ ul.breadcrumb {
   list-style: none;
   padding: 10px 16px;
   position: sticky;
-  top: 4rem;
+  top: 3rem;
   z-index: 1;
   width: 100%;
 }
@@ -511,12 +511,12 @@ ul.breadcrumb li a:hover {
 /* Keeping anchor sticky at the bottom */
 #top {
   background: black;
-  bottom: 0;
+  bottom: 0rem;
   color: purple;
   position: sticky;
   right: 0;
   text-decoration: none;
-  top: 0;
+  top: ;
 }
 
 
