@@ -515,8 +515,10 @@ ul.breadcrumb li a:hover {
   color: purple;
   position: sticky;
   right: 0;
+  text-align: right;
   text-decoration: none;
   top: 6rem;
+  width: 100%;
 }
 
 
