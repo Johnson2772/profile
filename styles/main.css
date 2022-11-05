@@ -315,7 +315,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 3rem;  
+  margin: 0 3rem;
 }
 
 nav ul li a {
@@ -341,7 +341,7 @@ nav ul li a:hover,
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
-.split {  
+.split {
   background: purple;
   color: white;
   float: right;
@@ -374,8 +374,8 @@ nav ul li a:hover,
 
 .dropdown-content {
   background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  
-  display: none;  
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
   min-width: 10rem;
   position: absolute;
   z-index: 5;
@@ -384,7 +384,7 @@ nav ul li a:hover,
 .dropdown-content a {
   color: black;
   display: block;
-  float: none;  
+  float: none;
   padding: 1.5rem;
   text-align: left;
   text-decoration: none;
@@ -510,19 +510,16 @@ ul.breadcrumb li a:hover {
 
 /* Keeping anchor sticky at the bottom */
 #top {
-  background: black;
+  background: radial-gradient(darkviolet 10%, transparent 50%);
   bottom: 0;
-  color: black;
-  display: block;
-  float: right;
+  color: white;
   height: 3rem;
-  opacity: 2;
-  position: sticky;
-  text-align: right;
-  text-decoration: none;
-  text-shadow: 3px 3px 5px white;
-  top: 7rem;
-  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+  position: fixed;
+  right: 0%;
+  top: 95%;
+  width: 10%;
   z-index: 1;
 }
 
