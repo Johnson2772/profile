@@ -82,7 +82,6 @@ section {
 /* Styling header banner */
 header {
   align-items: center;
-  background: no-repeat center/200% url("../images/header.png"), linear-gradient(#fff, #000);
   border-radius: 1rem;
   color: white;
   display: block;
@@ -91,6 +90,16 @@ header {
   min-height: fit-content;
   position: relative;
   text-align: center;
+}
+
+/* Jumps directly to linked element in page. Tweak necessary to show hidden elements by navigation and breadcrumbs bars */
+header::before {
+  display: block;
+  content: " ";
+  margin-top: -10rem;
+  height: 10rem;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 header a {
@@ -210,6 +219,7 @@ h1 {
 }
 
 h2 {
+  background: no-repeat center/200% url("../images/header.png"), linear-gradient(#fff, #000);
   font-size: 2.75rem;
 }
 
@@ -267,18 +277,6 @@ nav {
   top: 0;
   width: 100%;
   z-index: 3;
-}
-
-/* 
-Jumps directly to linked 
-*/
-header::before {
-  display: block;
-  content: " ";
-  margin-top: -10rem;
-  height: 10rem;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 /* Hidden icon from navigation bar */
