@@ -814,7 +814,7 @@ p {
   line-height: 2rem;
   margin: 1rem;
   padding: 0 0.8rem;
-  text-align: left;
+  text-align: justify;
   text-decoration: 0.2rem solid black;
   text-shadow: 0.2rem 0.2rem 1rem black;
 }
