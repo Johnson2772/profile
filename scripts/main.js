@@ -121,7 +121,7 @@ document.getElementById("active").click();
 
 
 let days = 2; //starting number of days
-let hours = 0; // starting number of hours
+let hours = 3; // starting number of hours
 let minutes = 2; // starting number of minutes
 let seconds = 5; // starting number of seconds
 
