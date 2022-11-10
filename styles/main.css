@@ -969,20 +969,17 @@ form {
 }
 
 button {
-  background-color: inherit;
+  background: inherit;
   border: none;
-  border-radius: 2rem;
   color: inherit;
   cursor: pointer;
   display: inline-block;
   margin: auto;
-  overflow: hidden;
-  padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 10rem;
+  width: fit-content;
 }
 
 button,
@@ -1160,10 +1157,10 @@ footer p {
 
 .animate-top {
   position: relative;
-  animation: animatetop 0.4s
+  animation: animate-top 0.4s
 }
 
-@keyframes animatetop {
+@keyframes animate-top {
   from {
     top: -300px;
     opacity: 0
@@ -1177,10 +1174,10 @@ footer p {
 
 .animate-left {
   position: relative;
-  animation: animateleft 0.4s
+  animation: animate-left 0.4s
 }
 
-@keyframes animateleft {
+@keyframes animate-left {
   from {
     left: -300px;
     opacity: 0
@@ -1194,10 +1191,10 @@ footer p {
 
 .animate-right {
   position: relative;
-  animation: animateright 0.4s
+  animation: animate-right 0.4s
 }
 
-@keyframes animateright {
+@keyframes animate-right {
   from {
     right: -300px;
     opacity: 0
@@ -1211,10 +1208,10 @@ footer p {
 
 .animate-bottom {
   position: relative;
-  animation: animatebottom 0.4s
+  animation: animate-bottom 0.4s
 }
 
-@keyframes animatebottom {
+@keyframes animate-bottom {
   from {
     bottom: -300px;
     opacity: 0
@@ -1227,10 +1224,10 @@ footer p {
 }
 
 .animate-zoom {
-  animation: animatezoom 0.6s
+  animation: animate-zoom 0.6s
 }
 
-@keyframes animatezoom {
+@keyframes animate-zoom {
   from {
     transform: scale(0)
   }
