@@ -79,6 +79,28 @@ section {
 
 /* Header and Title styles */
 
+#banner {
+  background: no-repeat center/150% url("../images/banner.jpg");
+  border-radius: 0;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#banner_container {
+  background-color: black;
+  border-radius: 2rem;
+  bottom: 3rem;
+  color: white;
+  margin: auto;
+  max-width: 55rem;
+  max-height: 75rem;
+  min-width: 35rem;
+  padding: 4rem 2rem;
+  position: relative;
+  text-align: center;
+}
+
 /* Styling header banner */
 header {
   align-items: center;
@@ -125,28 +147,6 @@ header .logo {
   text-transform: uppercase;
 }
 
-#banner {
-  background: no-repeat center/150% url("../images/banner.jpg");
-  border-radius: 0;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
-
-#banner_container {
-  background-color: black;
-  border-radius: 2rem;
-  bottom: 3rem;
-  color: white;
-  margin: auto;
-  max-width: 55rem;
-  max-height: 75rem;
-  min-width: 35rem;
-  padding: 4rem 2rem;
-  position: relative;
-  text-align: center;
-}
-
 #banner_container button {
   background-color: darkmagenta;
   border: none;
@@ -156,7 +156,6 @@ header .logo {
   cursor: pointer;
   display: inline-block;
   margin: auto;
-  opacity: 0.7;
   outline: 0;
   overflow: hidden;
   padding: 0.5rem;
@@ -170,9 +169,7 @@ header .logo {
 #banner_container button:hover {
   background-color: blueviolet;
   color: white;
-  opacity: 0.7;
 }
-
 
 
 
