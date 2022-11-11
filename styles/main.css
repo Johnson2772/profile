@@ -116,11 +116,7 @@ header img {
 }
 
 header p {
-  font-size: 25pt;
-  color: #3b464c;
-  padding-top: 5px;
-  margin: 0;
-  font-weight: bold;
+  font-size: 2rem;
   text-align: center;
 }
 
