@@ -143,6 +143,11 @@ header p {
   text-align: center;
 }
 
+header .logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 #banner_container button {
   background-color: darkmagenta;
   border: none;
@@ -274,8 +279,8 @@ nav {
   z-index: 3;
 }
 
-/* Hidden logo from navigation bar */
-nav .logo {
+/* Hidden icon from navigation bar */
+nav .icon {
   display: none;
 }
 
@@ -408,7 +413,7 @@ nav a:hover,
 
 /* Responsive navigation */
 @media screen and (max-width: 1080px) {
-  nav a.logo {
+  nav a.icon {
     float: right;
     display: block;
   }
@@ -426,12 +431,12 @@ nav a:hover,
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1080px) {
   nav.responsive {
     position: relative;
   }
 
-  nav.responsive .logo {
+  nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -799,7 +804,7 @@ p {
   font-family: system-ui;
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 2.5rem;
+  line-height: 2rem;
   margin: 2rem 1rem;
   padding: 0 0.8rem;
   text-align: justify;
