@@ -390,12 +390,12 @@ nav ul li a:hover,
 
 nav a:hover,
 .dropdown:hover .dropbtn {
-  background: darkgray;
+  background: plum;
   color: white;
 }
 
 .dropdown-content a:hover {
-  background: white;
+  background: plum;
   color: black;
 }
 
