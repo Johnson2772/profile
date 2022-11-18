@@ -435,8 +435,10 @@ nav a:hover,
 
 @media screen and (max-width: 800px) {
 
-  header#banner, .logo, ul.breadcrumb {
-    display: none;
+  header#banner,
+  .logo,
+  ul.breadcrumb {
+    display: none !important;
   }
 
   nav.responsive {
