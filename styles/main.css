@@ -205,15 +205,16 @@ h5 {
   font-style: italic;
   line-height: 3rem;
   margin: -1rem -1rem;
-  padding: 1rem;
-  text-shadow: 0.1rem 0.1rem 1rem plum; 
-  width: 102%; 
+  padding: 0 2rem;
+  text-shadow: 0.1rem 0.1rem 1rem plum;
+  width: 102%;
 }
 
 h2,
 h4,
 h6 {
   color: darkmagenta;
+  padding: 0 2.5rem;
 }
 
 h1 {
@@ -228,7 +229,7 @@ h2 {
   background: no-repeat center/200% url("../images/header.png"), linear-gradient(#fff, #000);
   color: white;
   font-size: 2.25rem;
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 
 h3 {
@@ -242,7 +243,6 @@ h3 {
 
 h4 {
   font-size: 1.75rem;
-  font-weight: bold;
 }
 
 h5 {
@@ -435,9 +435,7 @@ nav a:hover,
 
 @media screen and (max-width: 800px) {
 
-  header#banner,
-  ul.breadcrumb,
-  .logo {
+  header#banner, .logo, ul.breadcrumb {
     display: none;
   }
 
