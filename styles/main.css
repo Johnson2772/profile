@@ -90,7 +90,7 @@ section {
 #banner_container {
   background-color: black;
   border-radius: 2rem;
-  bottom: 3rem;
+  bottom: 1rem;
   color: white;
   margin: auto;
   max-width: 45rem;
@@ -127,7 +127,7 @@ header::before {
 header a {
   position: relative;
   padding: 0.2rem;
-  color: blue;
+  color: cyan;
 }
 
 header img {
@@ -278,6 +278,7 @@ nav {
   color: white;
   height: 3rem;
   justify-content: space-between;
+  overflow: hidden;
   padding: 0 1rem;
   position: sticky;
   top: 0;
@@ -756,7 +757,7 @@ img {
 
 a {
   background-color: transparent;
-  color: plum;
+  color: cyan;
   padding: 0rem 1rem;
   text-decoration: none;
 }
