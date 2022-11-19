@@ -278,7 +278,7 @@ nav {
   color: white;
   height: 3rem;
   justify-content: space-between;
-  overflow: hidden;
+  overflow: hidden; /*  This is hidden the dropbtn menu */
   padding: 0 1rem;
   position: sticky;
   top: 0;
