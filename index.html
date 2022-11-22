@@ -44,10 +44,10 @@
                 button below to go to the bottom of this page.
                 <br>
                 <br>
-                </p>
-                <a href="#footer">
-                    <button>Click Here</button>
-                </a>
+            </p>
+            <a href="#footer">
+                <button>Click Here</button>
+            </a>
             </p>
         </div>
 
@@ -437,35 +437,34 @@
 
                         <legend>Contact Form: </legend>
 
-                        <label for="username">Username: </label>
+                        <label for="username">Username: </label>                        
                         <input type="text" name="username" id="username" required autofocus pattern="[a-zA-Z]{3,}"
                             placeholder="Your username" title="Please introduce more than three letters">
-
+                        <br>
                         <label for="email">Email: </label>
                         <input type="text" name="email" id="email" required
                             pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" placeholder="Your Email"
                             title="Please enter in a valid email address">
-
+                        <br>
                         <label for="phone">Phone: </label>
                         <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             placeholder="Please enter in your phone number"
                             title="Please enter in a phone number in this format: 123-456-7890">
-
+                        <br>
                         <select name="language" required>
                             <option value=""> </option>
                             <option value="EN">EN</option>
                             <option value="ES">ES</option>
                             <option value="FR">FR</option>
                         </select>
-
-                        <label for="subject">Subject</label>
+                        <br>
+                        <label for="subject">Subject:</label>
+                        <br>
                         <textarea id="subject" name="subject" placeholder="Write something.."> </textarea>
 
                     </fieldset>
-
+                    
                     <hr>
-                    <hr>
-                    <br>
 
                     <fieldset>
 
@@ -473,20 +472,19 @@
 
                         <label for="date">Date: </label>
                         <input id="date" type="date" name="date" min="2020-12-02">
-
+                        <br>
                         <label for="numberOfGuests">Number of Guests: </label>
                         <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6">
-
+                        <br>
                         <p>Do you require continental breakfast?</p>
                         <label for="yesMeals">Yes: </label>
                         <input id="yesMeals" type="radio" name="meals" value="yesMeals">
                         <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
                         <br>
-
                         <label for="balcony">Do you require a bathtub?</label>
                         <input id="bathtub" type="checkbox" name="bathtub" value=" yes" checked>
                         <br>
-
+                        <br>
                         <input type="submit" value="Submit">
 
                     </fieldset>
