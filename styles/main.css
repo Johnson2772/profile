@@ -10,7 +10,7 @@ body {
   animation: background-change 10s linear infinite alternate;
   background: #333;
   color: darkviolet;
-  font-family: 'Handlee', system-ui, verdana, arial, helvetica, sans-serif, cursive;
+  font-family: helvetica, verdana, 'handlee', system-ui, sans-serif, arial, cursive;
   overflow: auto;
   overflow-y: auto;
 }
