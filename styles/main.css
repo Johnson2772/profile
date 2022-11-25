@@ -921,9 +921,8 @@ form {
 }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: .35em .625em .75em;
+  border: 1px solid lightgray;
+  padding: 3rem 2rem;
 }
 
 legend {
