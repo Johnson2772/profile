@@ -282,7 +282,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Hidden icon from navigation bar */
@@ -382,7 +382,7 @@ nav ul li a:hover,
   display: none;
   min-width: 10rem;
   position: absolute;
-  z-index: 5;
+  z-index: 3;
 }
 
 .dropdown-content a {
