@@ -914,6 +914,63 @@ li {
 
 /* Forms */
 
+
+form {
+  text-align: center;
+  margin-top: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+  font: inherit;
+}
+
+input {
+  padding: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  display: inline;
+  float: right;
+  height: 2.2rem;
+  width: 100%;
+}
+
+input,
+textarea {
+  font-size: 0.8rem;
+  padding: 0 2rem;
+  border: 1px solid lightgrey;
+  background-color: white;
+  color: grey;
+  border-radius: 1rem;
+  width: 25%;
+  outline: none;
+}
+
+textarea {
+  height: 10rem;
+  overflow: auto;
+  width: 80%;
+}
+
+/* Progress bar  */
+
 progress {
   width: 70%;
   height: 20px;
@@ -951,11 +1008,6 @@ audio {
   display: block;
   margin: 0 auto;
   border: 3px solid #3fb6b2;
-}
-
-form {
-  text-align: center;
-  margin-top: 0;
 }
 
 .submit {
@@ -1005,54 +1057,6 @@ select {
   border-bottom: 1px solid #ccc;
 }
 
-button,
-input,
-select,
-textarea,
-optgroup {
-  font: inherit;
-}
-
-input {
-  padding: 0.2rem;
-  border-bottom: 1px solid #ccc;
-  display: inline;
-  float: right;
-  height: 2.2rem;
-  width: 100%;
-}
-
-input,
-textarea {
-  font-size: 0.8rem;
-  padding: 0 2rem;
-  border: 1px solid lightgrey;
-  background-color: white;
-  color: grey;
-  border-radius: 1rem;
-  width: 25%;
-  outline: none;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: .35em .625em .75em;
-}
-
-legend {
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-textarea {
-  height: 10rem;
-  overflow: auto;
-  width: 80%;
-}
 
 
 
@@ -1148,10 +1152,10 @@ footer p {
 }
 
 .animate-opacity {
-  animation: opac 0.8s
+  animation: opacity 0.8s
 }
 
-@keyframes opac {
+@keyframes opacity {
   from {
     opacity: 0
   }
