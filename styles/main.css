@@ -151,19 +151,17 @@ header .logo {
   background-color: darkmagenta;
   border: none;
   border-radius: 2rem;
-  bottom: 5%;
   color: white;
   cursor: pointer;
   display: inline-block;
   margin: auto;
   outline: 0;
   overflow: hidden;
-  padding: 0.5rem;
+  padding: 1rem 1rem 0.5rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: auto;
 }
 
 #banner_container button:hover {
