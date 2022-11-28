@@ -274,8 +274,6 @@ nav {
   box-shadow: 0.1rem 0.2rem 2rem black;
   color: white;
   height: 3rem;
-  justify-content: space-between;
-  overflow: hidden; /*  This is hidden the dropbtn menu */
   padding: 0 1rem;
   position: sticky;
   top: 0;
@@ -417,6 +415,10 @@ nav a:hover,
 
 /* Responsive navigation */
 @media screen and (max-width: 1080px) {
+  nav {
+    overflow: hidden;
+  }
+  
   nav a.icon {
     float: right;
     display: block;
