@@ -562,6 +562,7 @@ aside {
 aside {
   float: right;
   margin: 0 0 0 1rem;
+  min-width: 25rem;
   text-align: left;
   width: 60%;
 }
