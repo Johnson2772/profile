@@ -544,7 +544,7 @@ main {
   min-width: 30%;
   position: relative;
   top: 5rem;
-  width: 80%;
+  width: 70%;
 }
 
 /* Creating two unequal columns that floats next to each other */
@@ -563,7 +563,7 @@ aside {
   float: right;
   margin: 0 0 0 1rem;
   text-align: left;
-  width: 50%;
+  width: 60%;
 }
 
 /* Adding a  */
