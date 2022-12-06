@@ -220,7 +220,7 @@ h1 {
   border: .2rem solid blueviolet;
   color: purple;
   font-size: 2.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 h2 {
@@ -821,7 +821,7 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.7rem;
-  margin: 2rem 1rem;
+  margin: 1rem 0;
   text-align: justify;
   text-decoration: 0.2rem solid black;
   text-shadow: 0.2rem 0.2rem 1rem black;
