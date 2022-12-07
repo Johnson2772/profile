@@ -525,13 +525,13 @@ ul.breadcrumb li a:hover {
 /* Keeping anchor sticky at the bottom */
 #top {
   background: radial-gradient(darkviolet 10%, transparent 50%);
-  bottom: 0rem;
+  bottom: 1rem;
   color: white;
   height: 3rem;
   text-align: center;
   text-shadow: 2px 2px 0 black;
   position: fixed;
-  right: 0rem;
+  right: 2%;
   width: 10rem;
   z-index: 1;
 }
