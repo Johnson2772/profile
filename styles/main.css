@@ -201,7 +201,7 @@ h5 {
   display: inline-block;
   font-style: italic;
   line-height: 3rem;
-  margin: -1rem -1rem;
+  margin: -1rem 0rem;
   padding: 0 2rem;
   text-shadow: 0.1rem 0.1rem 1rem plum;
   width: 100%;
@@ -220,6 +220,7 @@ h1 {
   border: .2rem solid blueviolet;
   color: purple;
   font-size: 2.5rem;
+  font-style: normal;
   padding: 2rem;
 }
 
