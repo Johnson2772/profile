@@ -1,12 +1,10 @@
 ## Hello there this is my GitHub Personal Page
 
-You can use the [editor on GitHub](https://github.com/Johnson2772/profile/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Iḿ starting my journey to become a professional web developer, and what better way to do it than keeping track of my steps than here in the greatest communities for developers in the world than is Github. I might not giving giant steps than people around me but every step will count in this long marathon than we call life.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### This is my hello world
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I'm grateful to be a live in such exciting time.
 
 ```markdown
 Syntax highlighted code block
