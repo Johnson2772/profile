@@ -37,6 +37,14 @@ section {
   display: block
 }
 
+/* Declaring variables to easily change page content settings  */
+:root {
+  --bg-color: black;
+  --txt-color: white;
+  --a-color: cyan;
+  --button-color: darkmagenta;
+  --hover-button-color: blueviolet;
+}
 
 
 
@@ -49,27 +57,27 @@ section {
 /* Background color changing effect  */
 @keyframes background-change {
   0% {
-    background-color: #000;
+    background: #000;
   }
 
   20% {
-    background-color: #111;
+    background: #111;
   }
 
   40% {
-    background-color: #222;
+    background: #222;
   }
 
   60% {
-    background-color: #333;
+    background: #333;
   }
 
   80% {
-    background-color: #444;
+    background: #444;
   }
 
   100% {
-    background-color: #555;
+    background: #555;
   }
 }
 
@@ -88,10 +96,10 @@ section {
 }
 
 #banner_container {
-  background-color: black;
+  background-color: var(--bg-color);
   border-radius: 2rem;
   bottom: 1rem;
-  color: white;
+  color: var(--txt-color);
   margin: auto;
   max-width: 40rem;
   max-height: 40rem;
@@ -104,7 +112,7 @@ section {
 header {
   align-items: center;
   border-radius: 1rem;
-  color: white;
+  color: var(--txt-color);
   display: block;
   font-size: 3rem;
   margin: auto;
@@ -126,7 +134,7 @@ header::before {
 header a {
   position: relative;
   padding: 0.2rem;
-  color: cyan;
+  color: var(--a-color);
 }
 
 header img {
@@ -138,7 +146,7 @@ header img {
 
 header p {
   font-size: 1.5rem;
-  margin: 2rem 0rem auto;  
+  margin: 2rem 0rem auto;
   text-align: center;
   padding: 0 2rem;
 }
@@ -149,10 +157,10 @@ header .logo {
 }
 
 #banner_container button {
-  background-color: darkmagenta;
+  background-color: var(--button-color);
   border: none;
   border-radius: 2rem;
-  color: white;
+  color: var(--txt-color);
   cursor: pointer;
   display: inline-block;
   margin: auto;
@@ -166,8 +174,8 @@ header .logo {
 }
 
 #banner_container button:hover {
-  background-color: blueviolet;
-  color: white;
+  background-color: var(--hover-button-color);
+  color: var(--txt-color);
 }
 
 
@@ -198,7 +206,7 @@ h3,
 h5 {
   border-radius: 2rem;
   box-shadow: 0rem 0rem 2rem purple;
-  color: white;
+  color: var(--txt-color);
   display: inline-block;
   font-style: italic;
   line-height: 3rem;
@@ -227,13 +235,13 @@ h1 {
 h2 {
   background: no-repeat center/200% url("../images/header.png"), linear-gradient(#fff, #000);
   border-radius: 0 0 2rem 2rem;
-  color: white;
+  color: var(--txt-color);
   font-size: 2.25rem;
-  padding: 1rem 0 0 0;  
+  padding: 1rem 0 0 0;
 }
 
 h3 {
-  color: white;
+  color: var(--txt-color);
   background: none;
   border: none;
   box-shadow: none;
@@ -272,10 +280,10 @@ The sticky value is not supported in IE or Edge 15 and earlier versions. However
 /* Navigation Bar */
 nav {
   align-items: center;
-  background: black;
+  background: var(--bg-color);
   bottom: 0;
   box-shadow: 0.1rem 0.2rem 2rem black;
-  color: white;
+  color: var(--txt-color);
   height: 3rem;
   padding: 0 1rem;
   position: sticky;
@@ -294,7 +302,7 @@ nav a {
   display: block;
   float: left;
   font-size: 1.5rem;
-  color: white;
+  color: var(--txt-color);
   text-align: center;
   text-decoration: none;
 }
@@ -421,7 +429,7 @@ nav a:hover,
   nav {
     overflow: hidden;
   }
-  
+
   nav a.icon {
     float: right;
     display: block;
