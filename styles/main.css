@@ -40,7 +40,9 @@ section {
 /* Declaring variables to easily change page content settings  */
 :root {
   --bg-color: black;
+  --bg2-color: white;
   --txt-color: white;
+  --hx-txt: purple;
   --a-color: cyan;
   --button-color: darkmagenta;
   --hover-button-color: blueviolet;
@@ -337,25 +339,25 @@ nav ul li a {
 
 nav a.active {
   background: purple;
-  color: white;
+  color: var(--txt-color);
 }
 
 nav ul li a:hover,
 .active {
   background: darkviolet;
   border-radius: 1rem 1rem 0;
-  color: white;
+  color: var(--txt-color);
 }
 
 .active {
   background: blueviolet;
-  color: white;
+  color: var(--txt-color);
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
 .split {
   background: purple;
-  color: white;
+  color: var(--txt-color);
   float: right;
 }
 
@@ -367,7 +369,7 @@ nav ul li a:hover,
 
 .dropbtn {
   background-color: darkviolet;
-  color: white;
+  color: var(--txt-color);
   padding: 1.5rem;
   font-size: 1.2rem;
   border: none;
@@ -376,7 +378,7 @@ nav ul li a:hover,
 .dropdown .dropbtn {
   border: none;
   background: inherit;
-  color: white;
+  color: var(--txt-color);
   font-family: inherit;
   font-size: 1.5rem;
   margin: 0;
