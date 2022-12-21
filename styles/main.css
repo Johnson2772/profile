@@ -491,7 +491,7 @@ nav a:hover,
 
 /* Breadcrumbs */
 ul.breadcrumb {
-  background-color: black;
+  background-color: var(--bg-color);
   display: inline-block;
   list-style: none;
   padding: 0 1rem;
@@ -539,7 +539,7 @@ ul.breadcrumb li a:hover {
 #top {
   background: radial-gradient(darkviolet 10%, transparent 50%);
   bottom: 1rem;
-  color: white;
+  color: var(--txt-color);
   height: 3rem;
   text-align: center;
   text-shadow: 2px 2px 0 black;
@@ -597,7 +597,7 @@ section {
 
 /* Add a card effect for articles */
 article {
-  background: black;
+  background: var(--bg-color);
   border: 0.2rem solid darkviolet;
   border-radius: 2rem 0 2rem;
   box-shadow: 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2), inset 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2);
