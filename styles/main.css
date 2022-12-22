@@ -753,7 +753,7 @@ a img {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: var(--txt-color);
   font-weight: bold;
   font-size: 1.2rem;
   transition: 0.6s ease;
@@ -828,7 +828,7 @@ mark {
 }
 
 p {
-  color: white;
+  color: var(--txt-color);
   display: block;
   font-family: system-ui;
   font-size: 1.2rem;
@@ -913,7 +913,7 @@ th {
 .selected {
   background-color: orchid;
   font-weight: bold;
-  color: white;
+  color: var(--txt-color);
 }
 
 li {
@@ -1085,7 +1085,7 @@ select {
 /* Footer section */
 
 footer {
-  background: black;
+  background: var(--bg-color);
   bottom: -15rem;
   clear: both;
   color: #aaa;
