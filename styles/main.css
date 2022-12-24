@@ -776,7 +776,7 @@ a img {
 
 a {
   background-color: transparent;
-  color: cyan;
+  color: var(--a-color);
   padding: 0rem 1rem;
   text-decoration: none;
 }
