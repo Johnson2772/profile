@@ -212,7 +212,7 @@ h5 {
   color: var(--txt-color);
   display: inline-block;
   font-style: italic;
-  line-height: 3rem;
+  line-height: 2rem;
   margin: -1rem 0rem;
   text-shadow: 0.1rem 0.1rem 1rem plum;
   width: 100%;
