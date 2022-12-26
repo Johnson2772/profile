@@ -106,7 +106,7 @@ section {
   margin: auto;
   max-width: 40rem;
   max-height: 40rem;
-  padding: 3rem;
+  padding: 2rem 1rem 1rem;
   position: relative;
   text-align: center;
 }
