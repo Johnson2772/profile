@@ -9,7 +9,7 @@
 body {
   animation: background-change 10s linear infinite alternate;
   background: #333;
-  color: darkviolet;
+  color: var(--main-color);
   font-family: helvetica, verdana, 'handlee', system-ui, sans-serif, arial, cursive;
   overflow: auto;
   overflow-y: auto;
@@ -42,6 +42,7 @@ section {
   --bg-color: black;
   --bg2-color: white;
   --txt-color: white;
+  --main-color: darkviolet;
   --hx-txt: purple;
   --a-color: cyan;
   --button-color: darkmagenta;
