@@ -539,13 +539,13 @@ ul.breadcrumb li a:hover {
 /* Keeping anchor sticky at the bottom */
 #top {
   background: radial-gradient(darkviolet 10%, transparent 50%);
-  bottom: 1rem;
+  bottom: 0%;
   color: var(--txt-color);
   height: 3rem;
   text-align: center;
   text-shadow: 2px 2px 0 var(--bg-color);
   position: fixed;
-  right: 2%;
+  right: -1%;
   width: 10rem;
   z-index: 1;
 }
@@ -557,10 +557,10 @@ ul.breadcrumb li a:hover {
 main {
   margin: auto;
   max-width: 100%;
-  min-width: 30%;
+  min-width: 60%;
   position: relative;
-  top: 5rem;
-  width: 70%;
+  top: 0%;
+  width: 80%;
 }
 
 /* Creating two unequal columns that floats next to each other */
