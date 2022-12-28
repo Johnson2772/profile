@@ -545,7 +545,7 @@ ul.breadcrumb li a:hover {
   text-align: center;
   text-shadow: 2px 2px 0 var(--bg-color);
   position: fixed;
-  right: -1%;
+  right: 0%;
   width: 10rem;
   z-index: 1;
 }
