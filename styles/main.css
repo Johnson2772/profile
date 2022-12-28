@@ -837,8 +837,8 @@ p {
   line-height: 1.5rem;
   margin: 1rem 0;
   text-align: justify;
-  text-decoration: 0.2rem solid black;
-  text-shadow: 0.2rem 0.2rem 1rem black;
+  text-decoration: 0.2rem solid var(--bg-color);
+  text-shadow: 0.2rem 0.2rem 1rem var(--bg-color);
 }
 
 small {
