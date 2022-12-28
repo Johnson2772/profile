@@ -287,7 +287,7 @@ nav {
   align-items: center;
   background: var(--bg-color);
   bottom: 0;
-  box-shadow: 0.1rem 0.2rem 2rem black;
+  box-shadow: 0.1rem 0.2rem 2rem var(--bg-color);
   color: var(--txt-color);
   height: 3rem;
   padding: 0 1rem;
@@ -409,7 +409,7 @@ nav ul li a:hover,
 nav a:hover,
 .dropdown:hover .dropbtn {
   background: plum;
-  color: white;
+  color: var(--txt-color);
 }
 
 .dropdown-content a:hover {
@@ -543,7 +543,7 @@ ul.breadcrumb li a:hover {
   color: var(--txt-color);
   height: 3rem;
   text-align: center;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 2px 2px 0 var(--bg-color);
   position: fixed;
   right: 2%;
   width: 10rem;
