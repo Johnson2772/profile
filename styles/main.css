@@ -107,7 +107,7 @@ section {
   margin: auto;
   max-width: 40rem;
   max-height: 40rem;
-  padding: 3rem 1rem 2rem;
+  padding: 3rem 2rem 2rem;
   position: relative;
   text-align: center;
 }
@@ -152,7 +152,7 @@ header p {
   font-size: 1.5rem;
   margin: 2rem 0rem auto;
   text-align: center;
-  padding: 0 3rem;
+  padding: 0 2.5rem;
 }
 
 header .logo {
