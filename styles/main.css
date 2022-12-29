@@ -200,6 +200,7 @@ h4,
 h5,
 h6 {
   font-family: "Segoe UI", Arial, sans-serif, "Times New Roman", Georgia, Serif;
+  font-style: italic;
   font-weight: normal;
   padding: 0.5rem;
   text-align: center;
@@ -212,8 +213,7 @@ h5 {
   box-shadow: 0rem 0rem 2rem purple;
   color: var(--txt-color);
   display: inline-block;
-  font-style: italic;
-  line-height: 2rem;
+  line-height: 2.5rem;
   margin: -1rem 0rem;
   text-shadow: 0.1rem 0.1rem 1rem plum;
   width: 100%;
