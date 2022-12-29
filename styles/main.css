@@ -41,13 +41,17 @@ section {
 :root {
   --bg-color: black;
   --bg2-color: white;
+
   --txt-color: white;
   --main-color: darkviolet;
-  --hx-txt: purple;
-  --a-color: cyan;
-  --button-color: darkmagenta;
-  --hover-button-color: blueviolet;
   --shadow-color: purple;
+
+  --hx-txt: purple;
+
+  --a-color: cyan;
+
+  --button-color: darkmagenta;
+  --hover-button-color: blueviolet;  
 }
 
 
