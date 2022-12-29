@@ -51,7 +51,7 @@ section {
   --a-color: cyan;
 
   --button-color: darkmagenta;
-  --hover-button-color: blueviolet;  
+  --hover-button-color: blueviolet;
 }
 
 
@@ -459,6 +459,7 @@ nav a:hover,
   .logo,
   ul.breadcrumb {
     display: none !important;
+    /* This must be done in order to apply property */
   }
 
   nav.responsive {
@@ -739,7 +740,7 @@ a img {
 
 .mySlides1,
 .mySlides2 {
-  display: none
+  display: none;
 }
 
 /* Slideshow container */
@@ -788,7 +789,7 @@ a {
 
 a:active,
 a:hover {
-  outline-width: 0
+  outline-width: 0;
 }
 
 
@@ -810,7 +811,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder
+  font-weight: bolder;
 }
 
 code {
@@ -860,11 +861,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25rem
+  bottom: -0.25rem;
 }
 
 sup {
-  top: -0.5rem
+  top: -0.5rem;
 }
 
 
