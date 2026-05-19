@@ -28,21 +28,16 @@
 
         <!-- Banner start -->
         <div id="banner_container">
-            <h1>
-                Hi There! <br>
-                Welcome To My Profile
-            </h1>
+            <h1>Hi There! <br> Welcome To My Profile.</h1>
             <p>
-                My name is <b>Jhonatan Posada</b>, I am a Web Developer currently living in Merrick, New York
+                My name is <strong>Jhonatan Posada</strong>, I am a Web Developer currently living in Merrick, New York
                 (USA). My interests range from technology, arts and pop culture. I am also interested in programming,
                 web development, and Open Software like GNU-Linux. If you would like to get in touch, feel free to say
                 hello through any of the social links at the bottom page. You can click the button below to go to the
                 bottom of this page.
-                <br>
-                <br>
             </p>
             <a href="#footer">
-                <button>Click Here</button>
+                <button>Get In Touch</button>
             </a>
         </div>
 
@@ -55,11 +50,12 @@
 
     <!-- Navigation Bar -->
     <nav class="nav" id="topNav">
-
-        <img src="images/avatar.jpg" class="image glow">
-        <a class="logo" href="#banner" onclick="index()">Johnson2772</a>
-
-        <ul>
+        <div class="nav-brand">
+            <img src="images/avatar.jpg" class="image glow" alt="Avatar">
+            <a class="logo" href="#banner" onclick="index()">Johnson2772</a>
+        </div>
+        
+        <ul class="nav-links">
             <li><a class="tablink active" id="active" href="#home" onclick="openPage('home', this)">Home</a></li>
             <li><a class="tablink" href="#projects" onclick="openPage('projects', this)">Projects</a></li>
             <li><a class="tablink" href="#news" onclick="openPage('news', this)">News</a></li>
@@ -84,11 +80,6 @@
                 </a>
             </li>
         </ul>
-
-
-
-
-
     </nav>
     <!-- Navigation Bar End -->
 
