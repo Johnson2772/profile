@@ -1,3 +1,20 @@
+/* Declaring variables to easily change page content settings  */
+:root {
+  --bg-color: black;
+  --bg2-color: white;
+
+  --txt-color: white;
+  --main-color: darkviolet;
+  --shadow-color: purple;
+
+  --hx-txt: purple;
+
+  --a-color: cyan;
+
+  --button-color: darkmagenta;
+  --hover-button-color: blueviolet;
+}
+
 /* Main page style properties */
 
 * {
@@ -6,11 +23,15 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   animation: background-change 10s linear infinite alternate;
   background: #333;
   color: var(--main-color);
-  font-family: helvetica, verdana, 'handlee', system-ui, sans-serif, arial, cursive;
+  font-family: 'Inter', system-ui, helvetica, verdana, 'handlee', sans-serif;
   overflow: auto;
   overflow-y: auto;
 }
@@ -36,31 +57,6 @@ nav,
 section {
   display: block
 }
-
-/* Declaring variables to easily change page content settings  */
-:root {
-  --bg-color: black;
-  --bg2-color: white;
-
-  --txt-color: white;
-  --main-color: darkviolet;
-  --shadow-color: purple;
-
-  --hx-txt: purple;
-
-  --a-color: cyan;
-
-  --button-color: darkmagenta;
-  --hover-button-color: blueviolet;
-}
-
-
-
-
-
-
-
-
 
 /* Background color changing effect  */
 @keyframes background-change {
@@ -185,13 +181,6 @@ header .logo {
   background-color: var(--hover-button-color);
   color: var(--txt-color);
 }
-
-
-
-
-
-
-
 
 
 
@@ -1095,7 +1084,7 @@ footer {
   bottom: -15rem;
   clear: both;
   color: #aaa;
-  padding: 7rem 0 0;
+  padding: 3rem 1rem;
   position: relative;
   text-align: center;
 }
