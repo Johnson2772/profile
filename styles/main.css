@@ -61,23 +61,23 @@ section {
   }
 
   20% {
-    background: #111;
-  }
-
-  40% {
-    background: #222;
-  }
-
-  60% {
     background: #333;
   }
 
+  40% {
+    background: #666;
+  }
+
+  60% {
+    background: #999;
+  }
+
   80% {
-    background: #444;
+    background: #ccc;
   }
 
   100% {
-    background: #555;
+    background: #fff;
   }
 }
 
@@ -102,6 +102,28 @@ section {
   padding: 3rem 2rem 2rem;
   position: relative;
   text-align: center;
+}
+
+#banner_container button {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 2rem;
+  color: var(--txt-color);
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  outline: 0;
+  overflow: hidden;
+  padding: 1rem 1rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+#banner_container button:hover {
+  background-color: var(--hover-button-color);
+  color: var(--txt-color);
 }
 
 /* Styling header banner */
@@ -150,28 +172,6 @@ header p {
 header .logo {
   font-size: 1.5rem;
   text-transform: uppercase;
-}
-
-#banner_container button {
-  background-color: var(--button-color);
-  border: none;
-  border-radius: 2rem;
-  color: var(--txt-color);
-  cursor: pointer;
-  display: inline-block;
-  margin: auto;
-  outline: 0;
-  overflow: hidden;
-  padding: 1rem 1rem 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-#banner_container button:hover {
-  background-color: var(--hover-button-color);
-  color: var(--txt-color);
 }
 
 /* Increase the font size of the h's element */
