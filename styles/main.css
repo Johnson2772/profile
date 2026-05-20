@@ -638,11 +638,11 @@ a img {
   border-radius: 75%;
   border-right: none;
   box-shadow: #333 1% 1%;
-  height: 50px;
+  height: 3rem;
   float: left;
   margin: 0% 0%;
   vertical-align: middle;
-  width: 50px;
+  width: 3rem;
 }
 
 /* Glowing Effect */
@@ -656,10 +656,11 @@ a img {
       0 0 1px #fff,
       0 0 2px #fff,
       0 0 3px #fff,
-      0 0 4px purple,
+      0 0 4px #fff,
       0 0 5px purple,
       0 0 6px purple,
-      0 0 7px purple;
+      0 0 7px purple,
+      0 0 8px purple;
   }
 
   to {
