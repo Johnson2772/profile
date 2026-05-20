@@ -16,7 +16,6 @@
 }
 
 /* Main page style properties */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,13 +24,14 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   animation: background-change 10s linear infinite alternate;
   background: #333;
   color: var(--main-color);
-  font-family: 'Inter', system-ui, helvetica, verdana, 'handlee', sans-serif;
+  font-family: "Inter", system-ui, helvetica, verdana, "handlee", sans-serif;
   overflow: auto;
   overflow-y: auto;
 }
@@ -44,10 +44,6 @@ html {
   overflow-x: hidden;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 article,
 aside,
 footer,
@@ -55,7 +51,7 @@ header,
 main,
 nav,
 section {
-  display: block
+  display: block;
 }
 
 /* Background color changing effect  */
@@ -84,10 +80,6 @@ section {
     background: #555;
   }
 }
-
-
-
-
 
 /* Header and Title styles */
 
@@ -182,8 +174,6 @@ header .logo {
   color: var(--txt-color);
 }
 
-
-
 /* Increase the font size of the h's element */
 
 h1,
@@ -223,7 +213,7 @@ h6 {
 
 h1 {
   background: white;
-  border: .2rem solid blueviolet;
+  border: 0.2rem solid blueviolet;
   color: purple;
   font-size: 2.5rem;
   font-style: normal;
@@ -231,7 +221,9 @@ h1 {
 }
 
 h2 {
-  background: no-repeat center/200% url("../images/header.png"), linear-gradient(#fff, #000);
+  background:
+    no-repeat center/200% url("../images/header.png"),
+    linear-gradient(#fff, #000);
   border-radius: 0 0 2rem 2rem;
   color: var(--txt-color);
   font-size: 2.25rem;
@@ -258,15 +250,6 @@ h5 {
 h6 {
   font-size: 1.25rem;
 }
-
-
-
-
-
-
-
-
-
 
 /* 
 Styling the top navigation bar.
@@ -418,10 +401,6 @@ nav a:hover,
   background: darkviolet;
 }
 
-
-
-
-
 /* Responsive navigation */
 @media screen and (max-width: 1080px) {
   nav {
@@ -437,13 +416,9 @@ nav a:hover,
   .dropdown .dropbtn {
     display: none;
   }
-
 }
 
-
-
 @media screen and (max-width: 800px) {
-
   header#banner,
   .logo,
   ul.breadcrumb {
@@ -482,8 +457,6 @@ nav a:hover,
   }
 }
 
-
-
 /* Breadcrumbs */
 ul.breadcrumb {
   background-color: var(--bg-color);
@@ -498,13 +471,13 @@ ul.breadcrumb {
 
 /* Display list items side by side */
 ul.breadcrumb li {
-  padding: 0 .1rem;
+  padding: 0 0.1rem;
   display: inline;
   font-size: 1.5rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
+ul.breadcrumb li + li:before {
   color: whitesmoke;
   content: "/\00a0";
 }
@@ -521,15 +494,6 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
 /* Keeping anchor sticky at the bottom */
 #top {
   background: radial-gradient(darkviolet 10%, transparent 50%);
@@ -543,8 +507,6 @@ ul.breadcrumb li a:hover {
   width: 10rem;
   z-index: 1;
 }
-
-
 
 /* Main page container */
 
@@ -595,7 +557,9 @@ article {
   background: var(--bg-color);
   border: 0.2rem solid darkviolet;
   border-radius: 2rem 0 2rem;
-  box-shadow: 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2), inset 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2);
+  box-shadow:
+    0 0 1rem 0.7rem rgba(148, 0, 211, 0.2),
+    inset 0 0 1rem 0.7rem rgba(148, 0, 211, 0.2);
   display: block;
   margin: 1rem auto 7rem;
   min-height: min-content;
@@ -603,7 +567,6 @@ article {
   text-align: left;
   width: 100%;
 }
-
 
 /* Fake image, just for this example */
 .fakeimg {
@@ -620,13 +583,8 @@ main:after {
   clear: both;
 }
 
-
-
-
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1080px) {
-
   main,
   aside {
     width: 100%;
@@ -650,15 +608,6 @@ main:after {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* Image styles */
 
@@ -702,31 +651,31 @@ a img {
   animation: glow 5s ease-in-out infinite alternate;
 }
 
-
-
-
-
 @keyframes glow {
   from {
-    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px purple, 0 0 4px purple, 0 0 5px purple, 0 0 6px purple, 0 0 7px purple;
+    box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px purple,
+      0 0 4px purple,
+      0 0 5px purple,
+      0 0 6px purple,
+      0 0 7px purple;
   }
 
   to {
-    box-shadow: 0 0 2px #fff, 0 0 3px plum, 0 0 4px plum, 0 0 5px plum, 0 0 6px plum, 0 0 7px plum, 0 0 8px plum;
+    box-shadow:
+      0 0 2px #fff,
+      0 0 3px plum,
+      0 0 4px plum,
+      0 0 5px plum,
+      0 0 6px plum,
+      0 0 7px plum,
+      0 0 8px plum;
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* Slideshow */
-
 .mySlides1,
 .mySlides2 {
   display: none;
@@ -781,15 +730,6 @@ a:hover {
   outline-width: 0;
 }
 
-
-
-
-
-
-
-
-
-
 /* Regular text styles */
 
 abbr[title] {
@@ -805,7 +745,7 @@ strong {
 
 code {
   background-color: #fff;
-  border-left: 4px solid #4CAF50;
+  border-left: 4px solid #4caf50;
   font-family: monospace, monospace;
   font-size: 1rem;
   padding: 8px 12px;
@@ -846,7 +786,7 @@ sup {
   font-size: 1rem;
   line-height: 0;
   position: relative;
-  vertical-align: baseline
+  vertical-align: baseline;
 }
 
 sub {
@@ -856,15 +796,6 @@ sub {
 sup {
   top: -0.5rem;
 }
-
-
-
-
-
-
-
-
-
 
 /* Table properties */
 
@@ -902,7 +833,7 @@ th {
   padding: 8px 8px;
   display: table-cell;
   text-align: center;
-  vertical-align: top
+  vertical-align: top;
 }
 
 .selected {
@@ -915,18 +846,7 @@ li {
   font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
 /* Forms */
-
-
 form {
   text-align: center;
   margin-top: 0;
@@ -1068,15 +988,6 @@ select {
   border-bottom: 1px solid #ccc;
 }
 
-
-
-
-
-
-
-
-
-
 /* Footer section */
 
 footer {
@@ -1119,153 +1030,135 @@ footer p {
   margin: 0.2rem 0 0 0;
 }
 
-
-
-
-
-
-
-
-
-
 /* Animation effects  */
 
 .spin {
-  animation: spin 2s infinite linear
+  animation: spin 2s infinite linear;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(359deg)
+    transform: rotate(359deg);
   }
 }
 
 .animate-fading {
-  animation: fading 10s infinite
+  animation: fading 10s infinite;
 }
 
 @keyframes fading {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   50% {
-    opacity: 1
+    opacity: 1;
   }
 
   100% {
-    opacity: 0
+    opacity: 0;
   }
 }
 
 .animate-opacity {
-  animation: opacity 0.8s
+  animation: opacity 0.8s;
 }
 
 @keyframes opacity {
   from {
-    opacity: 0
+    opacity: 0;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 .animate-top {
   position: relative;
-  animation: animate-top 0.4s
+  animation: animate-top 0.4s;
 }
 
 @keyframes animate-top {
   from {
     top: -300px;
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     top: 0;
-    opacity: 1
+    opacity: 1;
   }
 }
 
 .animate-left {
   position: relative;
-  animation: animate-left 0.4s
+  animation: animate-left 0.4s;
 }
 
 @keyframes animate-left {
   from {
     left: -300px;
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     left: 0;
-    opacity: 1
+    opacity: 1;
   }
 }
 
 .animate-right {
   position: relative;
-  animation: animate-right 0.4s
+  animation: animate-right 0.4s;
 }
 
 @keyframes animate-right {
   from {
     right: -300px;
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     right: 0;
-    opacity: 1
+    opacity: 1;
   }
 }
 
 .animate-bottom {
   position: relative;
-  animation: animate-bottom 0.4s
+  animation: animate-bottom 0.4s;
 }
 
 @keyframes animate-bottom {
   from {
     bottom: -300px;
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     bottom: 0;
-    opacity: 1
+    opacity: 1;
   }
 }
 
 .animate-zoom {
-  animation: animate-zoom 0.6s
+  animation: animate-zoom 0.6s;
 }
 
 @keyframes animate-zoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
 
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* Testing effect */
 
