@@ -29,11 +29,10 @@ html {
 
 body {
   animation: background-change 10s linear infinite alternate;
-  background: #333;
+  background: var(--bg-color);
   color: var(--main-color);
   font-family: "Inter", system-ui, helvetica, verdana, "handlee", sans-serif;
   overflow: auto;
-  overflow-y: auto;
 }
 
 body,
@@ -656,7 +655,7 @@ a img {
     box-shadow:
       0 0 1px #fff,
       0 0 2px #fff,
-      0 0 3px purple,
+      0 0 3px #fff,
       0 0 4px purple,
       0 0 5px purple,
       0 0 6px purple,
@@ -665,11 +664,12 @@ a img {
 
   to {
     box-shadow:
+      0 0 1px #fff,
       0 0 2px #fff,
       0 0 3px plum,
       0 0 4px plum,
-      0 0 5px plum,
-      0 0 6px plum,
+      0 0 5px #fff,
+      0 0 6px #fff,
       0 0 7px plum,
       0 0 8px plum;
   }
