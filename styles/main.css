@@ -81,7 +81,6 @@ section {
 }
 
 /* Header and Title styles */
-
 #banner {
   background: no-repeat center/150% url("../images/banner.jpg");
   border-radius: 0;
@@ -95,10 +94,10 @@ section {
   border-radius: 2rem;
   bottom: 1rem;
   color: var(--txt-color);
-  margin: auto;
+  margin: 5rem auto;
   max-width: 40rem;
   max-height: 40rem;
-  padding: 3rem 2rem 2rem;
+  padding: 5rem 2rem;
   position: relative;
   text-align: center;
 }
@@ -418,6 +417,7 @@ nav a:hover,
 }
 
 @media screen and (max-width: 800px) {
+
   header#banner,
   .logo,
   ul.breadcrumb {
@@ -458,25 +458,31 @@ nav a:hover,
 
 /* Breadcrumbs */
 ul.breadcrumb {
-  background-color: var(--bg-color);
-  display: inline-block;
+  align-items: center;
+  background: var(--bg-color);
+  bottom: 0;
+  color: var(--txt-color);
+  display: inline;
+  height: 3rem;
   list-style: none;
   padding: 0 1rem;
   position: sticky;
   top: 3rem;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
 }
+
+
 
 /* Display list items side by side */
 ul.breadcrumb li {
   padding: 0 0.1rem;
   display: inline;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li + li:before {
+ul.breadcrumb li+li:before {
   color: whitesmoke;
   content: "/\00a0";
 }
@@ -500,7 +506,7 @@ ul.breadcrumb li a:hover {
   color: var(--txt-color);
   height: 3rem;
   text-align: center;
-  text-shadow: 2px 2px 0 var(--bg-color);
+  text-shadow: 0.1rem 0.2rem 0 var(--bg-color);
   position: fixed;
   right: 0%;
   width: 10rem;
@@ -584,6 +590,7 @@ main:after {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1080px) {
+
   main,
   aside {
     width: 100%;
