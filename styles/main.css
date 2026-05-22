@@ -253,20 +253,19 @@ h6 {
 Styling the top navigation bar.
 Sticky navbar - toggles between relative and fixed, depending on the scroll position.
 It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
-The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position
 */
 
 /* Navigation Bar */
 nav {
   align-items: center;
   background: var(--bg-color);
-  bottom: 0;
+  bottom: -5rem;
   box-shadow: 0.1rem 0.2rem 2rem var(--bg-color);
   color: var(--txt-color);
   height: 3rem;
   padding: 0 1rem;
   position: sticky;
-  top: 0;
+  top: 0rem;
   width: 100%;
   z-index: 3;
 }
