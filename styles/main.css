@@ -97,7 +97,7 @@ section {
   margin: 5rem auto;
   max-width: 40rem;
   max-height: 40rem;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   position: relative;
   text-align: center;
 }
@@ -105,14 +105,14 @@ section {
 #banner_container button {
   background-color: var(--button-color);
   border: none;
-  border-radius: 2rem;
+  border-radius: 3rem;
   color: var(--txt-color);
   cursor: pointer;
   display: inline-block;
-  margin: auto;
+  margin: 1rem 0 0;
   outline: 0;
   overflow: hidden;
-  padding: 1rem 1rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -463,11 +463,11 @@ ul.breadcrumb {
   bottom: 0;
   color: var(--txt-color);
   display: inline;
-  height: 3rem;
+  height: 5rem;
   list-style: none;
   padding: 0 1rem;
   position: sticky;
-  top: 3rem;
+  top: 4rem;
   z-index: 4;
   width: 100%;
 }
