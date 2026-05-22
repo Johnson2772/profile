@@ -109,10 +109,11 @@ section {
   color: var(--txt-color);
   cursor: pointer;
   display: inline-block;
+  font-size: 1.25rem;
   margin: 1rem 0 0;
   outline: 0;
   overflow: hidden;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -459,14 +460,13 @@ nav a:hover,
 ul.breadcrumb {
   align-items: center;
   background: var(--bg-color);
-  bottom: 0;
+  bottom: 0rem;
   color: var(--txt-color);
-  display: inline;
-  height: 5rem;
+  height: 2rem;
   list-style: none;
-  padding: 0 1rem;
+  padding: 0rem;
   position: sticky;
-  top: 4rem;
+  top: 0rem;
   z-index: 4;
   width: 100%;
 }
@@ -475,7 +475,7 @@ ul.breadcrumb {
 
 /* Display list items side by side */
 ul.breadcrumb li {
-  padding: 0 0.1rem;
+  padding: 0rem;
   display: inline;
   font-size: 0.8rem;
 }
