@@ -457,28 +457,27 @@ nav a:hover,
 }
 
 /* Breadcrumbs */
-
+.breadcrumb-container {
+  bottom: 0rem;
+  position: sticky;
+  padding: 0rem;
+  top: 0rem;
+  z-index: 5;
+}
 
 ul.breadcrumb {
   align-items: center;
   background: var(--bg-color);
-  bottom: 0rem;
   color: var(--txt-color);
   height: 2rem;
   list-style: none;
-  padding: 0rem;
-  position: sticky;
-  top: 0rem;
-  z-index: 4;
   width: 100%;
 }
-
-
 
 /* Display list items side by side */
 ul.breadcrumb li {
   padding: 0rem;
-  display: inline;
+  
   font-size: 0.8rem;
 }
 
@@ -511,7 +510,7 @@ ul.breadcrumb li a:hover {
   position: fixed;
   right: 0%;
   width: 10rem;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* Main page container */
