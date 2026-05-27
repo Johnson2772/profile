@@ -6,6 +6,7 @@
   --txt-color: white;
   --main-color: darkviolet;
   --shadow-color: purple;
+  --highlight-color: violet;
 
   --hx-txt: purple;
 
@@ -32,13 +33,11 @@ body {
   background: var(--bg-color);
   color: var(--main-color);
   font-family: "Inter", system-ui, helvetica, verdana, "handlee", sans-serif;
-  overflow: auto;
 }
 
 body,
 html {
   font-size: 1rem;
-  height: 100%;
   line-height: 3rem;
   overflow-x: hidden;
 }
@@ -460,8 +459,9 @@ nav a:hover,
 .breadcrumb-container {
   bottom: 0rem;
   position: sticky;
+  background: var(--bg-color);
   padding: 0rem;
-  top: 0rem;
+  top: 15rem;
   z-index: 5;
 }
 
@@ -477,7 +477,6 @@ ul.breadcrumb {
 /* Display list items side by side */
 ul.breadcrumb li {
   padding: 0rem;
-  
   font-size: 0.8rem;
 }
 
@@ -495,7 +494,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: blue;
+  color: var(--highlight-color);
   text-decoration: underline;
 }
 
@@ -514,7 +513,6 @@ ul.breadcrumb li a:hover {
 }
 
 /* Main page container */
-
 main {
   margin: auto;
   max-width: 100%;
