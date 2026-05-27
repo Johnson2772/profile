@@ -456,7 +456,7 @@ nav a:hover,
 
 /* Breadcrumbs */
 .breadcrumb-container {
-  bottom: 0rem;
+  bottom: -3rem;
   display: flex;
   position: sticky;
   background: var(--bg-color);
@@ -469,15 +469,16 @@ ul.breadcrumb {
   align-items: center;
   background: var(--bg-color);
   color: var(--txt-color);
-  height: 2rem;
+  height: 1.5rem;
   list-style: none;
   width: 100%;
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
+  display: inline-block;
   padding: 0rem;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
