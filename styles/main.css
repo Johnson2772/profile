@@ -458,10 +458,11 @@ nav a:hover,
 /* Breadcrumbs */
 .breadcrumb-container {
   bottom: 0rem;
+  display: flex;
   position: sticky;
   background: var(--bg-color);
   padding: 0rem;
-  top: 15rem;
+  top: 3rem;
   z-index: 5;
 }
 
