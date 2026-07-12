@@ -30,7 +30,7 @@ document.getElementById("active").click();
 
 
 // Add event listeners to menu items to change the active class when clicked
-const navItems = document.querySelectorAll('#nav li');
+const navItems = document.querySelectorAll('#nav-links li');
 
         navItems.forEach(item => {
             item.addEventListener('click', function() {
