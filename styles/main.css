@@ -555,7 +555,7 @@ aside {
 
 /* Adding a  */
 section {
-  background: repeating-linear-gradient(black, transparent, lightgray, white);
+  background: repeating-linear-gradient(black,lightgray,white,transparent,lightgray,black);
   border: 0.1rem solid darkviolet;
   border-radius: 2rem;
   float: left;
