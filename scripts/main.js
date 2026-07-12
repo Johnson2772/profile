@@ -29,7 +29,18 @@ function openPage(pageName, element) {
 document.getElementById("active").click();
 
 
+// Add event listeners to menu items to change the active class when clicked
+const menuItems = document.querySelectorAll('#menu li');
 
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // Removing the class "active" from all elements
+                menuItems.forEach(i => i.classList.remove('active'));
+
+                // Adding the class "active" to the clicked element
+                this.classList.add('active');
+            });
+        });
 
 
 /* Changing content */
