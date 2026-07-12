@@ -460,9 +460,19 @@ nav a:hover,
   display: flex;
   position: sticky;
   background: var(--bg-color);
-  padding: 0rem;
+  padding: 0 rem;
   top: 3rem;
+  width: 100%;
   z-index: 5;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+  padding: 0.5rem;
+  width: 60%;
 }
 
 ul.breadcrumb {
@@ -471,7 +481,7 @@ ul.breadcrumb {
   color: var(--txt-color);
   height: 1.5rem;
   list-style: none;
-  width: 100%;
+  width: 80%;
 }
 
 /* Display list items side by side */
