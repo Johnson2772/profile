@@ -25,8 +25,6 @@ function openPage(pageName, element) {
   document.getElementById(pageName).style.display = "block";
 }
 
-// Get the element with id="active" and click on it
-document.getElementById("active").click();
 
 
 // Add event listeners to menu items to change the active class when clicked
