@@ -28,69 +28,19 @@ function openPage(pageName, element) {
 
 
 // Add event listeners to menu items to change the active class when clicked
-const navItems = document.querySelectorAll('#nav-links li');
+const navItems = document.querySelectorAll("#nav-links li");
 
-        navItems.forEach(item => {
-            item.addEventListener('click', function() {
-                // Removing the class "active" from all elements
-                navItems.forEach(i => i.classList.remove('active'));
+navItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    // Removing the class "active" from all elements
+    navItems.forEach((i) => i.classList.remove("active"));
 
-                // Adding the class "active" to the clicked element
-                this.classList.add('active');
-            });
-        });
+    // Adding the class "active" to the clicked element
+    this.classList.add("active");
+  });
+});
 
 
-/* Changing content */
-
-// function index() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "Welcome!!!";
-//   p.innerHTML = "This is my first web site in The SoloLearn...<br>You can navagation in menus...";
-
-// }
-// function home() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "Hii... ";
-//   p.innerHTML = "Nice to meet you.. :D";
-// }
-
-// function projects() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "In Progress... ";
-//   p.innerHTML = "I see you baby :D";
-// }
-
-// function about() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "About Me ... ";
-//   p.innerHTML = "Hello, I'm Johnson, 35 years old, I'm originally from Colombia (Hello world) This Web site is the simple example about Home pages, Menus and Context design <br><br> Good bye there :D";
-// }
-
-// function news() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "Today's news are ";
-//   p.innerHTML = "bla bla bla";
-// }
-
-// function schedule() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "schedule ";
-//   p.innerHTML = "Bla bla bla";
-// }
-
-// function contact() {
-//   var titulo = document.getElementById("titulo")
-//   var p = document.getElementById("p");
-//   titulo.innerHTML = "Contact ";
-//   p.innerHTML = "ZZZZzzzZZzZzzzZzzZZzzzzzzzZzzZZZzZzzzzzzzzzZZZZZzZZZZzZZzzzZZzzZZZZZ";
-// }
 
 
 
