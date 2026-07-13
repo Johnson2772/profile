@@ -509,6 +509,16 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 20% 0% 10%;
+  padding: 0 rem;
+  width: 70%;
+}
+
 /* Main page container */
 main {
   margin: auto;
