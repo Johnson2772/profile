@@ -9,8 +9,6 @@ function toggleResponsive() {
   }
 }
 
-
-
 /* Changing content */
 function openPage(pageName, element) {
   var i, tabcontent, tablinks;
@@ -25,8 +23,6 @@ function openPage(pageName, element) {
   document.getElementById(pageName).style.display = "block";
 }
 
-
-
 // Add event listeners to menu items to change the active class when clicked
 const navItems = document.querySelectorAll("#nav-links li");
 
@@ -39,12 +35,6 @@ navItems.forEach((item) => {
     this.classList.add("active");
   });
 });
-
-
-
-
-
-
 
 // // Set the date we're counting down to
 // var countDownDate = new Date("Jan 1, 2023 15:00:00").getTime();
@@ -68,16 +58,12 @@ navItems.forEach((item) => {
 //   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
 //     + minutes + "m " + seconds + "s ";
 
-//   // If the countdown is over, write some text 
+//   // If the countdown is over, write some text
 //   if (distance < 0) {
 //     clearInterval(countdownfunction);
 //     document.getElementById("countdown").innerHTML = "EXPIRED";
 //   }
 // }, 1000);
-
-
-
-
 
 let days = 2; //starting number of days
 let hours = 3; // starting number of hours
@@ -136,34 +122,31 @@ var x = setInterval(() => {
   tempSeconds = totalSeconds;
 }, 1000);
 
-
-
-
-
 /* Slideshow  */
 
 let slideIndex = [1, 1];
-let slideId = ["mySlides1", "mySlides2"]
+let slideId = ["mySlides1", "mySlides2"];
 showSlides(1, 0);
 showSlides(1, 1);
 
 function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
+  showSlides((slideIndex[no] += n), no);
 }
 
 function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) { slideIndex[no] = 1 }
-  if (n < 1) { slideIndex[no] = x.length }
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
   x[slideIndex[no] - 1].style.display = "block";
 }
-
-
-
 
 /* Automatic Slideshow - change image every 3 seconds */
 
@@ -177,7 +160,9 @@ function carousel() {
     x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) { myIndex = 1 }
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 3000);
 }
