@@ -1,19 +1,15 @@
 /* Declaring variables to easily change page content settings  */
 :root {
-  --bg-color: black;
-  --bg2-color: white;
-
-  --txt-color: white;
-  --main-color: darkviolet;
-  --shadow-color: purple;
-  --highlight-color: violet;
-
-  --hx-txt: purple;
-
   --a-color: cyan;
-
+  --bg2-color: white;
+  --bg-color: black;
   --button-color: darkmagenta;
   --hover-button-color: blueviolet;
+  --highlight-color: violet;
+  --hx-txt: purple;
+  --main-color: darkviolet;
+  --shadow-color: purple;
+  --txt-color: white;
 }
 
 /* Main page style properties */
@@ -24,8 +20,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -487,8 +483,8 @@ ul.breadcrumb {
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline-block;
-  padding: 0rem;
   font-size: 1rem;
+  padding: 0rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
