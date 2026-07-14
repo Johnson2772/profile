@@ -254,7 +254,7 @@ It is positioned relative until a given offset position is met in the viewport -
 nav {
   align-items: center;
   background: var(--bg-color);
-  bottom: -5rem;
+  bottom: -10rem;
   box-shadow: 0.1rem 0.2rem 2rem var(--bg-color);
   color: var(--txt-color);
   height: 6rem;
@@ -262,7 +262,7 @@ nav {
   position: sticky;
   top: 0rem;
   width: 100%;
-  z-index: 3;
+  z-index: 5;
 }
 
 /* Hidden icon from navigation bar */
@@ -287,8 +287,8 @@ nav a.right {
 
 /* Change color on hover */
 nav a:hover {
-  background: #ddd;
-  color: black;
+  background: var(--txt-color);
+  color: var(--bg-color);
 }
 
 nav ul {
@@ -298,17 +298,13 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
-  margin: 0 1rem;
-}
-
 nav ul li a {
   padding: 0 0.5rem;
   margin: 0 0.2rem;
 }
 
 nav a.active {
-  background: purple;
+  background: var(--hx-txt);
   color: var(--txt-color);
 }
 
