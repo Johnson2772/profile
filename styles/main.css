@@ -1,8 +1,8 @@
 /* Declaring variables to easily change page content settings  */
 :root {
   --a-color: cyan;
-  --bg2-color: white;
   --bg-color: black;
+  --bg-color2: white;
   --button-color: darkmagenta;
   --hover-button-color: blueviolet;
   --highlight-color: violet;
@@ -10,6 +10,7 @@
   --main-color: darkviolet;
   --shadow-color: purple;
   --txt-color: white;
+  --h1-color: purple;
 }
 
 /* Main page style properties */
@@ -207,7 +208,7 @@ h6 {
 h1 {
   background: white;
   border: 0.2rem solid blueviolet;
-  color: purple;
+  color: var(--h1-color);
   font-size: 2.5rem;
   font-style: normal;
   padding: 1.5rem;
@@ -353,7 +354,7 @@ nav ul li a:hover,
 }
 
 .dropdown-content {
-  background: var(--bg2-color);
+  background: var(--bg-color2);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;
   min-width: 10rem;
@@ -678,12 +679,6 @@ a img {
       0 0 7px plum,
       0 0 8px plum;
   }
-}
-
-/* Slideshow */
-.mySlides1,
-.mySlides2 {
-  display: none;
 }
 
 /* Slideshow container */
@@ -1017,7 +1012,7 @@ footer p {
 }
 
 .tolink {
-  background: var(--bg2-color);
+  background: var(--bg-color2);
   border-radius: 2rem;
   display: inline-flex;
   align-items: center;
