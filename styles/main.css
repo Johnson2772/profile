@@ -934,8 +934,7 @@ meter {
   background-color: lightslategray;
   border: 0.2rem solid #000;
   border-radius: 2rem;
-  color: black;
-  padding: 0 1rem 0 0;
+  color: var(--txt-color);
   text-align: right;
   width: 100%;
 }
