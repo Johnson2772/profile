@@ -261,7 +261,7 @@ nav {
   bottom: -5rem;
   box-shadow: 0.1rem 0.2rem 2rem var(--bg-color);
   color: var(--txt-color);
-  height: 3rem;
+  height: 6rem;
   padding: 0 1rem;
   position: sticky;
   top: 0rem;
@@ -303,7 +303,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 3rem;
+  margin: 0 1rem;
 }
 
 nav ul li a {
@@ -463,7 +463,7 @@ nav a:hover,
   padding: 0 rem;
   top: 3rem;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
 }
 
 .breadcrumb {
@@ -488,7 +488,7 @@ ul.breadcrumb {
 ul.breadcrumb li {
   display: inline-block;
   padding: 0rem;
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -515,8 +515,8 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   align-items: center;
   margin: 0% 20% 0% 10%;
-  padding: 0 rem;
-  width: 70%;
+  padding: 0rem;
+  width: 40%;
 }
 
 /* Main page container */
