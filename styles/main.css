@@ -42,12 +42,10 @@ html {
 }
 
 article,
-aside,
 footer,
 header,
 main,
-nav,
-section {
+nav {
   display: block;
 }
 
@@ -619,9 +617,12 @@ main:after {
 /* Image styles */
 
 img {
-  border: 1px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  border: 0.1rem solid var(--bg-color2);
   height: auto;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 a img {
