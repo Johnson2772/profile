@@ -447,14 +447,11 @@ nav a:hover,
 
 /* Breadcrumbs */
 .breadcrumb-container {
-  bottom: -3rem;
   display: flex;
   position: sticky;
   background: var(--bg-color);
-  padding: 0 rem;
-  top: 3rem;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .breadcrumb {
@@ -462,15 +459,13 @@ nav a:hover,
   justify-content: center;
   align-items: left;
   margin: auto;
-  padding: 0.5rem;
   width: 60%;
-}
+} 
 
 ul.breadcrumb {
   align-items: center;
   background: var(--bg-color);
   color: var(--txt-color);
-  height: 1.5rem;
   list-style: none;
   width: 80%;
 }
@@ -478,8 +473,6 @@ ul.breadcrumb {
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline-block;
-  font-size: 1rem;
-  padding: 0rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -506,7 +499,6 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   align-items: center;
   margin: 0% 20% 0% 10%;
-  padding: 0rem;
   width: 40%;
 }
 
