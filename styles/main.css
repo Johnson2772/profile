@@ -882,6 +882,13 @@ meter {
   width: 100%;
 }
 
+.percentage {
+  float: right;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
 iframe,
 audio {
   display: block;
