@@ -4,6 +4,7 @@
   --bg-color: black;
   --bg-color2: white;
   --bg-shadow: darkviolet;
+  --border-color: lightgray;
   --button-color: darkmagenta;
   --code: lime;
   --h1-border: blueviolet;
@@ -788,8 +789,8 @@ table,
 th,
 td,
 tr {
-  border: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-collapse: collapse;
   border-spacing: 0;
   display: table;
@@ -823,7 +824,7 @@ form {
 }
 
 fieldset {
-  border: 1px solid lightgray;
+  border: 1px solid var(--border-color);
   padding: 3rem 2rem;
 }
 
@@ -845,7 +846,7 @@ optgroup {
 
 input {
   padding: 0.2rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color);
   display: inline;
   float: right;
   height: 2.2rem;
@@ -856,7 +857,7 @@ input,
 textarea {
   font-size: 0.8rem;
   padding: 0 2rem;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--border-color);
   background-color: var(--bg-color2);
   color: grey;
   border-radius: 1rem;
@@ -874,7 +875,7 @@ textarea {
 /* Skill meter bar  */
 
 meter {
-  background-color: lightslategray;
+  background-color: var(--border-color);
   border: 0.2rem solid #000;
   border-radius: 2rem;
   color: var(--txt-color);
