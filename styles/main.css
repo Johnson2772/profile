@@ -276,6 +276,10 @@ nav .icon {
 
 /* Style the navigation bar links */
 .tablink {
+  font-size: 1.5rem;
+}
+
+nav a {
   display: block;
   float: left;
   color: var(--txt-color);
@@ -1013,7 +1017,7 @@ footer p {
   text-align: center;
   text-shadow: 0.1rem 0.2rem 0 var(--bg-color);
   position: fixed;
-  right: 0%;
+  right: 1%;
   width: 10rem;
   z-index: 10;
 }
