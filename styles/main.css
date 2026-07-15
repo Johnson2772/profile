@@ -517,21 +517,19 @@ ul.breadcrumb li a:hover {
 main {
   margin: auto;
   max-width: 100%;
-  min-width: 60%;
+  min-width: 50%;
   position: relative;
   top: 5rem;
   width: 90%;
 }
 
-/* Creating two unequal columns that floats next to each other */
+/* Creating two unequal columns that floats next to each other with the same height */
 main,
 aside {
   background: transparent;
   display: flex;
   flex: auto;
-  height: max-content;
-  min-height: 400rem;
-  overflow: hidden;
+  height: stretch;
 }
 
 /* Sidebar/right column container */
@@ -545,7 +543,7 @@ aside {
 
 /* Adding a  */
 section {
-  background: repeating-linear-gradient(black, gray, lightgray, white, transparent, white, lightgray, gray, black);
+  background: repeating-linear-gradient( black, black, gray, white, gray, black, black);
   border: 0.1rem solid darkviolet;
   border-radius: 2rem;
   float: left;
