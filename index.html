@@ -407,16 +407,17 @@
                         <input id="date" type="date" name="date" min="2020-01-01">
                         <br>
                         <label for="username">Username: </label>
-                        <input type="text" name="username" id="username" required autofocus pattern="[a-zA-Z]{3,}"
-                            placeholder="Your username" title="Please introduce more than three letters">
+                        <input type="text" name="username" id="username" required autocomplete="on" autofocus
+                            pattern="[a-zA-Z]{3,}" placeholder="Your username"
+                            title="Please introduce more than three letters">
                         <br>
                         <label for="email">Email: </label>
-                        <input type="text" name="email" id="email" required
+                        <input type="text" name="email" id="email" required autocomplete="on"
                             pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" placeholder="Your Email"
                             title="Please enter in a valid email address">
                         <br>
                         <label for="phone">Phone: </label>
-                        <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        <input type="tel" name="phone" id="phone" required autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             placeholder="Please enter in your phone number"
                             title="Please enter in a phone number in this format: 123-456-7890">
                         <br>
@@ -440,7 +441,7 @@
                         <input id="yesMeals" type="radio" name="meals" value="yesMeals">
                         <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
                         <br>
-                        <label for="balcony">Do you require a bathtub?</label>
+                        <label for="bathtub">Do you require a bathtub?</label>
                         <input id="bathtub" type="checkbox" name="bathtub" value=" yes" checked>
                         <br>
                         <input type="submit" value="Submit">
@@ -584,7 +585,7 @@
                     <meter min="0" max="100" low="40" high="60" optimum="80" value="70" id="GIMP">70/100</meter>
 
                     <label for="Inkscape">Inkscape</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="60" id="Inkscape" >60/100</meter>
+                    <meter min="0" max="100" low="40" high="60" optimum="80" value="60" id="Inkscape">60/100</meter>
 
                     <label for="Illustration">Illustration</label>
                     <meter min="0" max="100" low="40" high="60" optimum="80" value="50" id="Illustration">50/100</meter>
