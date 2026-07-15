@@ -3,7 +3,9 @@
   --a-color: cyan;
   --bg-color: black;
   --bg-color2: white;
+  --bg-shadow: darkviolet;
   --button-color: darkmagenta;
+  --code: lime;
   --h1-border: blueviolet;
   --h1-color: purple;
   --h2x-color: darkviolet;
@@ -11,6 +13,7 @@
   --hover-button-color: blueviolet;
   --hx-txt: purple;
   --main-color: darkviolet;
+  --mark: limegreen;
   --shadow-color: purple;
   --txt-color: white;
   --txt-shadow: plum;
@@ -279,11 +282,6 @@ nav a {
   color: var(--txt-color);
   text-align: center;
   text-decoration: none;
-}
-
-/* Right-aligned link */
-nav a.right {
-  float: right;
 }
 
 /* Change color on hover */
@@ -745,8 +743,8 @@ strong {
 }
 
 code {
-  background-color: #fff;
-  border-left: 4px solid #4caf50;
+  background-color: var(--txt-color);
+  border-left: 0.25rem solid var(--code);
   font-family: monospace, monospace;
   font-size: 1rem;
   padding: 8px 12px;
@@ -759,8 +757,8 @@ i {
 }
 
 mark {
-  background: #070;
-  color: #fff;
+  background: var(--mark);
+  color: var(--txt-color);
 }
 
 p {
@@ -902,27 +900,6 @@ textarea {
   width: 80%;
 }
 
-/* Progress bar  */
-
-progress {
-  width: 70%;
-  height: 20px;
-  color: #3fb6b2;
-  background: #efefef;
-}
-
-progress::-webkit-progress-bar {
-  background: #efefef;
-}
-
-progress::-webkit-progress-value {
-  background: #3fb6b2;
-}
-
-progress::-moz-progress-bar {
-  color: #3fb6b2;
-  background: #efefef;
-}
 
 /* Skill meter bar  */
 
