@@ -54,36 +54,9 @@ nav {
   display: block;
 }
 
-/* Background color changing effect  */
-@keyframes background-change {
-  0% {
-    background: #000;
-  }
-
-  20% {
-    background: #333;
-  }
-
-  40% {
-    background: #666;
-  }
-
-  60% {
-    background: #999;
-  }
-
-  80% {
-    background: #ccc;
-  }
-
-  100% {
-    background: #fff;
-  }
-}
-
 /* Header and Title styles */
-#banner {
-  background: no-repeat center/150% url("../images/banner.jpg");
+.banner {
+  background: no-repeat center/115% url("../images/banner.jpg");
   border-radius: 0;
   display: flex;
   height: 100%;
@@ -1026,7 +999,34 @@ footer p {
 
 
 
-/* Animation effects  */
+/* Animation effects... This is my mini-studio of animation ;-)  */
+
+/* Background color changing effect  */
+@keyframes background-change {
+  0% {
+    background: #000;
+  }
+
+  20% {
+    background: #333;
+  }
+
+  40% {
+    background: #666;
+  }
+
+  60% {
+    background: #999;
+  }
+
+  80% {
+    background: #ccc;
+  }
+
+  100% {
+    background: #fff;
+  }
+}
 
 .spin {
   animation: spin 2s infinite linear;
