@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  animation: background-change 10s linear infinite alternate;
+  animation: background-change 60s linear infinite alternate;
   background: var(--bg-color);
   color: var(--main-color);
   font-family: "Inter", system-ui, helvetica, verdana, "handlee", sans-serif;
@@ -90,7 +90,7 @@ nav {
   border-radius: 2rem;
   bottom: 1rem;
   color: var(--txt-color);
-  margin: 5rem auto;
+  margin: 5rem auto 10rem;
   max-width: 40rem;
   max-height: 40rem;
   padding: 3rem 2rem;
@@ -101,7 +101,7 @@ nav {
 #banner_container button {
   background-color: var(--button-color);
   border: none;
-  border-radius: 3rem;
+  border-radius: 1rem;
   color: var(--txt-color);
   cursor: pointer;
   display: inline-block;
@@ -256,7 +256,6 @@ It is positioned relative until a given offset position is met in the viewport -
 nav {
   align-items: center;
   background: var(--bg-color);
-  bottom: -10rem;
   box-shadow: 0.1rem 0.2rem 2rem var(--bg-color);
   color: var(--txt-color);
   height: 6rem;
