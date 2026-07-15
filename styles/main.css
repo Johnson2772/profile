@@ -275,10 +275,9 @@ nav .icon {
 }
 
 /* Style the navigation bar links */
-nav a {
+.tablink {
   display: block;
   float: left;
-  font-size: 1.5rem;
   color: var(--txt-color);
   text-align: center;
   text-decoration: none;
