@@ -902,7 +902,7 @@ audio {
   padding: 12px 45px;
   border-radius: 5px;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--txt-color);
   border: none;
   outline: none;
   margin: 0;
