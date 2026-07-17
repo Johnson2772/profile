@@ -459,7 +459,7 @@ nav a:hover,
 
 /*
 ==========================================================================
-  RESPONSIVE MEDIA
+  RESPONSIVE MEDIA FOR NAVIGATION MENU IN MEDIUM SCREENS
 ==========================================================================
 */
 
@@ -479,6 +479,16 @@ nav a:hover,
     display: none;
   }
 }
+
+
+
+
+
+/*
+==========================================================================
+  RESPONSIVE MEDIA FOR NAVIGATION MENU IN SMALL SCREENS
+==========================================================================
+*/
 
 @media screen and (max-width: 800px) {
 
@@ -746,7 +756,7 @@ a img {
 
 .avatar-frame {
   display: flex;
-  border: 5px solid white;
+  border: 5px solid var(--bg-color2);
   border-left: none;
   border-radius: 75%;
   border-right: none;
@@ -766,26 +776,26 @@ a img {
 @keyframes glow {
   from {
     box-shadow:
-      0 0 1px #fff,
-      0 0 2px #fff,
-      0 0 3px #fff,
-      0 0 4px #fff,
-      0 0 5px purple,
-      0 0 6px purple,
-      0 0 7px purple,
-      0 0 8px purple;
+      0 0 1px var(--txt-color),
+      0 0 2px var(--txt-color),
+      0 0 3px var(--txt-color),
+      0 0 4px var(--txt-color),
+      0 0 5px var(--shadow-color),
+      0 0 6px var(--shadow-color),
+      0 0 7px var(--shadow-color),
+      0 0 8px var(--shadow-color);
   }
 
   to {
     box-shadow:
-      0 0 1px #fff,
-      0 0 2px #fff,
-      0 0 3px plum,
-      0 0 4px plum,
-      0 0 5px #fff,
-      0 0 6px #fff,
-      0 0 7px plum,
-      0 0 8px plum;
+      0 0 1px var(--txt-color),
+      0 0 2px var(--txt-color),
+      0 0 3px var(--txt-shadow),
+      0 0 4px var(--txt-shadow),
+      0 0 5px var(--txt-color),
+      0 0 6px var(--txt-color),
+      0 0 7px var(--txt-shadow),
+      0 0 8px var(--txt-shadow);
   }
 }
 
@@ -1369,6 +1379,6 @@ footer p {
 
   100% {
     transform: rotate(360deg);
-    background-color: #fff;
+    background-color: var(--bg-color2);
   }
 }
