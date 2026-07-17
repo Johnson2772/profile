@@ -488,7 +488,7 @@ main {
   min-width: 50%;
   position: relative;
   top: 5rem;
-  width: 90%;
+  width: 85%;
 }
 
 /* Creating two unequal columns that floats next to each other with the same height */
@@ -999,8 +999,8 @@ footer p {
   height: 3rem;
   text-align: center;
   text-shadow: 0.1rem 0.2rem 0 var(--bg-color);
+  right: -1rem;
   position: fixed;
-  right: 1%;
   width: 10rem;
   z-index: 10;
 }
