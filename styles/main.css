@@ -111,6 +111,16 @@ article, #banner, header, footer, header, main, nav {
   display: block;
 }
 
+
+
+
+
+/*
+==========================================================================
+  Header & Title
+==========================================================================
+*/
+
 /* Header and Title styles */
 .banner {
   background: no-repeat center/115% url("../images/banner.jpg");
@@ -364,6 +374,16 @@ nav ul li a:hover,
   color: var(--txt-color);
 }
 
+
+
+
+
+/*
+==========================================================================
+  DROPDOWN MENU
+==========================================================================
+*/
+
 /* Create a right-aligned (split) link inside the navigation bar */
 .split {
   background: purple;
@@ -433,6 +453,16 @@ nav a:hover,
   background: darkviolet;
 }
 
+
+
+
+
+/*
+==========================================================================
+  RESPONSIVE MEDIA
+==========================================================================
+*/
+
 /* Responsive navigation */
 @media screen and (max-width: 1080px) {
   nav {
@@ -489,6 +519,17 @@ nav a:hover,
     text-align: left;
   }
 }
+
+
+
+
+
+
+/*
+==========================================================================
+  BREADCRUMBS SECTION
+==========================================================================
+*/
 
 /* Breadcrumbs */
 .breadcrumb-container {
@@ -628,6 +669,17 @@ main:after {
   clear: both;
 }
 
+
+
+
+
+
+/*
+==========================================================================
+  RESPONSIVE MEDIA LAYOUTS
+==========================================================================
+*/
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1080px) {
 
@@ -654,6 +706,17 @@ main:after {
     width: 100%;
   }
 }
+
+
+
+
+
+
+/*
+==========================================================================
+  IMAGES & MEDIA
+==========================================================================
+*/
 
 /* Image styles */
 
@@ -947,6 +1010,15 @@ textarea {
 }
 
 
+
+
+
+/*
+==========================================================================
+  METER BAR & PROGRESS INDICATOR
+==========================================================================
+*/
+
 /* Skill meter bar  */
 
 meter {
@@ -964,6 +1036,17 @@ meter {
   font-weight: bold;
   margin-right: 0.5rem;
 }
+
+
+
+
+
+
+/*
+==========================================================================
+  BUTTONS & INPUTS
+==========================================================================
+*/
 
 iframe,
 audio {
