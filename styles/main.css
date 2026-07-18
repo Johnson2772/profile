@@ -41,6 +41,14 @@
   --font-size-xxl: clamp(2rem, 1.75rem + 1.2vw, 3.5rem);
   --font-size-hero: clamp(2.5rem, 2.2rem + 2.5vw, 5.5rem);
 
+/* Heading Sizes */
+  --h1-font-size: clamp(3rem, 2.75rem + 2.1vw, 3.5rem);
+  --h2-font-size: clamp(2.5rem, 2.35rem + 1.8vw, 3rem);
+  --h3-font-size: clamp(2rem, 1.95rem + 1.4vw, 2.5rem);
+  --h4-font-size: clamp(1.75rem, 1.5rem + 1.2vw, 2rem);
+  --h5-font-size: clamp(1.5rem, 1.35rem + 0.8vw, 1.75rem);
+  --h6-font-size: clamp(1.25rem, 1.15rem + 0.6vw, 1.5rem);
+
   /* Spacing system (Logical layout spacing) */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -150,8 +158,8 @@ article, #banner, header, footer, header, main, nav {
   color: var(--txt-color);
   cursor: pointer;
   display: inline-block;
-  font-size: 1.25rem;
-  margin: 1rem 0 0;
+  font-size: var(--font-size-lg);
+  margin: var(--space-sm) 0 0;
   outline: 0;
   overflow: hidden;
   padding: 0.5rem;
@@ -172,7 +180,7 @@ header {
   border-radius: 1rem;
   color: var(--txt-color);
   display: block;
-  font-size: 3rem;
+  font-size: var(--font-size-hero);
   margin: auto;
   min-height: fit-content;
   position: relative;
@@ -203,14 +211,14 @@ header img {
 }
 
 header p {
-  font-size: 1.5rem;
-  margin: 2rem 0rem auto;
+  font-size: var(--font-size-lg);
+  margin: var(--space-lg) 0rem auto;
   text-align: center;
   padding: 0 2.5rem;
 }
 
 header .logo {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   text-transform: uppercase;
 }
 
@@ -252,10 +260,10 @@ h6 {
 }
 
 h1 {
-  background: white;
+  background: var(--bg-color2);
   border: 0.2rem solid var(--h1-border);
   color: var(--h1-color);
-  font-size: 2.5rem;
+  font-size: var(--h1-font-size);
   font-style: normal;
   padding: 1.5rem;
 }
@@ -266,7 +274,7 @@ h2 {
     linear-gradient(#fff, #000);
   border-radius: 0 0 2rem 2rem;
   color: var(--txt-color);
-  font-size: 2.25rem;
+  font-size: var(--h2-font-size);
   padding: 1rem 0 0 0;
 }
 
@@ -275,20 +283,20 @@ h3 {
   background: none;
   border: none;
   box-shadow: none;
-  font-size: 2rem;
+  font-size: var(--h3-font-size);
   position: static;
 }
 
 h4 {
-  font-size: 1.75rem;
+  font-size: var(--h4-font-size);
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: var(--h5-font-size);
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: var(--h6-font-size);
 }
 
 
