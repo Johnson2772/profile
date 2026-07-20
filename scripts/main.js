@@ -26,7 +26,7 @@ function openPage(pageName, element) {
   }
   document.getElementById(pageName).style.display = "block";
   element.style.backgroundColor = "var(--main-color)";
-  document.getElementsByClassName(pageName).style.display = "block";
+  document.getElementsByClassName(pageName)[0].style.display = "block";
 }
 
 
