@@ -9,6 +9,10 @@ function toggleResponsive() {
   }
 }
 
+
+
+
+
 /* Changing content */
 function openPage(pageName, element) {
   var i, tabcontent, tablinks;
@@ -22,6 +26,10 @@ function openPage(pageName, element) {
   }
   document.getElementById(pageName).style.display = "block";
 }
+
+
+
+
 
 // Add event listeners to menu items to change the active class when clicked
 const navItems = document.querySelectorAll("#nav-links li");
