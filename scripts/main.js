@@ -25,6 +25,7 @@ function openPage(pageName, element) {
     tablinks[i].style.backgroundColor = "var(--main-color)";
   }
   document.getElementById(pageName).style.display = "block";
+  element.style.backgroundColor = "var(--main-color)"; 
 }
 
 
