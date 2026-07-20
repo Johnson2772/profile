@@ -562,7 +562,7 @@ nav a:hover,
 .breadcrumb {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   margin: auto;
   width: 60%;
 }
@@ -572,7 +572,6 @@ ul.breadcrumb {
   background: var(--bg-color);
   color: var(--txt-color);
   list-style: none;
-  width: 80%;
 }
 
 /* Display list items side by side */
@@ -603,7 +602,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0% 12%;
+  margin: 0% 10%;
   width: 40%;
 }
 
