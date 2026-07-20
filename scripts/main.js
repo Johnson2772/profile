@@ -13,7 +13,7 @@ function toggleResponsive() {
 
 
 
-/* Changing content */
+/* Changes the content dynamically displayed on the page. */
 function openPage(pageName, element) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
