@@ -22,7 +22,7 @@ function openPage(pageName, element) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.backgroundColor = "var(--main-color)";
   }
   document.getElementById(pageName).style.display = "block";
 }
