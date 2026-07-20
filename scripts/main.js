@@ -33,7 +33,11 @@ function openPage(pageName, element) {
 
 
 
-// Add event listeners to menu items to change the active class when clicked
+/*
+This will ensure that the clicked menu item is highlighted as active
+Add event listeners to menu items to change the active class when clicked
+*/
+
 const navItems = document.querySelectorAll("#nav-links li");
 
 navItems.forEach((item) => {
@@ -45,6 +49,10 @@ navItems.forEach((item) => {
     this.classList.add("active");
   });
 });
+
+
+
+
 
 // // Set the date we're counting down to
 // var countDownDate = new Date("Jan 1, 2023 15:00:00").getTime();
