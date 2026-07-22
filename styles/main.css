@@ -190,7 +190,6 @@ header img {
 
 header p {
   font-size: var(--font-size-lg);
-  margin: var(--space-md) auto;
   text-align: center;
   padding: 0 2.5rem;
 }
@@ -223,7 +222,6 @@ h5 {
   color: var(--txt-color);
   display: inline-block;
   line-height: 2.5rem;
-  margin: -1rem 0rem;
   text-shadow: 0.1rem 0.1rem 1rem var(--txt-shadow);
   width: 100%;
 }
