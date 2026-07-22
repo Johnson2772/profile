@@ -152,29 +152,6 @@ article, #banner, header, footer, header, main, nav {
   text-align: center;
 }
 
-/* #banner_container button {
-  background-color: var(--button-color);
-  border: none;
-  border-radius: 1rem;
-  color: var(--txt-color);
-  cursor: pointer;
-  display: inline-block;
-  font-size: var(--font-size-lg);
-  margin: var(--space-sm) 0 0;
-  outline: 0;
-  overflow: hidden;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-#banner_container button:hover {
-  background-color: var(--hover-button-color);
-  color: var(--txt-color);
-} */
-
 /* Styling header banner */
 header {
   align-items: center;
