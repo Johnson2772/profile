@@ -19,15 +19,14 @@ function openPage(pageName, element) {
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
-    tabcontent[i].classList.remove("active");
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
+    tablinks[i].classList.remove("active");
   }
   document.getElementById(pageName).style.display = "block";
-  document.getElementById(pageName).classList.add("active");
-  element.style.backgroundColor = "var(--main-color)";
+  element.classList.add("active");
   document.getElementsByClassName(pageName)[0].style.display = "block";
 }
 
