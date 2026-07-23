@@ -562,10 +562,15 @@ ul.breadcrumb li {
   display: inline-block;
 }
 
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
+/* Add a slash symbol (/) after each list item */
+ul.breadcrumb li::after {
   color: whitesmoke;
   content: "/\00a0";
+  margin-left: 0.5rem;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
 }
 
 /* Add a color to all links inside the list */
