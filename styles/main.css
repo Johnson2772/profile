@@ -42,7 +42,7 @@
   --font-size-xxl: clamp(2rem, 1.9rem + 1.3vw, 3.5rem);
   --font-size-hero: clamp(2.25rem, 2.1rem + 1.5vw, 5.5rem);
 
-/* Heading Sizes */
+  /* Heading Sizes */
   --h1-font-size: clamp(2.5rem, 2.25rem + 1.5vw, 3rem);
   --h2-font-size: clamp(2.25rem, 2rem + 1.2vw, 2.5rem);
   --h3-font-size: clamp(2rem, 1.75rem + 1vw, 2rem);
@@ -111,12 +111,19 @@ body {
   overflow-x: hidden;
 }
 
-body, html {
+body,
+html {
   font-size: 1rem;
   line-height: 3rem;
 }
 
-article, #banner, header, footer, header, main, nav {
+article,
+#banner,
+header,
+footer,
+header,
+main,
+nav {
   display: block;
 }
 
