@@ -987,7 +987,8 @@ input {
   border-bottom: 1px solid var(--border-color);
   display: inline;
   float: right;
-  height: 2.2rem;
+  height: 2rem;
+  margin: 0 .5rem;
   padding: 0.2rem;
   width: 100%;
 }
@@ -1079,10 +1080,10 @@ button {
   color: var(--txt-color);
   cursor: pointer;
   display: inline-block;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   outline: 0;
   overflow: hidden;
-  padding: 1%;
+  padding: 0 5%;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
