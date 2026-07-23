@@ -975,7 +975,6 @@ legend {
   white-space: normal;
 }
 
-button,
 input,
 select,
 textarea,
@@ -1081,12 +1080,12 @@ button {
   cursor: pointer;
   display: inline-block;
   font-size: var(--font-size-md);
+  height: 2rem;
   outline: 0;
   overflow: hidden;
   padding: 0 5%;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
   white-space: nowrap;
   width: fit-content;
 }
