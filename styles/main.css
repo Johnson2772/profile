@@ -977,24 +977,24 @@ optgroup {
 }
 
 input {
-  padding: 0.2rem;
   border-bottom: 1px solid var(--border-color);
   display: inline;
   float: right;
   height: 2.2rem;
+  padding: 0.2rem;
   width: 100%;
 }
 
 input,
 textarea {
-  font-size: 0.8rem;
-  padding: 0 2rem;
-  border: 1px solid var(--border-color);
   background-color: var(--bg-color2);
-  color: grey;
+  border: 1px solid var(--border-color);
   border-radius: 1rem;
-  width: 75%;
+  color: grey;
+  font-size: 0.8rem;
   outline: none;
+  padding: 0 2rem;
+  width: 75%;
 }
 
 textarea {
@@ -1044,21 +1044,21 @@ meter {
 
 iframe,
 audio {
+  border: 3px solid #3fb6b2;
   display: block;
   margin: 0 auto;
-  border: 3px solid #3fb6b2;
 }
 
 .submit {
   background-color: #3fb6b2;
-  padding: 12px 45px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: var(--txt-color);
   border: none;
-  outline: none;
-  margin: 0;
+  border-radius: 5px;
+  color: var(--txt-color);
+  cursor: pointer;
   font-weight: bold;
+  margin: 0;
+  outline: none;
+  padding: 12px 45px;
 }
 
 .submit:hover {
@@ -1099,10 +1099,10 @@ select {
 }
 
 select {
-  padding: 9px 0;
-  width: 100%;
   border: none;
   border-bottom: 1px solid #ccc;
+  padding: 9px 0;
+  width: 100%;
 }
 
 
@@ -1132,21 +1132,21 @@ footer p {
 }
 
 .copyleft {
-  font-size: var(--font-size-base);
-  text-align: center;
-  padding: var(--space-sm);
   color: var(--bg-color3);
+  font-size: var(--font-size-base);
+  padding: var(--space-sm);
+  text-align: center;
 }
 
 .tolink {
+  align-items: center;
   background: var(--bg-color2);
   border-radius: 2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   color: var(--txt-color);
-  vertical-align: middle;
+  display: inline-flex;
   height: 2rem;
+  justify-content: center;
+  vertical-align: middle;
   width: 4rem;
 }
 
@@ -1168,10 +1168,10 @@ footer p {
   bottom: 0%;
   color: var(--txt-color);
   height: 3rem;
+  position: fixed;
+  right: -1rem;
   text-align: center;
   text-shadow: 0.1rem 0.2rem 0 var(--bg-color);
-  right: -1rem;
-  position: fixed;
   width: 10rem;
   z-index: 10;
 }
