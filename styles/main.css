@@ -456,7 +456,7 @@ nav a:hover,
 */
 
 /* Responsive navigation */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1150px) {
   nav {
     overflow: hidden;
   }
@@ -482,7 +482,7 @@ nav a:hover,
 ==========================================================================
 */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
   header#banner,
   .logo,
@@ -522,6 +522,43 @@ nav a:hover,
   }
 }
 
+
+
+
+
+
+/*
+==========================================================================
+  RESPONSIVE MEDIA LAYOUTS
+==========================================================================
+*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1150px) {
+
+  main,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 700px repeat(2, 1fr);
+  }
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
 
 
 
@@ -593,6 +630,7 @@ ul.breadcrumb li a:hover {
   margin: 0% 10%;
   width: 40%;
 }
+
 
 
 
@@ -674,45 +712,6 @@ main:after {
   display: table;
   clear: both;
 }
-
-
-
-
-
-
-/*
-==========================================================================
-  RESPONSIVE MEDIA LAYOUTS
-==========================================================================
-*/
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1080px) {
-
-  main,
-  aside {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  main {
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 700px repeat(2, 1fr);
-  }
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  nav a {
-    float: none;
-    width: 100%;
-  }
-}
-
 
 
 
