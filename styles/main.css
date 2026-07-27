@@ -9,7 +9,7 @@
 
   /* Color Palette */
   --a-color: cyan;
-  --bg-color: black;
+  --bg-color: #000000DF;
   --bg-color2: white;
   --bg-color3: gray;
   --bg-shadow: darkviolet;
@@ -196,7 +196,7 @@ header img {
 }
 
 header p {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   text-align: center;
   padding: 0 2.5rem;
 }
@@ -574,7 +574,6 @@ nav a:hover,
 .breadcrumb-container {
   display: flex;
   position: sticky;
-  background: var(--bg-color);
   width: 100%;
   z-index: 0;
 }
@@ -589,7 +588,6 @@ nav a:hover,
 
 ul.breadcrumb {
   align-items: center;
-  background: var(--bg-color);
   color: var(--txt-color);
   list-style: none;
 }
@@ -627,7 +625,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0% 10%;
+  margin: 0% 10% 0 0%;
   width: 40%;
 }
 
