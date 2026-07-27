@@ -18,7 +18,7 @@
   --code: lime;
   --h1-border: blueviolet;
   --h1-color: purple;
-  --h2x-color: darkviolet;
+  --h2-color: darkviolet;
   --highlight-color: violet;
   --hover-button-color: blueviolet;
   --hx-txt: purple;
@@ -26,6 +26,8 @@
   --mark: limegreen;
   --shadow-color: purple;
   --txt-color: white;
+  --txt-color2: gray;
+  --txt-color3: black;
   --txt-shadow: plum;
 
   /* Font Families */
@@ -236,7 +238,7 @@ h5 {
 h2,
 h4,
 h6 {
-  color: var(--h2x-color);
+  color: var(--h2-color);
   padding: 0 2.5rem;
   margin: 0 1rem;
   line-height: 2rem;
@@ -1128,7 +1130,7 @@ footer {
   background: var(--bg-color);
   bottom: -15rem;
   clear: both;
-  color: #aaa;
+  color: var(--bg-color3);
   padding: 3rem 1rem;
   position: relative;
   text-align: center;
@@ -1139,7 +1141,7 @@ footer p {
 }
 
 .copyleft {
-  color: var(--bg-color3);
+  color: var(--txt-color2);
   font-size: var(--font-size-base);
   padding: var(--space-sm);
   text-align: center;
@@ -1158,7 +1160,7 @@ footer p {
 }
 
 .tolink:hover {
-  background-color: darkviolet;
+  background-color: var(--bg-shadow);
   color: red;
 }
 
