@@ -1,4 +1,8 @@
-/* Trying to make a dynamic webpage */
+/*
+==========================================================================
+  Making a dynamic webpage
+==========================================================================
+*/
 
 function toggleResponsive() {
   var x = document.getElementById("topNav");
@@ -13,7 +17,12 @@ function toggleResponsive() {
 
 
 
-/* Changes the content dynamically displayed on the page. */
+/*
+==========================================================================
+  Changes the content dynamically displayed on the page
+==========================================================================
+*/
+
 function openPage(pageName, element) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -25,6 +34,11 @@ function openPage(pageName, element) {
     tablinks[i].style.backgroundColor = "";
     tablinks[i].classList.remove("active");
   }
+  if (tablinks == "home") {
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "block";
+    }
+  }
   document.getElementById(pageName).style.display = "block";
   element.classList.add("active");
   document.getElementsByClassName(pageName)[0].style.display = "block";
@@ -35,8 +49,10 @@ function openPage(pageName, element) {
 
 
 /*
-This will ensure that the clicked menu item is highlighted as active
-Add event listeners to menu items to change the active class when clicked
+==========================================================================
+  This will ensure that the clicked menu item is highlighted as active
+  Add event listeners to menu items to change the active class when clicked
+==========================================================================
 */
 
 const navItems = document.querySelectorAll("#nav-links li");
@@ -55,7 +71,13 @@ navItems.forEach((item) => {
 
 
 
-// // Set the date we're counting down to
+/*
+==========================================================================
+  Countdown timer
+==========================================================================
+*/
+
+// Set the date we're counting down to
 // var countDownDate = new Date("Jan 1, 2023 15:00:00").getTime();
 
 // // Update the count down every 1 second
@@ -89,14 +111,14 @@ let hours = 3; // starting number of hours
 let minutes = 2; // starting number of minutes
 let seconds = 5; // starting number of seconds
 
-// converts all to seconds
+// Converts all to seconds
 let totalSeconds =
   days * 60 * 60 * 24 + hours * 60 * 60 + minutes * 60 + seconds;
 
-//temporary seconds holder
+// Temporary seconds holder
 let tempSeconds = totalSeconds;
 
-// calculates number of days, hours, minutes and seconds from a given number of seconds
+// Calculates number of days, hours, minutes and seconds from a given number of seconds
 const convert = (value, inSeconds) => {
   if (value > inSeconds) {
     let x = value % inSeconds;
@@ -107,22 +129,22 @@ const convert = (value, inSeconds) => {
   }
 };
 
-//sets seconds
+// Sets seconds
 const setSeconds = (s) => {
   document.querySelector("#seconds").textContent = s + "s";
 };
 
-//sets minutes
+// Sets minutes
 const setMinutes = (m) => {
   document.querySelector("#minutes").textContent = m + "m";
 };
 
-//sets hours
+// Sets hours
 const setHours = (h) => {
   document.querySelector("#hours").textContent = h + "h";
 };
 
-//sets Days
+// Sets Days
 const setDays = (d) => {
   document.querySelector("#days").textContent = d + "d";
 };
@@ -141,7 +163,15 @@ var x = setInterval(() => {
   tempSeconds = totalSeconds;
 }, 1000);
 
-/* Slideshow  */
+
+
+
+
+/*
+==========================================================================
+  Slideshow
+==========================================================================
+*/
 
 let slideIndex = [1, 1];
 let slideId = ["mySlides1", "mySlides2"];
@@ -167,7 +197,15 @@ function showSlides(n, no) {
   x[slideIndex[no] - 1].style.display = "block";
 }
 
-/* Automatic Slideshow - change image every 3 seconds */
+
+
+
+
+/*
+==========================================================================
+  Automatic Slideshow - change image every 3 seconds
+==========================================================================
+*/
 
 var myIndex = 0;
 carousel();
