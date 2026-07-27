@@ -34,7 +34,7 @@ function openPage(pageName, element) {
     tablinks[i].style.backgroundColor = "";
     tablinks[i].classList.remove("active");
   }
-  if (tablinks == "home") {
+  if (pageName == "home") {
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "block";
     }
