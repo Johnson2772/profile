@@ -14,6 +14,7 @@
   --bg-color3: gray;
   --bg-shadow: darkviolet;
   --border-color: lightgray;
+  --border-color2: black;
   --button-color: darkmagenta;
   --code: lime;
   --h1-border: blueviolet;
@@ -33,6 +34,7 @@
   /* Font Families */
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, Arial, "Times New Roman", Georgia, Serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, helvetica, verdana, "handlee", sans-serif;
+  --font-code: 'Fira Code', roboto, "IBM Plex Sans", monospace, "Courier New", Courier;
 
   /* Typography Sizes */
   --font-size-xs: clamp(0.5rem, 0.7rem + 0.1vw, 0.875rem);
@@ -635,7 +637,7 @@ ul.breadcrumb li a:hover {
 
 /*
 ==========================================================================
-  LAYOUT UTILITIES
+  LAYOUT
 ==========================================================================
 */
 
@@ -761,37 +763,6 @@ a img {
   width: 3rem;
 }
 
-/* Glowing Effect */
-.glow {
-  animation: glow 5s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    box-shadow:
-      0 0 1px var(--txt-color),
-      0 0 2px var(--txt-color),
-      0 0 3px var(--txt-color),
-      0 0 4px var(--txt-color),
-      0 0 5px var(--shadow-color),
-      0 0 6px var(--shadow-color),
-      0 0 7px var(--shadow-color),
-      0 0 8px var(--shadow-color);
-  }
-
-  to {
-    box-shadow:
-      0 0 1px var(--txt-color),
-      0 0 2px var(--txt-color),
-      0 0 3px var(--txt-shadow),
-      0 0 4px var(--txt-shadow),
-      0 0 5px var(--txt-color),
-      0 0 6px var(--txt-color),
-      0 0 7px var(--txt-shadow),
-      0 0 8px var(--txt-shadow);
-  }
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -876,7 +847,7 @@ mark {
 p {
   color: var(--txt-color);
   display: block;
-  font-family: system-ui;
+  font-family: var(--font-body);
   font-size: var(--font-size-lg);
   font-weight: bold;
   line-height: 1.5rem;
@@ -890,7 +861,7 @@ small {
   align-content: center;
   display: block;
   line-height: 1.5rem;
-  font-size: 1.1rem;
+  font-size: var(--font-size-sm);
 }
 
 sub,
@@ -908,6 +879,16 @@ sub {
 sup {
   top: -0.5rem;
 }
+
+
+
+
+
+/*
+==========================================================================
+  TABLE
+==========================================================================
+*/
 
 /* Table properties */
 
@@ -957,6 +938,16 @@ th {
 li {
   font-weight: bold;
 }
+
+
+
+
+
+/*
+==========================================================================
+  FORMS
+==========================================================================
+*/
 
 /* Forms */
 form {
@@ -1024,7 +1015,7 @@ textarea {
 
 meter {
   background-color: var(--border-color);
-  border: 0.2rem solid #000;
+  border: 0.2rem solid var(--border-color2);
   border-radius: 2rem;
   color: var(--txt-color);
   text-align: right;
@@ -1347,6 +1338,37 @@ footer p {
 
   to {
     transform: scale(1);
+  }
+}
+
+/* Glowing Effect */
+.glow {
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow:
+      0 0 1px var(--txt-color),
+      0 0 2px var(--txt-color),
+      0 0 3px var(--txt-color),
+      0 0 4px var(--txt-color),
+      0 0 5px var(--shadow-color),
+      0 0 6px var(--shadow-color),
+      0 0 7px var(--shadow-color),
+      0 0 8px var(--shadow-color);
+  }
+
+  to {
+    box-shadow:
+      0 0 1px var(--txt-color),
+      0 0 2px var(--txt-color),
+      0 0 3px var(--txt-shadow),
+      0 0 4px var(--txt-shadow),
+      0 0 5px var(--txt-color),
+      0 0 6px var(--txt-color),
+      0 0 7px var(--txt-shadow),
+      0 0 8px var(--txt-shadow);
   }
 }
 
