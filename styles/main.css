@@ -847,7 +847,7 @@ p {
   color: var(--txt-color);
   display: block;
   font-family: var(--font-body);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   font-weight: bold;
   line-height: 1.5rem;
   margin: 1rem 0;
