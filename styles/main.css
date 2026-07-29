@@ -15,6 +15,7 @@
   --bg-shadow: darkviolet;
   --border-color: lightgray;
   --border-color2: black;
+  --border-color3: gray;
   --button-color: darkmagenta;
   --code: lime;
   --h1-border: blueviolet;
@@ -699,7 +700,7 @@ article {
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #aaa;
+  background-color: var(--bg-color3);
   height: 5rem;
   padding: 1rem;
   width: 100%;
@@ -754,7 +755,7 @@ a img {
   border-left: none;
   border-radius: 75%;
   border-right: none;
-  box-shadow: #333 1% 1%;
+  box-shadow: var(--border-color3) #333 1% 1%;
   height: 3rem;
   float: left;
   margin: 0% 0%;
@@ -795,8 +796,8 @@ a img {
 /* On hover, add a grey background color */
 .prev:hover,
 .next:hover {
-  background-color: #f1f1f1;
-  color: black;
+  background-color: var(--bg-color3);
+  color: var(--txt-color3);
 }
 
 a {
