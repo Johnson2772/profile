@@ -425,6 +425,11 @@
                         <label for="date">Date: </label>
                         <input id="date" type="date" name="date" min="2020-01-01">
                         <br>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" required autocomplete="on" autofocus
+                            pattern="[a-zA-Z]{3,}" placeholder="Your name"
+                            title="Please introduce more than three letters">
+                        <br>
                         <label for="username">Username: </label>
                         <input type="text" name="username" id="username" required autocomplete="on" autofocus
                             pattern="[a-zA-Z]{3,}" placeholder="Your username"
@@ -437,15 +442,16 @@
                         <br>
                         <label for="phone">Phone: </label>
                         <input type="tel" name="phone" id="phone" required autocomplete="on"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Please enter in your phone number"
-                            title="Please enter in a phone number in this format: 123-456-7890">
+                            pattern="[0-9]{10}" placeholder="Please enter your phone number"
+                            title="IMPORTANT! Enter your phone number without dashes: 1234567890">
                         <br>
-                        <select name="language" required>
+                        <label for="language">Language: </label>
+                        <select name="language" id="language" required>
                             <option value=""> </option>
-                            <option value="EN">EN</option>
-                            <option value="ES">ES</option>
-                            <option value="FR">FR</option>
-                            <option value="IT">IT</option>
+                            <option value="EN">English</option>
+                            <option value="ES">Spanish</option>
+                            <option value="FR">French</option>
+                            <option value="IT">Italian</option>
                         </select>
                         <br>
                         <label for="subject">Subject:</label>
@@ -455,12 +461,13 @@
                         <label for="numberOfGuests">Number of Guests: </label>
                         <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6">
                         <br>
-                        <p>Do you require continental breakfast?</p>
-                        <label for="yesMeals">Yes: </label>
-                        <input id="yesMeals" type="radio" name="meals" value="yesMeals">
-                        <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
+                        <label for="calls">Do you want to be called?</label>
+                        <input type="radio" id="yesCall" name="calls" value="yes">
+                        <label for="yesCall">Yes</label>
+                        <input type="radio" id="noCall" name="calls" value="no">
+                        <label for="noCall">No</label>
                         <br>
-                        <label for="bathtub">Do you require a bathtub?</label>
+                        <label for="bathtub">Do you want to be contacted by mail?</label>
                         <input id="bathtub" type="checkbox" name="bathtub" value=" yes" checked>
                         <br>
                         <input type="submit" value="Submit">
