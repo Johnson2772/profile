@@ -152,10 +152,9 @@ nav {
 #banner_container {
   background-color: var(--bg-color);
   border-radius: 2rem;
-  bottom: 1rem;
   color: var(--txt-color);
-  margin: 5rem auto 10rem;
-  max-width: 50rem;
+  margin: 7rem auto 7rem;
+  max-width: 60rem;
   max-height: 60rem;
   padding: 3rem 2rem;
   position: relative;
