@@ -9,6 +9,7 @@
 
   /* Color Palette */
   --a-color: cyan;
+  --accent: cyan;
   --bg-color: #000000DF;
   --bg-color2: white;
   --bg-color3: gray;
@@ -26,6 +27,7 @@
   --hx-txt: purple;
   --main-color: darkviolet;
   --mark: limegreen;
+  --primary: blueviolet;
   --shadow-color: purple;
   --txt-color: white;
   --txt-color2: gray;
@@ -130,6 +132,20 @@ header,
 main,
 nav {
   display: block;
+}
+
+/* Scroll progress bar */
+.scroll-progress-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  inline-size: 100%;
+  block-size: 2px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  transform-origin: 0 50%;
+  z-index: 1100;
+  animation: progress auto linear;
+  animation-timeline: scroll(root);
 }
 
 
@@ -309,7 +325,7 @@ nav {
   height: 6.1rem;
   padding: 0 1rem;
   position: sticky;
-  top: 0rem;
+  top: 2px;
   width: 100%;
   z-index: 5;
 }
@@ -1185,6 +1201,14 @@ footer p {
 */
 
 /* Animation effects... This is my mini-studio of animation ;-)  */
+
+/* Scroll progress animation */
+@keyframes progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+
 
 /* Background color changing effect  */
 @keyframes background-change {
