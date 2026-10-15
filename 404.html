@@ -1,20 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Glitch in the Matrix</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /*basic reset */
-
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            background: black;
+            background: #000;
+            color: #00ff66;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         canvas {
             display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .matrix-overlay {
+            position: relative;
+            z-index: 10;
+            background: rgba(10, 15, 12, 0.85);
+            border: 1px solid rgba(0, 255, 102, 0.4);
+            box-shadow: 0 0 30px rgba(0, 255, 102, 0.25);
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 480px;
+            margin: 1.5rem;
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: #00ff66;
+            text-shadow: 0 0 15px rgba(0, 255, 102, 0.7);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: 'Fira Code', monospace;
+            font-size: 1.15rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: #a3e635;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.75rem;
+        }
+
+        a.return-btn {
+            display: inline-block;
+            font-family: 'Fira Code', monospace;
+            background: #00ff66;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 0.75rem 1.75rem;
+            border-radius: 8px;
+            transition: all 0.25s ease;
+            box-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+        }
+
+        a.return-btn:hover {
+            background: #ffffff;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -23,58 +102,55 @@
 
     <canvas id="c"></canvas>
 
+    <div class="matrix-overlay">
+        <h1>404</h1>
+        <h2>Glitch in the Matrix</h2>
+        <p>The signal you are tracking does not exist in this sector. Reconnecting to mainframe...</p>
+        <a href="index.html" class="return-btn">&larr; Return to Safety</a>
+    </div>
+
     <script>
+        const c = document.getElementById("c");
+        const ctx = c.getContext("2d");
 
-        var c = document.getElementById("c");
-        var ctx = c.getContext("2d");
+        let fontSize = 14;
+        let columns = 0;
+        let drops = [];
+        const characters = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑0123456789ABCDEF<>/{};*";
+        const charArray = characters.split("");
 
-        //making the canvas full screen
-        c.height = window.innerHeight;
-        c.width = window.innerWidth;
+        function initCanvas() {
+            c.height = window.innerHeight;
+            c.width = window.innerWidth;
+            columns = Math.floor(c.width / fontSize);
+            drops = [];
+            for (let x = 0; x < columns; x++) {
+                drops[x] = Math.floor(Math.random() * -50);
+            }
+        }
 
-        //chinese characters - taken from the unicode charset
-        var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
-        //converting the string into an array of single characters
-        chinese = chinese.split("");
+        window.addEventListener("resize", initCanvas);
+        initCanvas();
 
-        var font_size = 10;
-        var columns = c.width / font_size; //number of columns for the rain
-        //an array of drops - one per column
-        var drops = [];
-        //x below is the x coordinate
-        //1 = y co-ordinate of the drop(same for every drop initially)
-        for (var x = 0; x < columns; x++)
-            drops[x] = 1;
-
-        //drawing the characters
         function draw() {
-            //Black BG for the canvas
-            //translucent BG to show trail
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillStyle = "rgba(0, 0, 0, 0.06)";
             ctx.fillRect(0, 0, c.width, c.height);
 
-            ctx.fillStyle = "#0F0"; //green text
-            ctx.font = font_size + "px arial";
-            //looping over drops
-            for (var i = 0; i < drops.length; i++) {
-                //a random chinese character to print
-                var text = chinese[Math.floor(Math.random() * chinese.length)];
-                //x = i*font_size, y = value of drops[i]*font_size
-                ctx.fillText(text, i * font_size, drops[i] * font_size);
+            ctx.fillStyle = "#00ff66";
+            ctx.font = `${fontSize}px 'Fira Code', monospace`;
 
-                //sending the drop back to the top randomly after it has crossed the screen
-                //adding a randomness to the reset to make the drops scattered on the Y axis
-                if (drops[i] * font_size > c.height && Math.random() > 0.975)
+            for (let i = 0; i < drops.length; i++) {
+                const text = charArray[Math.floor(Math.random() * charArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > c.height && Math.random() > 0.975) {
                     drops[i] = 0;
-
-                //incrementing Y coordinate
+                }
                 drops[i]++;
             }
         }
 
         setInterval(draw, 33);
-
-
     </script>
 </body>
 

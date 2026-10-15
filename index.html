@@ -5,773 +5,732 @@
     <!-- Meta information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhonatan Posada || About Me Profile </title>
-    <meta name="description" content="Personal portfolio of Jhonatan Posada, a Full-Stack Software Engineer.">
+    <title>Jhonatan Posada | Full-Stack Software Engineer & Web Developer</title>
+    <meta name="description" content="Personal portfolio and developer profile of Jhonatan Posada (Johnson), Full-Stack Software Engineer specializing in modern, high-performance web applications.">
 
     <!-- SEO & Social Meta Tags -->
-    <meta property="og:title" content="Jhonatan Posada || Full-Stack Software Engineer ">
-    <meta property="og:description"
-        content="Portfolio of Jhonatan Posada, specializing in high-performance web systems.">
+    <meta property="og:title" content="Jhonatan Posada | Full-Stack Software Engineer">
+    <meta property="og:description" content="Portfolio of Jhonatan Posada, showcasing projects, skills, coding schedule, and web development experience.">
     <meta property="og:image" content="images/avatar.jpg">
+    <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jhonatan Posada | Web Developer">
+    <meta name="twitter:description" content="Explore my portfolio, open-source projects, and full-stack development skills.">
+    <meta name="twitter:image" content="images/avatar.jpg">
 
     <!-- Linking Scripts & Stylesheets -->
     <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
 
-    <!-- Importing Google Fonts & Icons -->
+    <!-- Importing Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-
-
-    <!-- Header/Banner Section: Contains brand logo and main Navigation -->
+    <!-- Header/Banner Section: Hero section with brand presentation -->
     <header class="banner" id="start">
-        <!-- Banner start -->
         <div id="banner_container">
             <h1>Hi There! <br> Welcome To My Profile.</h1>
             <p>
-                My name is <strong>Jhonatan Posada</strong>, I am a <strong>Web Developer</strong> currently living in
-                <strong>Merrick</strong>, New York</strong> (USA). My interests range from technology, arts and pop
-                culture. I am also interested in programming, web development, and <strong>Open Software</strong> like
-                <strong>GNU/Linux</strong>. If you would like to get in touch, feel free to say hello through any of the 
-                social links at the bottom page. You can click the button below to go to the bottom of this page.
+                My name is <strong>Jhonatan Posada</strong> (friends call me <em>Johnson</em>). I am a <strong>Full-Stack Web Developer</strong> currently living in <strong>Merrick, New York</strong> (USA). My interests span modern technology, arts, pop culture, GNU/Linux, and open-source software. Feel free to explore my portfolio, check out my recent projects, or get in touch.
             </p>
-            <a href="#footer">
-                <button>Get In Touch</button>
-            </a>
+            <div class="banner-cta">
+                <a href="#contact" class="hero-btn" onclick="openPage('contact')">Get In Touch</a>
+                <a href="#projects" class="hero-btn secondary" onclick="openPage('projects')">View Projects</a>
+            </div>
         </div>
     </header>
     <!-- Header/Banner Section End -->
 
-
-
     <!-- Scroll Progress Indicator -->
     <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
 
+    <!-- Sticky Navigation Bar -->
+    <nav id="topNav" aria-label="Main navigation">
+        <div class="nav-wrapper">
+            <!-- Brand Logo -->
+            <div class="brand">
+                <a class="logo" href="#start" aria-label="Back to top">
+                    <img src="images/avatar.jpg" class="image glow" alt="Jhonatan Posada avatar">
+                    <span class="logo-text">Johnson2772</span>
+                </a>
+            </div>
 
-
-    <!-- Navigation Bar -->
-    <nav id="topNav">
-
-        <!-- My Logo -->
-        <div>
-            <a class="logo" href="#start">
-                <img src="images/avatar.jpg" class="image glow" alt="Avatar">
-            </a>
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a class="tablink active" href="#home" onclick="openPage('home', this)">Home</a></li>
+                <li><a class="tablink" href="#projects" onclick="openPage('projects', this)">Projects</a></li>
+                <li><a class="tablink" href="#news" onclick="openPage('news', this)">News</a></li>
+                <li><a class="tablink" href="#schedule" onclick="openPage('schedule', this)">Schedule</a></li>
+                <li><a class="tablink" href="#about" onclick="openPage('about', this)">About</a></li>
+                <li><a class="tablink" href="#contact" onclick="openPage('contact', this)">Contact</a></li>
+                <li class="split">
+                    <div class="dropdown">
+                        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                            Menu <i aria-hidden="true">&#9776;</i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/Johnson2772" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/johnson2772/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="#contact" onclick="openPage('contact')">Message Me</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="icon" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleResponsive()">
+                        <i aria-hidden="true">&#9776;</i>
+                    </button>
+                </li>
+            </ul>
         </div>
 
-        <!-- Navigation Links -->
-        <ul>
-            <li><a class="tablink active" href="#home" onclick="openPage('home', this)">Home</a></li>
-            <li><a class="tablink" href="#projects" onclick="openPage('projects', this)">Projects</a></li>
-            <li><a class="tablink" href="#news" onclick="openPage('news', this)">News</a></li>
-            <li><a class="tablink" href="#schedule" onclick="openPage('schedule', this)">Schedule</a></li>
-            <li><a class="tablink" href="#about" onclick="openPage('about', this)">About</a></li>
-            <li><a class="tablink" href="#contact" onclick="openPage('contact', this)">Contact</a></li>
-            <li class="split">
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        Menu <i>&#9776;</i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#signup">Sign Up</a>
-                        <a href="#login">Login</a>
-                        <a href="#help">Help</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
-                    <i>&#9776;</i>
-                </a>
-            </li>
-        </ul>
-
-
-        <!-- Breadcrumbs line -->
+        <!-- Breadcrumbs & Search line -->
         <div class="breadcrumb-container">
-            <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#news">News</a></li>
-                <li>Current</li>
-            </ul>
-            <div class="search-bar">
-                <input type="search" name="SearchBar" placeholder="Search..." />
-                <button type="submit" value="Go!">Go</button>
-            </div>
+            <nav aria-label="Breadcrumb">
+                <ul class="breadcrumb">
+                    <li><a href="#home" onclick="openPage('home')">Home</a></li>
+                    <li><a href="#projects" onclick="openPage('projects')">Portfolio</a></li>
+                    <li aria-current="page">Profile</li>
+                </ul>
+            </nav>
+            <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+                <input type="search" name="SearchBar" placeholder="Search topics..." aria-label="Search content on this page">
+                <button type="submit" aria-label="Submit search">Go</button>
+            </form>
         </div>
         <!-- End Breadcrumbs line -->
-
     </nav>
     <!-- Navigation Bar End -->
 
-
-
-
-
-
-
-    <!-- Main Content Container Grid: Unique content of the page -->
+    <!-- Main Content Container Grid -->
     <main>
 
-
-
         <!-- Main section start -->
-        <section>
+        <section class="main-content-section">
 
+            <!-- HOME TAB -->
             <header id="home" class="tabcontent">
                 <h1>Welcome &#128075;</h1>
-                <h2>To my Github Profile!
-                    <small>Johnson2772</small>
+                <h2>To my Developer Profile & Portfolio
+                    <small>@Johnson2772 &bull; Crafting code with passion</small>
                 </h2>
             </header>
 
             <article class="home tabcontent">
-
                 <h3>Hello World!</h3>
-                <h4>Greetings, Oct 7th, 2022</h4>
-                <div class="fakeimg">Image</div>
+                <h4>Greetings & Welcome</h4>
+                
+                <div class="featured-badge-container">
+                    <span class="tech-tag">HTML5 / CSS3</span>
+                    <span class="tech-tag">JavaScript (ES6+)</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">GNU/Linux</span>
+                    <span class="tech-tag">Git</span>
+                </div>
 
-                <p>Hi there! &#128075;
-                I am <strong>Jhonatan Posada</strong> —though my friends also call me Johnson, you can call me Johnson as well (It is a
-                long Story &#128521;). I am a self-taught professional Fullstack Developer with over five years of hands-on experience
-                in HTML, CSS, and JavaScript. My journey has been driven by a love for building user-friendly, visually stunning
-                websites and a relentless curiosity for solving problems through code.
-                <br>
-                <br>
-                I thrive on turning ideas into reality—whether it is crafting a brand-new website from scratch, optimizing performance,
-                or diving into new technologies. With a strong foundation in [JavaScript, React, Node.js], I am always eager to learn,
-                adapt, and push boundaries to deliver high-quality, creative solutions for my clients.
-                <br>
-                <br>
-                I am always looking for new opportunities to learn and grow as a developer. Whether it's building a new website from
-                scratch or optimizing an existing one for better performance, I am confident in my ability to deliver top-quality
-                results for my clients. I am highly motivated, detail-oriented and I look forward to working with you and helping
-                bringing my skills and creativity to your projects to make your vision to life.
-                <br>
-                <br>
-                Coding is not just my profession it is my passion. I love the challenge of building powerful web apps, solving complex
-                problems, and using technology to make an impact. Beyond work, I enjoy applying my skills to improve my everyday life
-                and connect with others on a technical level. I enjoy the challenge of solving problems and creating solutions through
-                code for powerful web apps, I love building web applications and I am constantly looking for new challenges (Definitely
-                Coding is my passion). I am glad you are on my site, feel free to explore... Learning to code gave me
-                <strong>problem-solving skills</strong> and a way to communicate with others on a technical level. I can also develop
-                websites and use my coding skills to improve my everyday life.
+                <p>
+                    Hi there! &#128075; I am <strong>Jhonatan Posada</strong> — though friends and colleagues often call me Johnson. I am a passionate, self-taught <strong>Full-Stack Web Developer</strong> with extensive hands-on experience designing and building responsive, accessible, and high-performance digital experiences.
+                </p>
+                <p>
+                    My journey in software engineering has been fueled by a fascination with how clean code translates into intuitive user experiences. With strong foundations in modern <strong>JavaScript, React, Node.js, and Python</strong>, I thrive on taking projects from concept to deployment — whether developing tailored web applications from scratch, fine-tuning performance benchmarks, or adopting cutting-edge tools.
+                </p>
+                <p>
+                    For me, coding is more than a craft — it is a discipline of creative problem-solving and lifelong learning. Beyond web architecture, I have a deep appreciation for open-source ecosystems, Linux environments, and automation that makes daily digital workflows smarter.
                 </p>
 
-                <blockquote class="quote">"Thanks for stopping by! Feel free to explore my work, and let's create something amazing together. &#128640; &#128512;"</p>
-                    
-                    <div class="fakeimg">Image</div>
+                <blockquote class="quote">
+                    "Thanks for stopping by! Feel free to explore my work, and let's create something amazing together. &#128640; &#128512;"
+                </blockquote>
             </article>
 
-
-
+            <!-- PROJECTS TAB -->
             <header id="projects" class="tabcontent">
                 <h1>Projects &#128194;</h1>
-                <h2>Take a peek of my portfolio
-                    <small>Visit my <a href="https://github.com/Johnson2772" target="_blank"> Github profile </a> for
-                        more.</small>
+                <h2>Explore Featured Work & Experiments
+                    <small>Visit my <a href="https://github.com/Johnson2772" target="_blank" rel="noopener noreferrer">GitHub profile</a> for full repositories.</small>
                 </h2>
             </header>
 
             <article class="projects tabcontent">
+                <h3>Live Showcase</h3>
+                <h4>Interactive Projects & Tools</h4>
 
-                <h3>Recent project</h3>
-                <h4>Look my most recent projects, Sep 2, 2022</h4>
-
-                <h5>New Year's Countdown</h5>
-                <div id="countdown-container">
-                    <div id="countdown">
-                        <span id="days">0d</span>:
-                        <span id="hours">0h</span>:
-                        <span id="minutes">0m</span>:
-                        <span id="seconds">0s</span>
+                <!-- Project Item: Countdown -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h5>New Year's Global Countdown</h5>
+                        <span class="badge live">Live Demo</span>
+                    </div>
+                    <p>An interactive, real-time dynamic countdown calculating the exact distance to the upcoming New Year with millisecond precision and responsive time-unit containers.</p>
+                    
+                    <div id="countdown-container">
+                        <div id="countdown" aria-live="polite">
+                            <div class="countdown-box"><span id="days">00d</span><label>Days</label></div>
+                            <div class="countdown-sep">:</div>
+                            <div class="countdown-box"><span id="hours">00h</span><label>Hours</label></div>
+                            <div class="countdown-sep">:</div>
+                            <div class="countdown-box"><span id="minutes">00m</span><label>Minutes</label></div>
+                            <div class="countdown-sep">:</div>
+                            <div class="countdown-box"><span id="seconds">00s</span><label>Seconds</label></div>
+                        </div>
                     </div>
                 </div>
 
-                <p> I'm currently working on my portfolio. I'll keep updating this page in the future.
-                </p>
+                <!-- Featured Projects Grid -->
+                <div class="portfolio-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h5>Personal Portfolio & Profile Hub</h5>
+                            <span class="badge">Web App</span>
+                        </div>
+                        <p>Fully responsive developer hub with custom tab navigation, interactive CSS animations, dark-mode styling, and accessible layout architecture.</p>
+                        <div class="project-tags">
+                            <span class="mini-tag">HTML5</span>
+                            <span class="mini-tag">CSS3 Grid/Flex</span>
+                            <span class="mini-tag">Vanilla JS</span>
+                        </div>
+                        <a href="https://github.com/Johnson2772/profile" target="_blank" rel="noopener noreferrer" class="card-link">View Repository &rarr;</a>
+                    </div>
 
-                <blockquote class="quote">"This is a brave an inspiring quote, by Me :)"</p>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h5>Matrix Rain 404 Canvas</h5>
+                            <span class="badge">Graphics</span>
+                        </div>
+                        <p>High-performance HTML5 Canvas animation simulating classic digital rain with randomized Unicode glyphs and smooth 60fps rendering.</p>
+                        <div class="project-tags">
+                            <span class="mini-tag">HTML5 Canvas</span>
+                            <span class="mini-tag">JavaScript</span>
+                        </div>
+                        <a href="404.html" class="card-link">Launch Demo &rarr;</a>
+                    </div>
+                </div>
 
-                    <div class="fakeimg">Image</div>
+                <blockquote class="quote">
+                    "First, solve the problem. Then, write the code." &mdash; John Johnson
+                </blockquote>
             </article>
 
-
-
+            <!-- NEWS TAB -->
             <header id="news" class="tabcontent">
-                <h1>News &#128240;</h1>
-                <h2>
-                    Multiple Slideshows
-                    <small>Check out my blog</small>
+                <h1>News & Media &#128240;</h1>
+                <h2>Interactive Sliders & Visual Experiments
+                    <small>Visual showcases and media carousels</small>
                 </h2>
             </header>
 
             <article class="news tabcontent">
-
-                <p>Slideshow 1:</p>
-                <div class="slideshow-container">
-                    <div class="mySlides1">
-                        <img
-                            src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8d2F0Y2h8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60">
+                <h3>Gallery Showcase 1</h3>
+                <p>Curated photography & design assets (Manual Slider):</p>
+                <div class="slideshow-container" aria-label="First image slideshow">
+                    <div class="mySlides1 fade">
+                        <img src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?auto=format&fit=crop&w=700&q=80" alt="Minimalist luxury watch craftsmanship on dark background">
+                        <div class="slide-caption">Precision & Time</div>
                     </div>
 
-                    <div class="mySlides1">
-                        <img
-                            src="https://images.unsplash.com/photo-1519458246479-6acae7536988?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhbWVyYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    <div class="mySlides1 fade">
+                        <img src="https://images.unsplash.com/photo-1519458246479-6acae7536988?auto=format&fit=crop&w=700&q=80" alt="Vintage camera lens on wooden desk">
+                        <div class="slide-caption">Focus & Perspective</div>
                     </div>
 
-                    <div class="mySlides1">
-                        <img
-                            src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    <div class="mySlides1 fade">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=80" alt="Modern tailored shirts arranged cleanly">
+                        <div class="slide-caption">Structure & Elegance</div>
                     </div>
 
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    <button class="prev" aria-label="Previous slide" onclick="plusSlides(-1, 0)">&#10094;</button>
+                    <button class="next" aria-label="Next slide" onclick="plusSlides(1, 0)">&#10095;</button>
                 </div>
 
-                <p>Slideshow 2:</p>
-                <div class="slideshow-container">
-                    <div class="mySlides2">
-                        <img
-                            src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8d2F0Y2h8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60">
+                <hr>
+
+                <h3>Gallery Showcase 2</h3>
+                <p>Second category stream:</p>
+                <div class="slideshow-container" aria-label="Second image slideshow">
+                    <div class="mySlides2 fade">
+                        <img src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?auto=format&fit=crop&w=700&q=80" alt="Horology timepiece mechanism">
+                        <div class="slide-caption">Continuous Motion</div>
                     </div>
 
-                    <div class="mySlides2">
-                        <img
-                            src="https://images.unsplash.com/photo-1519458246479-6acae7536988?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhbWVyYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    <div class="mySlides2 fade">
+                        <img src="https://images.unsplash.com/photo-1519458246479-6acae7536988?auto=format&fit=crop&w=700&q=80" alt="Retro vintage photography gear">
+                        <div class="slide-caption">Creative Optics</div>
                     </div>
 
-                    <div class="mySlides2">
-                        <img
-                            src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    <div class="mySlides2 fade">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=80" alt="Modern organized apparel textures">
+                        <div class="slide-caption">Modern Design</div>
                     </div>
 
-                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    <button class="prev" aria-label="Previous slide" onclick="plusSlides(-1, 1)">&#10094;</button>
+                    <button class="next" aria-label="Next slide" onclick="plusSlides(1, 1)">&#10095;</button>
                 </div>
 
+                <hr>
 
-                <!-- Slide Show -->
-
-                <img class="mySlides"
-                    src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8d2F0Y2h8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60">
-                <img class="mySlides"
-                    src="https://images.unsplash.com/photo-1519458246479-6acae7536988?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhbWVyYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                <img class="mySlides"
-                    src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                <!-- Slide Show End -->
-
+                <h3>Auto-Cycling Highlights</h3>
+                <p>Rotates automatically every 3.5 seconds:</p>
+                <div class="slideshow-container" aria-label="Automatic highlight carousel">
+                    <div class="mySlides fade">
+                        <img src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?auto=format&fit=crop&w=700&q=80" alt="Watch technology slide">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://images.unsplash.com/photo-1519458246479-6acae7536988?auto=format&fit=crop&w=700&q=80" alt="Camera lens gear slide">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=80" alt="Apparel clothing design slide">
+                    </div>
+                </div>
             </article>
 
-
-
+            <!-- SCHEDULE TAB -->
             <header id="schedule" class="tabcontent">
                 <h1>Schedule &#128198;</h1>
-                <h2>My Coding Schedule
-                    <small>Please feel free to contact me any day from 3:00pm - 6:00pm</small>
+                <h2>Weekly Routine & Availability
+                    <small>Feel free to reach out during open collaboration hours (3:00 PM &ndash; 6:00 PM EST)</small>
                 </h2>
             </header>
 
             <article class="schedule tabcontent">
-                <table>
-                    <tr>
-                        <th>#</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
-                    </tr>
-                    <tr>
-                        <td>9-10</td>
-                        <td class="selected">Learning</td>
-                        <td>Learning</td>
-                        <td>Learning</td>
-                        <td>Learning</td>
-                        <td>Learning</td>
-                        <td>Learning</td>
-                        <td>Learning</td>
-                    </tr>
-                    <tr>
-                        <td>10-11</td>
-                        <td>Practicing</td>
-                        <td class="selected">Practicing</td>
-                        <td>Practicing</td>
-                        <td>Practicing</td>
-                        <td>Practicing</td>
-                        <td>Practicing</td>
-                        <td>Practicing</td>
-                    </tr>
-                    <tr>
-                        <td>11-12</td>
-                        <td>Coding</td>
-                        <td>Coding</td>
-                        <td class="selected">Coding</td>
-                        <td>Coding</td>
-                        <td>Coding</td>
-                        <td>Coding</td>
-                        <td>Coding</td>
-                    </tr>
-                    <tr>
-                        <td>1-2</td>
-                        <td>Lunch</td>
-                        <td>Lunch</td>
-                        <td>Lunch</td>
-                        <td class="selected">Lunch</td>
-                        <td>Lunch</td>
-                        <td>Lunch</td>
-                        <td>Lunch</td>
-                    </tr>
-                    <tr>
-                        <td>2-3</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td class="selected">AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                    </tr>
-                    <tr>
-                        <td>3-4</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td class="selected">AFKB</td>
-                        <td>AFKB</td>
-                    </tr>
-                    <tr>
-                        <td>4-5</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td>AFKB</td>
-                        <td class="selected">AFKB</td>
-                    </tr>
-                </table>
+                <h3>Weekly Time Allocation</h3>
+                <p>A structured schedule dedicated to learning, deliberate practice, code implementation, and project sprints:</p>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Mon</th>
+                                <th scope="col">Tue</th>
+                                <th scope="col">Wed</th>
+                                <th scope="col">Thu</th>
+                                <th scope="col">Fri</th>
+                                <th scope="col">Sat</th>
+                                <th scope="col">Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">9:00 - 10:00</th>
+                                <td class="selected"><span class="table-badge badge-learn">Learning</span></td>
+                                <td>Learning</td>
+                                <td>Learning</td>
+                                <td>Learning</td>
+                                <td>Learning</td>
+                                <td>Learning</td>
+                                <td>Learning</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10:00 - 11:00</th>
+                                <td>Practicing</td>
+                                <td class="selected"><span class="table-badge badge-practice">Practicing</span></td>
+                                <td>Practicing</td>
+                                <td>Practicing</td>
+                                <td>Practicing</td>
+                                <td>Practicing</td>
+                                <td>Practicing</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11:00 - 12:00</th>
+                                <td>Coding</td>
+                                <td>Coding</td>
+                                <td class="selected"><span class="table-badge badge-code">Coding</span></td>
+                                <td>Coding</td>
+                                <td>Coding</td>
+                                <td>Coding</td>
+                                <td>Coding</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1:00 - 2:00</th>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td class="selected"><span class="table-badge badge-lunch">Lunch</span></td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2:00 - 3:00</th>
+                                <td>AFKB</td>
+                                <td>AFKB</td>
+                                <td>AFKB</td>
+                                <td>AFKB</td>
+                                <td class="selected"><span class="table-badge badge-afk">AFKB</span></td>
+                                <td>AFKB</td>
+                                <td>AFKB</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3:00 - 4:00</th>
+                                <td>Open Collab</td>
+                                <td>Open Collab</td>
+                                <td>Open Collab</td>
+                                <td>Open Collab</td>
+                                <td>Open Collab</td>
+                                <td class="selected"><span class="table-badge badge-open">Open Collab</span></td>
+                                <td>Open Collab</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4:00 - 5:00</th>
+                                <td>Projects</td>
+                                <td>Projects</td>
+                                <td>Projects</td>
+                                <td>Projects</td>
+                                <td>Projects</td>
+                                <td>Projects</td>
+                                <td class="selected"><span class="table-badge badge-code">Projects</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <small class="schedule-note">* AFKB = Away From Keyboard / Personal Break</small>
             </article>
 
-
-
+            <!-- ABOUT TAB -->
             <header id="about" class="tabcontent">
                 <h1>About Me &#128100;</h1>
-                <h2>Qualifications and accomplishments
-                    <small>Academic Resume</small>
+                <h2>Education, Certifications & Milestones
+                    <small>Academic Resume & Continuous Professional Growth</small>
                 </h2>
             </header>
 
             <article class="about tabcontent">
-                <h3><b>W3Schools.com</b></h3>
-                <h4><b>&#128197;</b> 2015 - Present </h4>
-                <p>
-                    W3Schools is a freemium educational website for learning coding online. It offers well-organized and easy-to-understand
-                    tutorials with lots of examples for technologies like HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, and Java
-                </p>
-                <hr>
-                <h3><b>SoloLearn.com</b></h3>
-                <h4><b>&#128197;</b> 2012 - Present </h4>
-                <p>
-                    <strong>SoloLearn</strong> is a well-known online learning platform recognized for coding education, designed to help
-                    people learn programming through interactive, bite-sized lessons and exercises. The platform is known for its gamified
-                    approach, which includes quizzes and interactive content to make learning engaging. SoloLearn operates as a free
-                    resource, providing access to its courses without requiring a membership. It also hosts a large community of learners,
-                    making it one of the world's largest communities for coding education.
-                </p>
-                <hr>
-                <h3><b>Nassau Community College</b></h3>
-                <h4><b>&#128197;</b> 2011 - 2012 </h4>
-                <p>
-                    I studied English in Nassau Community College (NCC), a Non-credit program for international students
-                    in a full-time, intensive, academic English language training.
-                </p>
-                <hr>
-                <h3><b>Technological University of Pereira (UTP)</b></h3>
-                <h4><b>&#128197;</b> 2008 - 2011 </h4>
-                <p>
-                    An academic program that trains professionals capable of designing, developing, and implementing innovative
-                    technological solutions. The curriculum includes courses such as Software Engineering, Communications, Operating
-                    Systems, Compilers, and Artificial Intelligence, among others. The program lasts four and a half years and is taught
-                    in an in-person format. The program has achieved high-quality accreditation, reflecting its commitment to academic
-                    excellence and the training of competent professionals in the fields of technology and computer science.
-                </p>
-                <br>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>W3Schools Certified Training</h3>
+                            <span class="timeline-date">&#128197; 2015 &ndash; Present</span>
+                        </div>
+                        <p>
+                            Comprehensive coursework covering modern web standards: HTML5, CSS3, modern ECMAScript/JavaScript, responsive interface design, Bootstrap, Python, PHP, and SQL databases.
+                        </p>
+                    </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>SoloLearn Developer Certifications</h3>
+                            <span class="timeline-date">&#128197; 2012 &ndash; Present</span>
+                        </div>
+                        <p>
+                            Interactive programming challenges, algorithmic problem-solving, and certification tracks spanning JavaScript, Python, SQL, C++, and object-oriented programming paradigms.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Nassau Community College (NCC)</h3>
+                            <span class="timeline-date">&#128197; 2011 &ndash; 2012</span>
+                        </div>
+                        <p>
+                            Intensive academic English language and communications curriculum in Garden City, NY, developing technical writing and cross-cultural collaborative communication skills.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Technological University of Pereira (UTP)</h3>
+                            <span class="timeline-date">&#128197; 2008 &ndash; 2011</span>
+                        </div>
+                        <p>
+                            Comprehensive computer systems engineering coursework including Software Engineering, Data Communications, Operating Systems, Compilers, and Artificial Intelligence foundations.
+                        </p>
+                    </div>
+                </div>
             </article>
 
-
-
+            <!-- CONTACT TAB -->
             <header id="contact" class="tabcontent">
                 <h1>Contact &#129309;</h1>
-                <h2>
-                    Contact me now
-                    <small>Let's talk</small>
+                <h2>Let's Connect & Collaborate
+                    <small>Send a direct message or inquiry</small>
                 </h2>
             </header>
 
             <article class="contact tabcontent">
-
-                <form action="destination.html" method="POST">
-
+                <form action="#" method="POST" novalidate>
                     <fieldset>
+                        <legend>Contact Form</legend>
 
-                        <legend>Contact Form: </legend>
-                        <label for="date">Date: </label>
-                        <input id="date" type="date" name="date" min="2020-01-01">
-                        <br>
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" required autocomplete="on" autofocus
-                            pattern="[a-zA-Z]{3,}" placeholder="Your name"
-                            title="Please introduce more than three letters">
-                        <br>
-                        <label for="username">Username: </label>
-                        <input type="text" name="username" id="username" required autocomplete="on" autofocus
-                            pattern="[a-zA-Z]{3,}" placeholder="Your username"
-                            title="Please introduce more than three letters">
-                        <br>
-                        <label for="email">Email: </label>
-                        <input type="text" name="email" id="email" required autocomplete="on"
-                            pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" placeholder="Your Email"
-                            title="Please enter in a valid email address">
-                        <br>
-                        <label for="phone">Phone: </label>
-                        <input type="tel" name="phone" id="phone" required autocomplete="on"
-                            pattern="[0-9]{10}" placeholder="Please enter your phone number"
-                            title="IMPORTANT! Enter your phone number without dashes: 1234567890">
-                        <br>
-                        <label for="language">Language: </label>
-                        <select name="language" id="language" required>
-                            <option value=""> </option>
-                            <option value="EN">English</option>
-                            <option value="ES">Spanish</option>
-                            <option value="FR">French</option>
-                            <option value="IT">Italian</option>
-                        </select>
-                        <br>
-                        <label for="subject">Subject:</label>
-                        <br>
-                        <textarea id="subject" name="subject" placeholder="Write something.."> </textarea>
-                        <br>
-                        <label for="numberOfGuests">Number of Guests: </label>
-                        <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6">
-                        <br>
-                        <legend>Do you want to be called?</legend>
-                        <input type="radio" id="yesCall" name="calls" value="yes">
-                        <label for="yesCall">Yes</label>
-                        <input type="radio" id="noCall" name="calls" value="no">
-                        <label for="noCall">No</label>
-                        <br>
-                        <legend>Do you want to be contacted by mail?</legend>
-                        <input id="bathtub" type="checkbox" name="bathtub" value=" yes" checked>
-                        <br>
-                        <input type="submit" value="Submit">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Your Name: <span class="req">*</span></label>
+                                <input type="text" name="name" id="name" required autocomplete="name" autofocus
+                                    pattern="[a-zA-Z\s]{2,}" placeholder="e.g. Alex Smith"
+                                    title="Please enter your full name">
+                            </div>
 
+                            <div class="form-group">
+                                <label for="email">Email Address: <span class="req">*</span></label>
+                                <input type="email" name="email" id="email" required autocomplete="email"
+                                    placeholder="alex@example.com"
+                                    title="Please enter a valid email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" name="phone" id="phone" autocomplete="tel"
+                                    placeholder="(555) 000-0000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="language">Preferred Language: <span class="req">*</span></label>
+                                <select name="language" id="language" required>
+                                    <option value="EN" selected>English</option>
+                                    <option value="ES">Spanish</option>
+                                    <option value="FR">French</option>
+                                    <option value="IT">Italian</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectType">Inquiry Type:</label>
+                                <select name="projectType" id="projectType">
+                                    <option value="web-dev">Web Development Project</option>
+                                    <option value="consulting">Technical Consulting</option>
+                                    <option value="collaboration">Open Source Collaboration</option>
+                                    <option value="other">General Hello</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Target Date:</label>
+                                <input id="date" type="date" name="date" min="2020-01-01">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="subject">Message: <span class="req">*</span></label>
+                                <textarea id="subject" name="subject" required placeholder="Tell me about your project, ideas, or questions..."></textarea>
+                            </div>
+
+                            <div class="form-group full-width form-options">
+                                <div class="radio-group">
+                                    <span class="group-label">May I contact you via phone?</span>
+                                    <label class="radio-label"><input type="radio" id="yesCall" name="calls" value="yes"> Yes</label>
+                                    <label class="radio-label"><input type="radio" id="noCall" name="calls" value="no" checked> No</label>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label" for="contactMail">
+                                        <input id="contactMail" type="checkbox" name="contactMail" value="yes" checked>
+                                        Keep me updated on portfolio news & articles
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <button type="submit" class="submit-btn">Send Message &rarr;</button>
+                            </div>
+                        </div>
                     </fieldset>
-
                 </form>
-
             </article>
-
-
 
         </section>
         <!-- Main section end -->
 
+        <!-- Side Menu Component: Profile Summary & Sidebar -->
+        <aside class="sidebar-aside">
+            <section class="sidebar-section">
 
-
-
-
-        <!-- Side Menu Component: Non-essential tangential content -->
-        <aside>
-
-            <section>
-
-                <header>
-                    <h1>About Me &#129706;</h1>
-                    <h2>
-                        Jhonatan Posada
-                        <small>Web Developer</small>
+                <!-- Quick Profile Card -->
+                <header class="aside-header">
+                    <h1>Profile &#129706;</h1>
+                    <h2>Jhonatan Posada
+                        <small>Full-Stack Web Developer</small>
                     </h2>
                 </header>
 
-                <article>
-                    <img src="images/avatar.jpg" alt="Avatar">
-                    <br>
-                    <strong>
-                        <h3>Jhonatan Posada</h3>
-                    </strong>
-                    <p> <i>&#128188;</i> Fullstack Web Developer</p>
-                    <p> <i>&#127968;</i> Merrick, NY</p>
-                    <p> <i>&#128386;</i> no-reply@gmail.com</p>
-                    <p> <i>&#128222;</i> +1(234)567-8901</p>
-                    <hr>
-                    <h4>Photo of me:</h4>
-                    <p>You can watch my profile pictures on Instagram</p>
-                    <div class="fakeimg">Image</div>
-                    <br>
-                    <p>Also you can watch my videos on Youtube.</p>
-                    <div class="fakeimg">Image</div>
-                    <hr>
-                    <h3>More Text</h3>
-                    <p>Thank you for trying to reach me out.</p>
-                    <div class="fakeimg">Image</div>
-                    <br>
-                    <div class="fakeimg">Image</div>
-                    <br>
-                    <div class="fakeimg">Image</div>
-                    <br>
+                <article class="aside-article profile-card">
+                    <img src="images/avatar.jpg" alt="Photo of Jhonatan Posada" class="profile-avatar glow">
+                    <h3>Jhonatan Posada</h3>
+                    <ul class="contact-quick-list">
+                        <li><i>&#128188;</i> Full-Stack Developer</li>
+                        <li><i>&#127968;</i> Merrick, NY, USA</li>
+                        <li><i>&#128386;</i> <a href="mailto:johnson2772@gmail.com">johnson2772@gmail.com</a></li>
+                        <li><i>&#128222;</i> +1 (234) 567-8901</li>
+                    </ul>
                 </article>
 
-
-
-                <header>
+                <!-- Experience Card -->
+                <header class="aside-header">
                     <h1>Experience &#128214;</h1>
-                    <h2>
-                        Work Experience
-                        <small>Short</small>
-                    </h2>
+                    <h2>Career Highlights</h2>
                 </header>
 
-                <article>
-                    <h3><b>Front End Developer | W3Schools.com</b></h3>
-                    <h4><i>&#128198;</i> Jan 2017 - <span>Current</span></h4>
-                    <p>
-                        I have been studying at W3Schools.com to become a Front End Developer since January 2017. I have been designing and
-                        implementing user interfaces, optimizing web performance, delivering high-quality web applications and web platforms are
-                        accessible and responsive across various devices.
-                    </p>
+                <article class="aside-article">
+                    <div class="exp-item">
+                        <h3>Front-End Developer | W3Schools.com</h3>
+                        <span class="exp-date">&#128198; Jan 2017 &ndash; Present</span>
+                        <p>Designing and implementing responsive user interfaces, optimizing performance, and ensuring cross-browser accessibility.</p>
+                    </div>
                     <hr>
-                    <h3><b>Web Developer | AmadaCafeBar.com</b></h3>
-                    <h4><i>&#128198;</i> Jun 2026 - Aug 2017</h4>
-                    <p>
-                        I Developed a custom website from scratch over 3 months, significantly enhancing the business's online presence and
-                        visibility. Collaborated with the client to design and implement a user-friendly, responsive website that aligned with
-                        their brand and business goals.
-                    </p>
+                    <div class="exp-item">
+                        <h3>Web Developer | AmadaCafeBar.com</h3>
+                        <span class="exp-date">&#128198; Jun 2017 &ndash; Aug 2017</span>
+                        <p>Engineered a custom, mobile-friendly landing page and ordering catalog from scratch, significantly elevating business visibility.</p>
+                    </div>
                     <hr>
-                    <h3><b>Graphic Designer | About.me/johnson2772</b></h3>
-                    <h4><i>&#128198;</i> Jun 2015 - Current </h4>
-                    <p>
-                        I Designed and developed a visually compelling personal portfolio website to showcase my work and skills. Ensured the
-                        website was user-friendly, responsive, and aligned with modern design principles.
-                    </p>
-                    <br>
-                    <br>
+                    <div class="exp-item">
+                        <h3>Web & Graphic Designer | Portfolio</h3>
+                        <span class="exp-date">&#128198; Jun 2015 &ndash; Present</span>
+                        <p>Designed brand identities, vector graphics, and accessible digital assets aligned with modern aesthetic guidelines.</p>
+                    </div>
                 </article>
 
-
-
-                <!-- Skills section start -->
-                <header>
-                    <h1>My Skills &#127891;</h1>
-                    <h2>
-                        Resume
-                        <small>Short</small>
-                    </h2>
-
+                <!-- Skills Section -->
+                <header class="aside-header">
+                    <h1>Skills &#127891;</h1>
+                    <h2>Technical Competencies</h2>
                 </header>
 
-                <article>
-                    <h3>Knowledge</h3>
+                <article class="aside-article skills-card">
+                    <h3>Web Development</h3>
+                    
+                    <div class="skill-row">
+                        <span class="skill-name">HTML5</span>
+                        <span class="percentage">95%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="95" id="HTML">95%</meter>
+                    </div>
 
-                    <p>&#128376; <b>Web Development</b> </p>
+                    <div class="skill-row">
+                        <span class="skill-name">CSS3 / Flex / Grid</span>
+                        <span class="percentage">90%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="90" id="CSS">90%</meter>
+                    </div>
 
-                    <label for="HTML">HTML</label> <label for="HTML" class="percentage">90%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="100" id="HTML">100/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">JavaScript (ES6+)</span>
+                        <span class="percentage">85%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="85" id="JavaScript">85%</meter>
+                    </div>
 
-                    <label for="CSS">CSS</label> <label for="CSS" class="percentage">90%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="90" id="CSS">90/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">PHP</span>
+                        <span class="percentage">70%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="70" id="PHP">70%</meter>
+                    </div>
 
-                    <label for="JavaScript">JavaScript</label> <label for="JavaScript" class="percentage">80%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="80" id="JavaScript">80/100</meter>
-
-                    <label for="PHP">PHP</label> <label for="PHP" class="percentage">70%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="70" id="PHP">70/100</meter>
-
-                    <label for="SQL">SQL</label> <label for="SQL" class="percentage">90%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="90" id="SQL">90/100</meter>
-
-                    <hr>
-
-                    <p>&#128435; <b>Programming</b> </p>
-
-                    <label for="Python">Python</label> <label for="Python" class="percentage">95%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="95" id="Python">95/100</meter>
-
-                    <label for="Ruby">Ruby</label> <label for="Ruby" class="percentage">70%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="70" id="Ruby">70/100</meter>
-
-                    <label for="Java">Java</label> <label for="Java" class="percentage">90%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="90" id="Java">90/100</meter>
-
-                    <hr>
-
-                    <p>&#127912; <b>Design</b> </p>
-
-                    <label for="GIMP">GIMP</label> <label for="GIMP" class="percentage">70%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="70" id="GIMP">70/100</meter>
-
-                    <label for="Inkscape">Inkscape</label> <label for="Inkscape" class="percentage">60%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="60" id="Inkscape">60/100</meter>
-
-                    <label for="Illustration">Illustration</label> <label for="Illustration"
-                        class="percentage">50%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="50" id="Illustration">50/100</meter>
-
-                    <label for="Photography">Photography</label> <label for="Photography" class="percentage">30%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="30" id="Photography">30/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">SQL Databases</span>
+                        <span class="percentage">80%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="80" id="SQL">80%</meter>
+                    </div>
 
                     <hr>
 
-                    <p>&#127760; <b>Languages</b></p>
+                    <h3>Languages & Tools</h3>
 
-                    <label for="English">English</label> <label for="English" class="percentage">95%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="95" id="English">95/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">Python</span>
+                        <span class="percentage">90%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="90" id="Python">90%</meter>
+                    </div>
 
-                    <label for="French">French</label> <label for="French" class="percentage">40%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="40" id="French">40/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">Java</span>
+                        <span class="percentage">80%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="80" id="Java">80%</meter>
+                    </div>
 
-                    <label for="Italian">Italian</label> <label for="Italian" class="percentage">60%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="60" id="Italian">60/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">GNU/Linux & Bash</span>
+                        <span class="percentage">85%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="85" id="Linux">85%</meter>
+                    </div>
 
-                    <label for="Spanish">Spanish</label> <label for="Spanish" class="percentage">100%</label>
-                    <meter min="0" max="100" low="40" high="60" optimum="80" value="100" id="Spanish">100/100</meter>
+                    <div class="skill-row">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="percentage">90%</span>
+                        <meter min="0" max="100" low="40" high="70" optimum="90" value="90" id="Git">90%</meter>
+                    </div>
 
                     <hr>
 
-                </article>
-                <!-- Skills section end -->
-
-
-
-                <header>
-                    <h1>News &#128240;</h1>
-                    <h2>
-                        Popular Post
-                        <small>Read more</small>
-                    </h2>
-
-                </header>
-
-                <article>
-                    <div class="fakeimg">Image</div>
-                    <br>
-                    <div class="fakeimg">Image</div>
-                    <br>
-                    <div class="fakeimg">Image</div>
-                    <br>
-                    <h4>Follow Me</h4>
-                    <p>Some text..</p>
+                    <h3>Spoken Languages</h3>
+                    <div class="skill-row">
+                        <span class="skill-name">Spanish (Native)</span>
+                        <span class="percentage">100%</span>
+                        <meter min="0" max="100" value="100" id="Spanish">100%</meter>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">English (Fluent)</span>
+                        <span class="percentage">95%</span>
+                        <meter min="0" max="100" value="95" id="English">95%</meter>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Italian (Conversational)</span>
+                        <span class="percentage">60%</span>
+                        <meter min="0" max="100" value="60" id="Italian">60%</meter>
+                    </div>
                 </article>
 
             </section>
-
-
-
         </aside>
         <!-- Side Menu End -->
-
-
-
-
 
     </main>
     <!-- Main Grid End -->
 
-
-
-
-
-    <!-- Footer Section: This section contains social media websites where you can follow me, 
-    copyright information and secondary information. -->
+    <!-- Footer Section -->
     <footer id="footer">
+        <div class="footer-content">
+            <p class="footer-lead">
+                Connect with me on social media and professional networks:
+            </p>
 
-        <p class="copyleft">
-            You can follow me on any of my social media accounts by clicking on any of the buttons below:
-        </p>
+            <div class="social-links-grid">
+                <a href="https://github.com/Johnson2772/" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="GitHub profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg" alt="GitHub icon">
+                </a>
 
-        <p class="copyleft">
-            <a href="https://www.facebook.com/johnson2772/" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook">
-            </a>
+                <a href="https://www.linkedin.com/in/johnson2772/" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="LinkedIn profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn icon">
+                </a>
 
-            <a href="https://www.linkedin.com/in/johnson2772/" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
-            </a>
+                <a href="https://www.twitter.com/johnson2772/" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="Twitter/X profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg" alt="X Twitter icon">
+                </a>
 
-            <a href="https://www.instagram.com/johnson2772/" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
-            </a>
+                <a href="https://www.instagram.com/johnson2772/" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="Instagram profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram icon">
+                </a>
 
-            <a href="https://www.twitter.com/johnson2772/" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg"
-                    alt="Twitter">
-            </a>
+                <a href="https://www.facebook.com/johnson2772/" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="Facebook profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook icon">
+                </a>
 
-            <a href="https://www.github.com/johnson2772/" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg"
-                    alt="Github">
-            </a>
+                <a href="https://www.sololearn.com/en/profile/3179005" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="SoloLearn profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Sololearn.jpg" alt="SoloLearn icon">
+                </a>
 
-            <a href="https://www.sololearn.com/en/profile/3179005" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Sololearn.jpg" alt="SoloLearn">
-            </a>
+                <a href="https://johnson2772.w3spaces.com/" target="_blank" rel="noopener noreferrer" class="tolink glow" aria-label="W3Schools space">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg" alt="W3Schools icon">
+                </a>
+            </div>
 
-            <a href="https://johnson2772.w3spaces.com/" target="_blank" class="tolink glow">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg" alt="W3Schools">
-            </a>
-        </p>
-
-        <p class="copyleft">
-            <small>
-                This website was made by @Johnson2772
-                <br>
-                Feel free to &#127279;Copyleft | &#127279;Share-ALike
-                <br>
-                Contact Me: +1(234)567-8901
-                <br>
-                All Rights Shared.
-                <br>
-                &#127279;2020-2050
-            </small>
-        </p>
-
-
-        <!-- Testing -->
-        <div class="avatar-frame"></div>
-        <div class="rotating-test"></div>
-
-
-
+            <p class="copyleft">
+                <small>
+                    Crafted with care by <strong>@Johnson2772</strong>
+                    <br>
+                    Licensed under &#127279; Copyleft &bull; Share-Alike &bull; Open Source
+                    <br>
+                    &copy; 2022 &ndash; 2026 Jhonatan Posada. All rights shared.
+                </small>
+            </p>
+        </div>
     </footer>
     <!-- Footer end -->
 
-
-
-    <!-- Go to top link -->
-    <a id="top" href="#start">Go To Top</a>
-    <!-- End go to top link -->
-
-
+    <!-- Floating Go-to-Top Button -->
+    <a id="top" href="#start" aria-label="Scroll back to top">
+        <span>&#8679; Top</span>
+    </a>
 
 </body>
-
 </html>

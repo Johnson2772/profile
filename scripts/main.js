@@ -1,225 +1,310 @@
 /*
 ==========================================================================
-  Making a dynamic webpage
+  Jhonatan Posada - Portfolio Scripts
+  Polished, modern, modular JavaScript
 ==========================================================================
 */
 
+// --- 1. Responsive Navigation ---
 function toggleResponsive() {
-  var x = document.getElementById("topNav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
+  const nav = document.getElementById("topNav");
+  const toggleBtn = document.querySelector(".icon");
+  if (!nav) return;
+
+  const isOpen = nav.classList.toggle("responsive");
+  if (toggleBtn) {
+    toggleBtn.setAttribute("aria-expanded", String(isOpen));
   }
 }
 
+// Close mobile menu when a navigation link is clicked
+document.addEventListener("DOMContentLoaded", () => {
+  const topNav = document.getElementById("topNav");
+  const navLinks = document.querySelectorAll("#topNav ul li a");
 
-
-
-
-/*
-==========================================================================
-  Changes the content dynamically displayed on the page
-==========================================================================
-*/
-
-function openPage(pageName, element) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-    tablinks[i].classList.remove("active");
-  }
-  if (pageName == "home") {
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "block";
-    }
-  }
-  document.getElementById(pageName).style.display = "block";
-  element.classList.add("active");
-  document.getElementsByClassName(pageName)[0].style.display = "block";
-}
-
-
-
-
-
-/*
-==========================================================================
-  This will ensure that the clicked menu item is highlighted as active
-  Add event listeners to menu items to change the active class when clicked
-==========================================================================
-*/
-
-const navItems = document.querySelectorAll("#nav-links li");
-
-navItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    // Removing the class "active" from all elements
-    navItems.forEach((i) => i.classList.remove("active"));
-
-    // Adding the class "active" to the clicked element
-    this.classList.add("active");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (topNav && topNav.classList.contains("responsive") && !link.classList.contains("icon")) {
+        topNav.classList.remove("responsive");
+        const toggleBtn = document.querySelector(".icon");
+        if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 });
 
 
+// --- 2. Dynamic Tabbed Page Navigation ---
+function openPage(pageName, element) {
+  if (!pageName) return;
 
+  // Clean the pageName (strip any leading hash)
+  pageName = pageName.replace("#", "");
 
+  const tabcontents = document.querySelectorAll(".tabcontent");
+  const tablinks = document.querySelectorAll(".tablink");
 
-/*
-==========================================================================
-  Countdown timer
-==========================================================================
-*/
+  // Hide all tab contents
+  tabcontents.forEach((content) => {
+    content.style.display = "none";
+  });
 
-// Set the date we're counting down to
-// var countDownDate = new Date("Jan 1, 2023 15:00:00").getTime();
+  // Remove active class from all navigation links
+  tablinks.forEach((link) => {
+    link.classList.remove("active");
+  });
 
-// // Update the count down every 1 second
-// var countdownfunction = setInterval(function () {
+  // Display target tab header
+  const targetHeader = document.getElementById(pageName);
+  if (targetHeader && targetHeader.classList.contains("tabcontent")) {
+    targetHeader.style.display = "block";
+  }
 
-//   // Get todays date and time
-//   var now = new Date().getTime();
+  // Display target tab article(s)
+  const targetArticles = document.querySelectorAll(`article.${pageName}.tabcontent`);
+  targetArticles.forEach((article) => {
+    article.style.display = "block";
+  });
 
-//   // Find the distance between now an the count down date
-//   var distance = countDownDate - now;
-
-//   // Time calculations for days, hours, minutes and seconds
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//   // Output the result in an element with id="countdown"
-//   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-//     + minutes + "m " + seconds + "s ";
-
-//   // If the countdown is over, write some text
-//   if (distance < 0) {
-//     clearInterval(countdownfunction);
-//     document.getElementById("countdown").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
-
-let days = 2; //starting number of days
-let hours = 3; // starting number of hours
-let minutes = 2; // starting number of minutes
-let seconds = 5; // starting number of seconds
-
-// Converts all to seconds
-let totalSeconds =
-  days * 60 * 60 * 24 + hours * 60 * 60 + minutes * 60 + seconds;
-
-// Temporary seconds holder
-let tempSeconds = totalSeconds;
-
-// Calculates number of days, hours, minutes and seconds from a given number of seconds
-const convert = (value, inSeconds) => {
-  if (value > inSeconds) {
-    let x = value % inSeconds;
-    tempSeconds = x;
-    return (value - x) / inSeconds;
+  // Highlight active link
+  if (element && element.classList.contains("tablink")) {
+    element.classList.add("active");
   } else {
-    return 0;
+    const matchingLink = document.querySelector(`.tablink[href="#${pageName}"]`);
+    if (matchingLink) {
+      matchingLink.classList.add("active");
+    }
   }
-};
 
-// Sets seconds
-const setSeconds = (s) => {
-  document.querySelector("#seconds").textContent = s + "s";
-};
-
-// Sets minutes
-const setMinutes = (m) => {
-  document.querySelector("#minutes").textContent = m + "m";
-};
-
-// Sets hours
-const setHours = (h) => {
-  document.querySelector("#hours").textContent = h + "h";
-};
-
-// Sets Days
-const setDays = (d) => {
-  document.querySelector("#days").textContent = d + "d";
-};
-
-// Update the count down every 1 second
-var x = setInterval(() => {
-  //clears countdown when all seconds are counted
-  if (totalSeconds <= 0) {
-    clearInterval(x);
+  // Update URL hash without causing a page jump
+  if (window.history && window.history.replaceState) {
+    window.history.replaceState(null, "", `#${pageName}`);
   }
-  setDays(convert(tempSeconds, 24 * 60 * 60));
-  setHours(convert(tempSeconds, 60 * 60));
-  setMinutes(convert(tempSeconds, 60));
-  setSeconds(tempSeconds == 60 ? 59 : tempSeconds);
-  totalSeconds--;
-  tempSeconds = totalSeconds;
-}, 1000);
+}
+
+// Initialize tabs based on URL hash or default to 'home'
+window.addEventListener("DOMContentLoaded", () => {
+  const validTabs = ["home", "projects", "news", "schedule", "about", "contact"];
+  const currentHash = window.location.hash.replace("#", "").toLowerCase();
+  const initialTab = validTabs.includes(currentHash) ? currentHash : "home";
+  const initialLink = document.querySelector(`.tablink[href="#${initialTab}"]`);
+
+  openPage(initialTab, initialLink);
+});
+
+// Support browser back/forward buttons
+window.addEventListener("hashchange", () => {
+  const hash = window.location.hash.replace("#", "").toLowerCase();
+  const validTabs = ["home", "projects", "news", "schedule", "about", "contact"];
+  if (validTabs.includes(hash)) {
+    const link = document.querySelector(`.tablink[href="#${hash}"]`);
+    openPage(hash, link);
+  }
+});
 
 
+// --- 3. Dynamic New Year's Countdown Timer ---
+function initCountdown() {
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+  const countdownContainer = document.getElementById("countdown");
+
+  if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+  function updateCountdown() {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    // Countdown to January 1st of the upcoming year
+    const targetDate = new Date(currentYear + 1, 0, 1, 0, 0, 0).getTime();
+    const distance = targetDate - now.getTime();
+
+    if (distance <= 0) {
+      if (countdownContainer) {
+        countdownContainer.innerHTML = '<span class="countdown-expired">🎉 Happy New Year! 🎉</span>';
+      }
+      return;
+    }
+
+    const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+    const pad = (n) => String(n).padStart(2, "0");
+
+    daysEl.textContent = `${d}d`;
+    hoursEl.textContent = `${pad(h)}h`;
+    minutesEl.textContent = `${pad(m)}m`;
+    secondsEl.textContent = `${pad(s)}s`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
 
 
-
-/*
-==========================================================================
-  Slideshow
-==========================================================================
-*/
-
-let slideIndex = [1, 1];
-let slideId = ["mySlides1", "mySlides2"];
-showSlides(1, 0);
-showSlides(1, 1);
+// --- 4. Interactive Slideshows ---
+const slideIndex = [1, 1];
+const slideId = ["mySlides1", "mySlides2"];
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
 }
 
 function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {
+  const slides = document.getElementsByClassName(slideId[no]);
+  if (!slides || slides.length === 0) return;
+
+  if (n > slides.length) {
     slideIndex[no] = 1;
   }
   if (n < 1) {
-    slideIndex[no] = x.length;
+    slideIndex[no] = slides.length;
   }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  x[slideIndex[no] - 1].style.display = "block";
+
+  slides[slideIndex[no] - 1].style.display = "block";
 }
 
 
-
-
-
-/*
-==========================================================================
-  Automatic Slideshow - change image every 3 seconds
-==========================================================================
-*/
-
-var myIndex = 0;
-carousel();
+// --- 5. Automatic Carousel Slideshow ---
+let carouselIndex = 0;
+let carouselTimer = null;
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  const slides = document.getElementsByClassName("mySlides");
+  if (!slides || slides.length === 0) return;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1;
+
+  carouselIndex++;
+  if (carouselIndex > slides.length) {
+    carouselIndex = 1;
   }
-  x[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 3000);
+
+  slides[carouselIndex - 1].style.display = "block";
+  carouselTimer = setTimeout(carousel, 3500);
 }
+
+
+// --- 6. Scroll Progress Bar (Cross-Browser Fallback) ---
+function initScrollProgress() {
+  const progressBar = document.getElementById("scroll-progress");
+  if (!progressBar) return;
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) : 0;
+    progressBar.style.transform = `scaleX(${progress})`;
+  }, { passive: true });
+}
+
+
+// --- 7. Search Bar Feature ---
+function initSearchBar() {
+  const searchInput = document.querySelector(".search-bar input[type='search']");
+  const searchForm = document.querySelector(".search-bar");
+
+  if (!searchInput) return;
+
+  function handleSearch(e) {
+    if (e) e.preventDefault();
+    const query = searchInput.value.trim().toLowerCase();
+    if (!query) return;
+
+    const sections = ["home", "projects", "news", "schedule", "about", "contact"];
+    let matchFound = false;
+
+    for (const sec of sections) {
+      const el = document.querySelector(`article.${sec}`);
+      if (el && el.textContent.toLowerCase().includes(query)) {
+        openPage(sec);
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        showNotification(`Found match in "${sec.charAt(0).toUpperCase() + sec.slice(1)}" tab!`);
+        matchFound = true;
+        break;
+      }
+    }
+
+    if (!matchFound) {
+      showNotification(`No direct matches found for "${query}".`);
+    }
+  }
+
+  if (searchForm) {
+    searchForm.addEventListener("submit", handleSearch);
+  }
+
+  const goBtn = searchForm ? searchForm.querySelector("button") : null;
+  if (goBtn) {
+    goBtn.addEventListener("click", handleSearch);
+  }
+}
+
+
+// --- 8. Contact Form Handler & Toast Notification ---
+function showNotification(message) {
+  let toast = document.getElementById("site-toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "site-toast";
+    toast.className = "toast-message";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 4000);
+}
+
+function initContactForm() {
+  const form = document.querySelector("article.contact form");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const nameInput = document.getElementById("name");
+    const userName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : "Friend";
+
+    showNotification(`Thank you, ${userName}! Your message has been sent successfully.`);
+    form.reset();
+  });
+}
+
+
+// --- 9. Initializing all modules on DOM ready ---
+document.addEventListener("DOMContentLoaded", () => {
+  initCountdown();
+  showSlides(1, 0);
+  showSlides(1, 1);
+  carousel();
+  initScrollProgress();
+  initSearchBar();
+  initContactForm();
+
+  // Set today's date as default in contact form
+  const dateInput = document.getElementById("date");
+  if (dateInput && !dateInput.value) {
+    const today = new Date().toISOString().split("T")[0];
+    dateInput.value = today;
+  }
+});
